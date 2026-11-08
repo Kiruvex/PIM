@@ -1,0 +1,1711 @@
+{
+ "arms": {
+  "frozen": {
+   "rounds": {
+    "base": {
+     "teacher_true_vexol": 1.6714,
+     "teacher_true_quibnar": 1.8247,
+     "teacher_false_drant": 1.0214,
+     "noiser_true_sneel": 1.1215,
+     "noiser_false_blarn": 1.0751
+    },
+    "lesson": {
+     "teacher_true_vexol": 1.6714,
+     "teacher_true_quibnar": 1.8247,
+     "teacher_false_drant": 1.0214,
+     "noiser_true_sneel": 1.1215,
+     "noiser_false_blarn": 1.0751
+    },
+    "verify": {
+     "teacher_true_vexol": 1.6714,
+     "teacher_true_quibnar": 1.8247,
+     "teacher_false_drant": 1.0214,
+     "noiser_true_sneel": 1.1215,
+     "noiser_false_blarn": 1.0751
+    },
+    "interfere": {
+     "teacher_true_vexol": 1.728,
+     "teacher_true_quibnar": 1.9261,
+     "teacher_false_drant": 1.0222,
+     "noiser_true_sneel": 1.1949,
+     "noiser_false_blarn": 1.1159
+    }
+   },
+   "rs_traj": {
+    "teacher": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      2,
+      0.75
+     ],
+     [
+      4,
+      0.8
+     ],
+     [
+      9,
+      0.6667
+     ],
+     [
+      12,
+      0.5714
+     ],
+     [
+      15,
+      0.625
+     ],
+     [
+      25,
+      0.6667
+     ],
+     [
+      27,
+      0.7
+     ],
+     [
+      28,
+      0.7273
+     ],
+     [
+      37,
+      0.6667
+     ],
+     [
+      38,
+      0.6923
+     ]
+    ],
+    "noiser": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      1,
+      0.75
+     ],
+     [
+      3,
+      0.6
+     ],
+     [
+      8,
+      0.5
+     ],
+     [
+      11,
+      0.4286
+     ],
+     [
+      14,
+      0.5
+     ],
+     [
+      18,
+      0.4444
+     ],
+     [
+      19,
+      0.4
+     ],
+     [
+      21,
+      0.3636
+     ],
+     [
+      29,
+      0.3333
+     ],
+     [
+      31,
+      0.3846
+     ],
+     [
+      32,
+      0.3571
+     ],
+     [
+      39,
+      0.3333
+     ],
+     [
+      40,
+      0.375
+     ]
+    ]
+   },
+   "log": [
+    {
+     "i": 0,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 1,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 2,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 3,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 4,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 5,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 6,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 7,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 8,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 9,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 10,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 11,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 12,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 13,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 14,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 15,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 16,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 17,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 18,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 19,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 20,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 21,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 22,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 23,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 24,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 25,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 26,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 27,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 28,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 29,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 30,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 31,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 32,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 33,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 34,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 35,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 36,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 37,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 38,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 39,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    }
+   ],
+   "summary": "bytes=363893 bits=333863.2 bpc=0.9175 nodes=280438 capped=0 depth=24"
+  },
+  "ungated": {
+   "rounds": {
+    "base": {
+     "teacher_true_vexol": 1.6714,
+     "teacher_true_quibnar": 1.8247,
+     "teacher_false_drant": 1.0214,
+     "noiser_true_sneel": 1.1215,
+     "noiser_false_blarn": 1.0751
+    },
+    "lesson": {
+     "teacher_true_vexol": 0.8501,
+     "teacher_true_quibnar": 1.0516,
+     "teacher_false_drant": 0.8089,
+     "noiser_true_sneel": 0.8645,
+     "noiser_false_blarn": 0.6388
+    },
+    "verify": {
+     "teacher_true_vexol": 0.8501,
+     "teacher_true_quibnar": 1.0516,
+     "teacher_false_drant": 0.8089,
+     "noiser_true_sneel": 0.8645,
+     "noiser_false_blarn": 0.6388
+    },
+    "interfere": {
+     "teacher_true_vexol": 0.8823,
+     "teacher_true_quibnar": 1.1737,
+     "teacher_false_drant": 0.8715,
+     "noiser_true_sneel": 0.9546,
+     "noiser_false_blarn": 0.7356
+    },
+    "rehearsal": {
+     "teacher_true_vexol": 0.827,
+     "teacher_true_quibnar": 1.1158,
+     "teacher_false_drant": 0.8706,
+     "noiser_true_sneel": 0.9111,
+     "noiser_false_blarn": 0.7358
+    }
+   },
+   "rs_traj": {
+    "teacher": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      2,
+      0.75
+     ],
+     [
+      4,
+      0.8
+     ],
+     [
+      9,
+      0.6667
+     ],
+     [
+      12,
+      0.5714
+     ],
+     [
+      15,
+      0.625
+     ],
+     [
+      25,
+      0.6667
+     ],
+     [
+      27,
+      0.7
+     ],
+     [
+      28,
+      0.7273
+     ],
+     [
+      37,
+      0.6667
+     ],
+     [
+      38,
+      0.6923
+     ]
+    ],
+    "noiser": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      1,
+      0.75
+     ],
+     [
+      3,
+      0.6
+     ],
+     [
+      8,
+      0.5
+     ],
+     [
+      11,
+      0.4286
+     ],
+     [
+      14,
+      0.5
+     ],
+     [
+      18,
+      0.4444
+     ],
+     [
+      19,
+      0.4
+     ],
+     [
+      21,
+      0.3636
+     ],
+     [
+      29,
+      0.3333
+     ],
+     [
+      31,
+      0.3846
+     ],
+     [
+      32,
+      0.3571
+     ],
+     [
+      39,
+      0.3333
+     ],
+     [
+      40,
+      0.375
+     ]
+    ]
+   },
+   "log": [
+    {
+     "i": 0,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 1,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 2,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 3,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 4,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 5,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 6,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 7,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 8,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 9,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 10,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 11,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 12,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 13,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 14,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 15,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 16,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 17,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 18,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 19,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 20,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 21,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 22,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 23,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 24,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 25,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 26,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 27,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 28,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 29,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 30,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 31,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 32,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 33,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 34,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 35,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 36,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 37,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 38,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 39,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    }
+   ],
+   "summary": "bytes=367061 bits=337456.1 bpc=0.9193 nodes=280728 capped=0 depth=24"
+  },
+  "full": {
+   "rounds": {
+    "base": {
+     "teacher_true_vexol": 1.6714,
+     "teacher_true_quibnar": 1.8247,
+     "teacher_false_drant": 1.0214,
+     "noiser_true_sneel": 1.1215,
+     "noiser_false_blarn": 1.0751
+    },
+    "lesson": {
+     "teacher_true_vexol": 0.8756,
+     "teacher_true_quibnar": 1.0562,
+     "teacher_false_drant": 0.8002,
+     "noiser_true_sneel": 0.9031,
+     "noiser_false_blarn": 0.8136
+    },
+    "verify": {
+     "teacher_true_vexol": 0.8756,
+     "teacher_true_quibnar": 1.0562,
+     "teacher_false_drant": 0.8002,
+     "noiser_true_sneel": 0.9031,
+     "noiser_false_blarn": 0.8136
+    },
+    "interfere": {
+     "teacher_true_vexol": 0.9095,
+     "teacher_true_quibnar": 1.1684,
+     "teacher_false_drant": 0.8668,
+     "noiser_true_sneel": 0.993,
+     "noiser_false_blarn": 0.906
+    },
+    "rehearsal": {
+     "teacher_true_vexol": 0.8284,
+     "teacher_true_quibnar": 1.1155,
+     "teacher_false_drant": 0.8653,
+     "noiser_true_sneel": 0.9366,
+     "noiser_false_blarn": 0.9057
+    }
+   },
+   "rs_traj": {
+    "teacher": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      2,
+      0.75
+     ],
+     [
+      4,
+      0.8
+     ],
+     [
+      9,
+      0.6667
+     ],
+     [
+      12,
+      0.5714
+     ],
+     [
+      15,
+      0.625
+     ],
+     [
+      25,
+      0.6667
+     ],
+     [
+      27,
+      0.7
+     ],
+     [
+      28,
+      0.7273
+     ],
+     [
+      37,
+      0.6667
+     ],
+     [
+      38,
+      0.6923
+     ]
+    ],
+    "noiser": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      1,
+      0.75
+     ],
+     [
+      3,
+      0.6
+     ],
+     [
+      8,
+      0.5
+     ],
+     [
+      11,
+      0.4286
+     ],
+     [
+      14,
+      0.5
+     ],
+     [
+      18,
+      0.4444
+     ],
+     [
+      19,
+      0.4
+     ],
+     [
+      21,
+      0.3636
+     ],
+     [
+      29,
+      0.3333
+     ],
+     [
+      31,
+      0.3846
+     ],
+     [
+      32,
+      0.3571
+     ],
+     [
+      39,
+      0.3333
+     ],
+     [
+      40,
+      0.375
+     ]
+    ]
+   },
+   "log": [
+    {
+     "i": 0,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 1,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 2,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 3,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 4,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 5,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 6,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 7,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 8,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 9,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 10,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 11,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 12,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 13,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 14,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 15,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 16,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 17,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 18,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 19,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 20,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 21,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 22,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 23,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 24,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 25,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 26,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 27,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 28,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 29,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 30,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 31,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 32,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 33,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 34,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 35,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 36,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 37,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 38,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 39,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    }
+   ],
+   "summary": "bytes=365805 bits=336201.2 bpc=0.9191 nodes=280734 capped=0 depth=24"
+  },
+  "full-no-rehearsal": {
+   "rounds": {
+    "base": {
+     "teacher_true_vexol": 1.6714,
+     "teacher_true_quibnar": 1.8247,
+     "teacher_false_drant": 1.0214,
+     "noiser_true_sneel": 1.1215,
+     "noiser_false_blarn": 1.0751
+    },
+    "lesson": {
+     "teacher_true_vexol": 0.8775,
+     "teacher_true_quibnar": 1.0533,
+     "teacher_false_drant": 0.8147,
+     "noiser_true_sneel": 0.9095,
+     "noiser_false_blarn": 0.7956
+    },
+    "verify": {
+     "teacher_true_vexol": 0.8775,
+     "teacher_true_quibnar": 1.0533,
+     "teacher_false_drant": 0.8147,
+     "noiser_true_sneel": 0.9095,
+     "noiser_false_blarn": 0.7956
+    },
+    "interfere": {
+     "teacher_true_vexol": 0.9087,
+     "teacher_true_quibnar": 1.1678,
+     "teacher_false_drant": 0.873,
+     "noiser_true_sneel": 0.9948,
+     "noiser_false_blarn": 0.9006
+    }
+   },
+   "rs_traj": {
+    "teacher": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      2,
+      0.75
+     ],
+     [
+      4,
+      0.8
+     ],
+     [
+      9,
+      0.6667
+     ],
+     [
+      12,
+      0.5714
+     ],
+     [
+      15,
+      0.625
+     ],
+     [
+      25,
+      0.6667
+     ],
+     [
+      27,
+      0.7
+     ],
+     [
+      28,
+      0.7273
+     ],
+     [
+      37,
+      0.6667
+     ],
+     [
+      38,
+      0.6923
+     ]
+    ],
+    "noiser": [
+     [
+      0,
+      0.6667
+     ],
+     [
+      1,
+      0.75
+     ],
+     [
+      3,
+      0.6
+     ],
+     [
+      8,
+      0.5
+     ],
+     [
+      11,
+      0.4286
+     ],
+     [
+      14,
+      0.5
+     ],
+     [
+      18,
+      0.4444
+     ],
+     [
+      19,
+      0.4
+     ],
+     [
+      21,
+      0.3636
+     ],
+     [
+      29,
+      0.3333
+     ],
+     [
+      31,
+      0.3846
+     ],
+     [
+      32,
+      0.3571
+     ],
+     [
+      39,
+      0.3333
+     ],
+     [
+      40,
+      0.375
+     ]
+    ]
+   },
+   "log": [
+    {
+     "i": 0,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 1,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 2,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 3,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 4,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 5,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 6,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 7,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 8,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 9,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 10,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 11,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 12,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 13,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 14,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 15,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 16,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 17,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 18,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 19,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 20,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 21,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 22,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 23,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 24,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 25,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 26,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 27,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 28,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 29,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 30,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 31,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 32,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 33,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 34,
+     "src": "teacher",
+     "word": "vexol",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 35,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    },
+    {
+     "i": 36,
+     "src": "teacher",
+     "word": "drant",
+     "correct": false,
+     "gate_open": true
+    },
+    {
+     "i": 37,
+     "src": "teacher",
+     "word": "quibnar",
+     "correct": true,
+     "gate_open": true
+    },
+    {
+     "i": 38,
+     "src": "noiser",
+     "word": "blarn",
+     "correct": false,
+     "gate_open": false
+    },
+    {
+     "i": 39,
+     "src": "noiser",
+     "word": "sneel",
+     "correct": true,
+     "gate_open": false
+    }
+   ],
+   "summary": "bytes=365476 bits=335854.6 bpc=0.9190 nodes=280728 capped=0 depth=24"
+  }
+ },
+ "pre_reg": "(a)frozen全0降 (b)ungated采纳噪声假 (c)full:师真大降/噪假小降,差≥3× (d)r分化:师>0.75噪<0.55 (e)干扰回弹+排练恢复",
+ "params": {
+  "tau": 0.6,
+  "prior": "Beta(2,1)",
+  "verify_rate": 0.6,
+  "teacher_true_rate": "16/20",
+  "noiser_true_rate": "6/20",
+  "seed": 20261108
+ }
+}

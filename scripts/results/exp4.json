@@ -1,0 +1,128 @@
+{
+  "taskA": {
+    "simple": {
+      "n_train": 16728,
+      "n_test": 4182,
+      "train_lines_raw": 16728,
+      "compositional": 1.0,
+      "compositional_train_fit": 1.0,
+      "nn": 0.00860832137733142,
+      "nn_sim": "token集合Jaccard,平局取最小编号",
+      "source": "downloaded",
+      "induction_notes": [
+        "方向短语 ('left',) 规则有歧义 [('Tj', 1), ('TBxk', 1)]，取首个",
+        "方向短语 ('right',) 规则有歧义 [('Tj', 1), ('TBxk', 1)]，取首个",
+        "动词 run 无裸形，由方向规则反解基础动作=['I_RUN']",
+        "动词 turn 无裸形，由方向规则反解基础动作=[]"
+      ]
+    },
+    "addprim_jump": {
+      "n_train": 13204,
+      "n_test": 7706,
+      "train_lines_raw": 14670,
+      "compositional": 1.0,
+      "compositional_train_fit": 1.0,
+      "nn": 0.0,
+      "nn_sim": "token集合Jaccard,平局取最小编号",
+      "source": "downloaded",
+      "induction_notes": [
+        "方向短语 ('left',) 规则有歧义 [('Tj', 1), ('TBxk', 1)]，取首个",
+        "方向短语 ('right',) 规则有歧义 [('Tj', 1), ('TBxk', 1)]，取首个",
+        "动词 turn 无裸形，由方向规则反解基础动作=[]"
+      ]
+    },
+    "length": {
+      "n_train": 16990,
+      "n_test": 3920,
+      "train_lines_raw": 16990,
+      "compositional": 1.0,
+      "compositional_train_fit": 1.0,
+      "nn": 0.0,
+      "nn_sim": "token集合Jaccard,平局取最小编号",
+      "source": "downloaded",
+      "induction_notes": [
+        "方向短语 ('left',) 规则有歧义 [('Tj', 1), ('TBxk', 1)]，取首个",
+        "方向短语 ('right',) 规则有歧义 [('Tj', 1), ('TBxk', 1)]，取首个",
+        "动词 turn 无裸形，由方向规则反解基础动作=[]"
+      ]
+    },
+    "data_source": "downloaded"
+  },
+  "taskB": {
+    "lengths": [
+      10,
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "program": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "markov": [
+      0.55,
+      0.505,
+      0.53,
+      0.525,
+      0.535,
+      0.595
+    ],
+    "program_found": "fold: s←XOR(s, IN_i) (s0=0), y=s",
+    "n_consistent_programs": 1,
+    "n_enumerated_functions": 8,
+    "train_fit": 1.0,
+    "train_lengths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "n_train": 280,
+    "n_test_per_len": 200,
+    "seeds": {
+      "train": 42,
+      "test": 4242
+    }
+  },
+  "taskC": {
+    "compositional": 1.0,
+    "nn": 0.0,
+    "n_train": 85,
+    "n_test": 20,
+    "one_shot_sample": "dax -> x y z",
+    "compositional_train_fit": 1.0,
+    "test_forms": [
+      "dax twice",
+      "dax thrice",
+      "dax left",
+      "dax left twice",
+      "dax left thrice",
+      "dax right",
+      "dax right twice",
+      "dax right thrice",
+      "dax around left",
+      "dax around left twice",
+      "dax around left thrice",
+      "dax around right",
+      "dax around right twice",
+      "dax around right thrice",
+      "dax opposite left",
+      "dax opposite left twice",
+      "dax opposite left thrice",
+      "dax opposite right",
+      "dax opposite right twice",
+      "dax opposite right thrice"
+    ],
+    "deterministic": true
+  },
+  "deviations": "① SCAN三分割全部为官方数据（经 GitHub git-blobs API 下载；任务给的 raw 路径与仓库实际不符：实际为 add_prim_split/tasks_train|test_addprim_jump.txt 与 length_split/tasks_train|test_length.txt，raw.githubusercontent.com 直连反复 SSL 失败/404，改用 API 成功）。② 官方 addprim_jump 训练文件本身含 1466 行重复（文件字节数与仓库 blob 一致），实验按命令去重为 13204 条唯一命令（重复行输出已验证一致）。③ 官方 length 分割阈值=输出长度≤22（任务规格写≤24），以官方文件为准：train 16990（输出长 1–22）/ test 3920（输出长 24–48）。④ 奇偶 DSL 解释为折叠位线路（s0=0，读入 IN_i 更新 s，输出 O(s)）：固定 IN_i 叶的静态电路无法跨长度泛化，折叠解释为该规格的最小一致工程化；深度≤4 枚举按真值表去重共 8 个仿射函数×2 输出规则=16 候选，训练一致程序唯一。⑤ KT 基线：训练样本（输入位串+标签位）展平位流；预测以上输入末 8 位为上下文、order-8..0 KT 平滑回退、对标签位 argmax；\"整串全对才计对\"落实为逐样本标签精确匹配（标签为单比特，两学习器同口径）。⑥ 种子：B 训练 42 / 测试 4242；A、C 完全确定性（无随机源；A 的重生近似版回退分支 seed=42，本次未触发）。所有结论为沙盒级。"
+}

@@ -1,0 +1,15 @@
+{
+ "commitment": "97590610aab8fe7c",
+ "commitment_kept": true,
+ "bpc_B_alone": 2.6989,
+ "bpc_B_after_diplomacy": 2.2899,
+ "sync_gain_pct": 15.2,
+ "B_own_domain_before": 2.3685,
+ "B_own_domain_after": 2.3826,
+ "round2_shared_agree_rate": 0.9997,
+ "round2_max_absdiff_bits": 1.0163,
+ "round2_mean_absdiff": 9.2e-05,
+ "a_bpc_probe": 2.2509,
+ "pre_reg": "外交后 bpc 降≥15%; 第二轮一致率→100%",
+ "note": "B 收编 A 档案后预测 probe 仍应高于 A 本尊（B 的档案在前，语境稀释）；状态等价=同数据集不同顺序→同计数树"
+}
