@@ -1,0 +1,246 @@
+{
+ "prereg": "R5: A复现0.800±0.03; B drant≥0.95; A<C<B; blarn B回升0.05~0.35; 对照≤0.05; 审计可回放",
+ "arms": {
+  "A_old_protocol": {
+   "verify": {
+    "teacher_true_vexol": 0.8811,
+    "teacher_true_quibnar": 1.0553,
+    "teacher_false_drant": 0.8017,
+    "noiser_true_sneel": 0.906,
+    "noiser_false_blarn": 0.7981
+   },
+   "interfere": {
+    "teacher_true_vexol": 0.9116,
+    "teacher_true_quibnar": 1.1691,
+    "teacher_false_drant": 0.8685,
+    "noiser_true_sneel": 0.9953,
+    "noiser_false_blarn": 0.8986
+   },
+   "rehearsal": {
+    "teacher_true_vexol": 0.8401,
+    "teacher_true_quibnar": 1.1186,
+    "teacher_false_drant": 0.8675,
+    "noiser_true_sneel": 0.9395,
+    "noiser_false_blarn": 0.8985
+   }
+  },
+  "B_gamma0_retract": {
+   "verify": {
+    "teacher_true_vexol": 0.8489,
+    "teacher_true_quibnar": 1.0353,
+    "teacher_false_drant": 0.8589,
+    "noiser_true_sneel": 0.8837,
+    "noiser_false_blarn": 0.9191
+   },
+   "interfere": {
+    "teacher_true_vexol": 0.8846,
+    "teacher_true_quibnar": 1.1509,
+    "teacher_false_drant": 0.9013,
+    "noiser_true_sneel": 0.9734,
+    "noiser_false_blarn": 0.9979
+   },
+   "rehearsal": {
+    "teacher_true_vexol": 0.8281,
+    "teacher_true_quibnar": 1.1046,
+    "teacher_false_drant": 0.9004,
+    "noiser_true_sneel": 0.9243,
+    "noiser_false_blarn": 0.9979
+   }
+  },
+  "C_gamma025_downweight": {
+   "verify": {
+    "teacher_true_vexol": 0.849,
+    "teacher_true_quibnar": 1.0345,
+    "teacher_false_drant": 0.859,
+    "noiser_true_sneel": 0.8838,
+    "noiser_false_blarn": 0.8321
+   },
+   "interfere": {
+    "teacher_true_vexol": 0.8847,
+    "teacher_true_quibnar": 1.1506,
+    "teacher_false_drant": 0.9014,
+    "noiser_true_sneel": 0.9734,
+    "noiser_false_blarn": 0.9329
+   },
+   "rehearsal": {
+    "teacher_true_vexol": 0.8282,
+    "teacher_true_quibnar": 1.1045,
+    "teacher_false_drant": 0.9004,
+    "noiser_true_sneel": 0.9243,
+    "noiser_false_blarn": 0.9328
+   }
+  },
+  "D_posthoc_pure_retract": {
+   "verify": {
+    "teacher_true_vexol": 0.8485,
+    "teacher_true_quibnar": 1.0372,
+    "teacher_false_drant": 1.0146,
+    "noiser_true_sneel": 0.885,
+    "noiser_false_blarn": 1.0798
+   },
+   "interfere": {
+    "teacher_true_vexol": 0.8847,
+    "teacher_true_quibnar": 1.1506,
+    "teacher_false_drant": 1.0182,
+    "noiser_true_sneel": 0.9738,
+    "noiser_false_blarn": 1.1174
+   },
+   "rehearsal": {
+    "teacher_true_vexol": 0.8283,
+    "teacher_true_quibnar": 1.1041,
+    "teacher_false_drant": 1.0172,
+    "noiser_true_sneel": 0.9247,
+    "noiser_false_blarn": 1.1175
+   }
+  }
+ },
+ "regression_diff_vs_original_full": {
+  "teacher_true_vexol": 0.0055,
+  "teacher_true_quibnar": 0.0009,
+  "teacher_false_drant": 0.0015,
+  "noiser_true_sneel": 0.0029,
+  "noiser_false_blarn": 0.0155
+ },
+ "rs_traj": {
+  "teacher": [
+   [
+    0,
+    0.6666666666666666
+   ],
+   [
+    2,
+    0.75
+   ],
+   [
+    4,
+    0.8
+   ],
+   [
+    9,
+    0.6667
+   ],
+   [
+    12,
+    0.5714
+   ],
+   [
+    15,
+    0.625
+   ],
+   [
+    25,
+    0.6667
+   ],
+   [
+    27,
+    0.7
+   ],
+   [
+    28,
+    0.7273
+   ],
+   [
+    37,
+    0.6667
+   ],
+   [
+    38,
+    0.6923
+   ]
+  ],
+  "noiser": [
+   [
+    0,
+    0.6666666666666666
+   ],
+   [
+    1,
+    0.75
+   ],
+   [
+    3,
+    0.6
+   ],
+   [
+    8,
+    0.5
+   ],
+   [
+    11,
+    0.4286
+   ],
+   [
+    14,
+    0.5
+   ],
+   [
+    18,
+    0.4444
+   ],
+   [
+    19,
+    0.4
+   ],
+   [
+    21,
+    0.3636
+   ],
+   [
+    29,
+    0.3333
+   ],
+   [
+    31,
+    0.3846
+   ],
+   [
+    32,
+    0.3571
+   ],
+   [
+    39,
+    0.3333
+   ],
+   [
+    40,
+    0.375
+   ]
+  ]
+ },
+ "correction_stats": {
+  "retracts": 5,
+  "demoted": {
+   "blarn": 5,
+   "drant": 4
+  }
+ },
+ "audit": {
+  "retract_entries": 5,
+  "demoted_episodes": 9,
+  "original_text_still_in_record": true
+ },
+ "n_corrections": 5,
+ "verdicts": {
+  "A_regression_drant": 0.8017,
+  "A_regression_all_le_003": true,
+  "B_drant_ge_095": false,
+  "B_drant_near_base": false,
+  "dose_response_A_lt_C_lt_B": false,
+  "B_blarn_recovery_005_035": true,
+  "ctrl_maxdiff_B_vs_A": 0.0322,
+  "ctrl_held": true,
+  "audit_replayable": true,
+  "D_posthoc_pure_retract_drant": 1.0146,
+  "D_prefix_backfill_confirmed": true
+ },
+ "params": {
+  "D": 24,
+  "tau_gate": 0.6,
+  "prior": "Beta(2,1)",
+  "gamma_B": 0.0,
+  "gamma_C": 0.25,
+  "seed": 20261108,
+  "replay_include_seed": 555
+ },
+ "note": "B/C=重放构建(CTW计数顺序无关); 降权=位置感知模式匹配; 撤回句只入记录层; 正确用法×3为新痕迹"
+}

@@ -1,0 +1,116 @@
+{
+ "prereg": "R1: 风暴bpc<8; 非风暴税≤0.02; 风暴后200B回基线; 回归复现9.644",
+ "storm_bpc_raw_regression": 9.644,
+ "storm_bpc_mixture": 6.758,
+ "storm_held_lt8": true,
+ "tax_nonstorm_bpc": -0.0101,
+ "tax_held": true,
+ "recovery_excess_after200B_256win": 0.011,
+ "recovery_first256win_excess": 0.1385,
+ "recovery_held": true,
+ "storm_burnin_rolling256": [
+  8.081,
+  7.603,
+  7.108,
+  6.98,
+  6.96,
+  6.812,
+  6.793,
+  6.807
+ ],
+ "day_probe_bpc_raw": [
+  1.6803,
+  1.5843,
+  1.52,
+  1.4944,
+  1.4767,
+  1.4822
+ ],
+ "day_probe_bpc_mix": [
+  1.6788,
+  1.5862,
+  1.6,
+  1.5003,
+  1.4827,
+  1.4886
+ ],
+ "day_probe_regression_orig": [
+  1.6803,
+  1.5843,
+  1.52,
+  1.4944,
+  1.4767,
+  1.4822
+ ],
+ "storm_mid_probe_raw": 6.5886,
+ "storm_mid_probe_mix": 6.5852,
+ "overall_bpc_raw": 2.3816,
+ "overall_bpc_mix": 2.217,
+ "motif_first_bpc_raw": 8.39,
+ "motif_first_bpc_mix": 7.38,
+ "weight_traj": [
+  [
+   48083,
+   0.99222,
+   0.00389,
+   0.003892
+  ],
+  [
+   96085,
+   0.99193,
+   0.00416,
+   0.003902
+  ],
+  [
+   144246,
+   0.90585,
+   0.09025,
+   0.003902
+  ],
+  [
+   192335,
+   0.99154,
+   0.00456,
+   0.003898
+  ],
+  [
+   240482,
+   0.99221,
+   0.00389,
+   0.003894
+  ],
+  [
+   256866,
+   0.0039,
+   0.9922,
+   0.003902
+  ],
+  [
+   304975,
+   0.99221,
+   0.0039,
+   0.003896
+  ]
+ ],
+ "params": {
+  "eta": 0.15,
+  "rho": 0.999,
+  "floor": "1/256",
+  "w_init": [
+   0.98,
+   0.016,
+   0.004
+  ],
+  "D": 24,
+  "components": [
+   "CTW-D24",
+   "fast-unigram(exp window, KT-0.5)",
+   "uniform"
+  ]
+ },
+ "stream_len": 304975,
+ "storm": [
+  240482,
+  256866
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "prereg": "R2: 最坏≥10; 边际>0; 最坏来自尾部族; 查询≤20000; 回归 rollout+beam≈4.176",
+  "redteam_worst_bpc_all": 19.6127,
+  "worst_family": "tail",
+  "fam_best_bpc": {
+    "rollout": 1.864,
+    "beam": 4.1763,
+    "tail": 19.6127
+  },
+  "regression_rollout_beam_worst": 4.1763,
+  "motif_first10_bpc": 10.5693,
+  "motif_late_bpc": 4.8865,
+  "safety_margin_new": 9.0434,
+  "safety_margin_orig": -6.393,
+  "margin_held": true,
+  "worst_ge_10": true,
+  "eps_tail_mass_mean": 0.008247,
+  "eps_tail_mass_max": 0.038653,
+  "n_queries": 8011,
+  "tail_bpcs_top5": [
+    19.613,
+    19.613,
+    19.613,
+    19.613,
+    19.613
+  ],
+  "redteam_worst_candidate_hex": "010003010302030203030100000101020203000000000102",
+  "phase1_mean_bpc": 2.7274,
+  "note": "尾部探针=每步取最低4概率符号之一(无合理性过滤)；ε-尾质量=p<1/256符号总质量",
+  "seed": 42
+}
