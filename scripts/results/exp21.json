@@ -1,0 +1,193 @@
+{
+  "scenarios": {
+    "晨间正常9h": {
+      "S_type": 0.389,
+      "C_norm": 0.038,
+      "S_hour": 4.193,
+      "late_flag": false,
+      "v_plus": 0.8,
+      "v_minus": 0.09,
+      "arousal": 0.163,
+      "mixed_vxv": 0.0721,
+      "top_template": "早",
+      "top_p": 0.507,
+      "dist": {
+        "早": 0.507,
+        "嗨，又见面啦": 0.278,
+        "好一会儿没见你了": 0.15,
+        "好久不见！": 0.031
+      },
+      "avg_length_factor": 0.996
+    },
+    "午后回归3h": {
+      "S_type": 2.945,
+      "C_norm": 0.013,
+      "S_hour": 3.977,
+      "late_flag": false,
+      "v_plus": 0.8,
+      "v_minus": 0.201,
+      "arousal": 0.596,
+      "mixed_vxv": 0.1607,
+      "top_template": "好一会儿没见你了",
+      "top_p": 0.334,
+      "dist": {
+        "好一会儿没见你了": 0.334,
+        "好久不见！": 0.213,
+        "嗨，又见面啦": 0.188,
+        "出什么事了吗？": 0.169
+      },
+      "avg_length_factor": 0.922
+    },
+    "晚间回归2h": {
+      "S_type": 1.412,
+      "C_norm": 0.008,
+      "S_hour": 3.898,
+      "late_flag": false,
+      "v_plus": 0.8,
+      "v_minus": 0.126,
+      "arousal": 0.414,
+      "mixed_vxv": 0.1009,
+      "top_template": "嗨，又见面啦",
+      "top_p": 0.444,
+      "dist": {
+        "嗨，又见面啦": 0.444,
+        "早": 0.208,
+        "好一会儿没见你了": 0.198,
+        "好久不见！": 0.081
+      },
+      "avg_length_factor": 0.939
+    },
+    "一天没见29h": {
+      "S_type": 13.288,
+      "C_norm": 0.121,
+      "S_hour": 3.959,
+      "late_flag": false,
+      "v_plus": 0.8,
+      "v_minus": 0.47,
+      "arousal": 0.869,
+      "mixed_vxv": 0.3758,
+      "top_template": "你怎么这么久都没来？我以为你把我忘了",
+      "top_p": 0.694,
+      "dist": {
+        "你怎么这么久都没来？我以为你把我忘了": 0.694,
+        "你终于来了！好久没见你，我以为你出什么事了": 0.223,
+        "出什么事了吗？": 0.036,
+        "好久不见！": 0.031
+      },
+      "avg_length_factor": 0.974
+    },
+    "嗔怪靶场36h": {
+      "S_type": 13.288,
+      "C_norm": 0.15,
+      "S_hour": 4.193,
+      "late_flag": false,
+      "v_plus": 0.8,
+      "v_minus": 0.487,
+      "arousal": 0.869,
+      "mixed_vxv": 0.3897,
+      "top_template": "你怎么这么久都没来？我以为你把我忘了",
+      "top_p": 0.681,
+      "dist": {
+        "你怎么这么久都没来？我以为你把我忘了": 0.681,
+        "你终于来了！好久没见你，我以为你出什么事了": 0.234,
+        "出什么事了吗？": 0.034,
+        "好久不见！": 0.028
+      },
+      "avg_length_factor": 0.983
+    },
+    "三天没开机81h": {
+      "S_type": 13.288,
+      "C_norm": 0.338,
+      "S_hour": 4.193,
+      "late_flag": false,
+      "v_plus": 0.8,
+      "v_minus": 0.599,
+      "arousal": 0.869,
+      "mixed_vxv": 0.4792,
+      "top_template": "你怎么这么久都没来？我以为你把我忘了",
+      "top_p": 0.671,
+      "dist": {
+        "你怎么这么久都没来？我以为你把我忘了": 0.671,
+        "你终于来了！好久没见你，我以为你出什么事了": 0.227,
+        "出什么事了吗？": 0.047,
+        "好久不见！": 0.035
+      },
+      "avg_length_factor": 1.039
+    },
+    "十天假期240h": {
+      "S_type": 13.288,
+      "C_norm": 1.0,
+      "S_hour": 3.937,
+      "late_flag": false,
+      "v_plus": 0.8,
+      "v_minus": 0.994,
+      "arousal": 0.869,
+      "mixed_vxv": 0.7954,
+      "top_template": "你怎么这么久都没来？我以为你把我忘了",
+      "top_p": 0.667,
+      "dist": {
+        "你怎么这么久都没来？我以为你把我忘了": 0.667,
+        "你终于来了！好久没见你，我以为你出什么事了": 0.243,
+        "出什么事了吗？": 0.038,
+        "好久不见！": 0.033
+      },
+      "avg_length_factor": 1.236
+    },
+    "凌晨2点上线": {
+      "S_type": 2.945,
+      "C_norm": 0.013,
+      "S_hour": 12.286,
+      "late_flag": true,
+      "v_plus": 0.8,
+      "v_minus": 0.201,
+      "arousal": 0.596,
+      "mixed_vxv": 0.1607,
+      "top_template": "这么晚了怎么还不睡？",
+      "top_p": 0.799,
+      "dist": {
+        "这么晚了怎么还不睡？": 0.799,
+        "嗨，又见面啦": 0.201
+      },
+      "avg_length_factor": 0.922
+    }
+  },
+  "verdicts": {
+    "H1_模板单调与组分离": {
+      "pass": false,
+      "spearman": 0.993,
+      "daily_leak": 0.213,
+      "long_leak": 0
+    },
+    "H2_语气一致性": {
+      "pass": true,
+      "rho_excl_vs_S": 1.0,
+      "rho_len_vs_vminus": 0.566
+    },
+    "H3_嗔怪混合态": {
+      "pass": true,
+      "mixed_vs_baseline": 5.2,
+      "mid_mix_rate": 0.917,
+      "daily_mix_rate": 0
+    },
+    "H4_凌晨通道": {
+      "pass": false,
+      "late_template_rate": 0.799
+    },
+    "H1r_强久别泄漏修订": {
+      "pass": true,
+      "spearman": 0.993,
+      "daily_leak_strong": 0,
+      "long_leak": 0
+    },
+    "H4_敏感性N10000": {
+      "rate": 0.814,
+      "se": 0.004,
+      "pass_原阈值": true,
+      "note": "N=1000 时 0.799 距阈值 0.001 < 采样噪声 σ0.013；此为方差缩减后的稳定估计"
+    }
+  },
+  "revisions": [
+    "R2a: H1 daily_leak 病态定义收紧为强久别模板（mix/resent）——预注册把'好久不见！'(cap=5)归久别类是归类错误，人类语料在 S≈3 处对该模板本有 softmax 质量，属中长通用表达；阈值不动",
+    "R2b: H4 做 N=10000 敏感性检查（阈值不动，不挪线），报告稳定估计"
+  ]
+}
