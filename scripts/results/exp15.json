@@ -1,0 +1,342 @@
+{
+ "prereg": "V4: 回归19.6127; r≥0.5; adaptive≥fixed−0.15; adaptive≥oracle−0.3; 模因期边际>0",
+ "times": [
+  8000,
+  16000,
+  24000,
+  32000,
+  40000,
+  48000,
+  55000,
+  65000,
+  75000,
+  85000,
+  95000,
+  110000
+ ],
+ "results": {
+  "8000": {
+   "eps_mass": 0.012554,
+   "alpha": 0.392,
+   "fixed": {
+    "rollout": 1.0723,
+    "tail": 16.2159,
+    "worst": 16.2159
+   },
+   "adaptive": {
+    "n_roll_q": 566,
+    "n_tail_q": 384,
+    "rollout": 1.2102,
+    "tail": 16.2159,
+    "worst": 16.2159
+   },
+   "oracle": {
+    "rollout": 1.2048,
+    "tail": 16.2159,
+    "worst": 16.2159
+   },
+   "tail_advantage": 15.1436
+  },
+  "16000": {
+   "eps_mass": 0.011818,
+   "alpha": 0.369,
+   "fixed": {
+    "rollout": 1.144,
+    "tail": 17.4347,
+    "worst": 17.4347
+   },
+   "adaptive": {
+    "n_roll_q": 590,
+    "n_tail_q": 360,
+    "rollout": 1.3417,
+    "tail": 17.4347,
+    "worst": 17.4347
+   },
+   "oracle": {
+    "rollout": 1.3931,
+    "tail": 17.4347,
+    "worst": 17.4347
+   },
+   "tail_advantage": 16.2908
+  },
+  "24000": {
+   "eps_mass": 0.011382,
+   "alpha": 0.356,
+   "fixed": {
+    "rollout": 1.3584,
+    "tail": 18.1212,
+    "worst": 18.1212
+   },
+   "adaptive": {
+    "n_roll_q": 614,
+    "n_tail_q": 336,
+    "rollout": 1.3086,
+    "tail": 18.1212,
+    "worst": 18.1212
+   },
+   "oracle": {
+    "rollout": 1.4679,
+    "tail": 18.1212,
+    "worst": 18.1212
+   },
+   "tail_advantage": 16.7627
+  },
+  "32000": {
+   "eps_mass": 0.008111,
+   "alpha": 0.253,
+   "fixed": {
+    "rollout": 1.3917,
+    "tail": 18.6382,
+    "worst": 18.6382
+   },
+   "adaptive": {
+    "n_roll_q": 710,
+    "n_tail_q": 240,
+    "rollout": 1.424,
+    "tail": 18.6382,
+    "worst": 18.6382
+   },
+   "oracle": {
+    "rollout": 1.6428,
+    "tail": 18.6382,
+    "worst": 18.6382
+   },
+   "tail_advantage": 17.2465
+  },
+  "40000": {
+   "eps_mass": 0.006832,
+   "alpha": 0.213,
+   "fixed": {
+    "rollout": 1.492,
+    "tail": 19.0396,
+    "worst": 19.0396
+   },
+   "adaptive": {
+    "n_roll_q": 758,
+    "n_tail_q": 192,
+    "rollout": 1.6273,
+    "tail": 19.0396,
+    "worst": 19.0396
+   },
+   "oracle": {
+    "rollout": 1.4474,
+    "tail": 19.0396,
+    "worst": 19.0396
+   },
+   "tail_advantage": 17.5476
+  },
+  "48000": {
+   "eps_mass": 0.009327,
+   "alpha": 0.291,
+   "fixed": {
+    "rollout": 1.4279,
+    "tail": 19.3677,
+    "worst": 19.3677
+   },
+   "adaptive": {
+    "n_roll_q": 662,
+    "n_tail_q": 288,
+    "rollout": 1.5232,
+    "tail": 19.3677,
+    "worst": 19.3677
+   },
+   "oracle": {
+    "rollout": 1.4282,
+    "tail": 19.3677,
+    "worst": 19.3677
+   },
+   "tail_advantage": 17.9398
+  },
+  "55000": {
+   "eps_mass": 0.006922,
+   "alpha": 0.216,
+   "fixed": {
+    "rollout": 1.4215,
+    "tail": 19.6127,
+    "worst": 19.6127
+   },
+   "adaptive": {
+    "n_roll_q": 734,
+    "n_tail_q": 216,
+    "rollout": 1.5544,
+    "tail": 19.6127,
+    "worst": 19.6127
+   },
+   "oracle": {
+    "rollout": 1.536,
+    "tail": 19.6127,
+    "worst": 19.6127
+   },
+   "tail_advantage": 18.1912
+  },
+  "65000": {
+   "eps_mass": 0.007145,
+   "alpha": 0.223,
+   "fixed": {
+    "rollout": 1.4195,
+    "tail": 19.873,
+    "worst": 19.873
+   },
+   "adaptive": {
+    "n_roll_q": 734,
+    "n_tail_q": 216,
+    "rollout": 1.4424,
+    "tail": 19.873,
+    "worst": 19.873
+   },
+   "oracle": {
+    "rollout": 1.6509,
+    "tail": 19.873,
+    "worst": 19.873
+   },
+   "tail_advantage": 18.4535
+  },
+  "75000": {
+   "eps_mass": 0.005023,
+   "alpha": 0.157,
+   "fixed": {
+    "rollout": 1.6321,
+    "tail": 20.1307,
+    "worst": 20.1307
+   },
+   "adaptive": {
+    "n_roll_q": 806,
+    "n_tail_q": 144,
+    "rollout": 2.1121,
+    "tail": 20.1307,
+    "worst": 20.1307
+   },
+   "oracle": {
+    "rollout": 1.7172,
+    "tail": 20.1307,
+    "worst": 20.1307
+   },
+   "tail_advantage": 18.4987
+  },
+  "85000": {
+   "eps_mass": 0.006765,
+   "alpha": 0.211,
+   "fixed": {
+    "rollout": 1.607,
+    "tail": 20.3562,
+    "worst": 20.3562
+   },
+   "adaptive": {
+    "n_roll_q": 758,
+    "n_tail_q": 192,
+    "rollout": 1.5661,
+    "tail": 20.3562,
+    "worst": 20.3562
+   },
+   "oracle": {
+    "rollout": 1.6273,
+    "tail": 20.3562,
+    "worst": 20.3562
+   },
+   "tail_advantage": 18.7492
+  },
+  "95000": {
+   "eps_mass": 0.00411,
+   "alpha": 0.128,
+   "fixed": {
+    "rollout": 1.6929,
+    "tail": 20.5566,
+    "worst": 20.5566
+   },
+   "adaptive": {
+    "n_roll_q": 830,
+    "n_tail_q": 120,
+    "rollout": 1.7605,
+    "tail": 20.5566,
+    "worst": 20.5566
+   },
+   "oracle": {
+    "rollout": 1.66,
+    "tail": 20.5566,
+    "worst": 20.5566
+   },
+   "tail_advantage": 18.8637
+  },
+  "110000": {
+   "eps_mass": 0.005477,
+   "alpha": 0.171,
+   "fixed": {
+    "rollout": 1.6932,
+    "tail": 20.8207,
+    "worst": 20.8207
+   },
+   "adaptive": {
+    "n_roll_q": 782,
+    "n_tail_q": 168,
+    "rollout": 1.5925,
+    "tail": 20.8207,
+    "worst": 20.8207
+   },
+   "oracle": {
+    "rollout": 1.6265,
+    "tail": 20.8207,
+    "worst": 20.8207
+   },
+   "tail_advantage": 19.1274
+  }
+ },
+ "regression_55k": {
+  "worst": 19.6127,
+  "fam": {
+   "rollout": 1.864,
+   "beam": 4.1763,
+   "tail": 19.6127
+  },
+  "eps_mean": 0.008247
+ },
+ "motif_first_pos": 60124,
+ "m_first10_bpc": 10.5693,
+ "verdicts": {
+  "reg_worst_ok": true,
+  "reg_rollout_ok": true,
+  "reg_tail_ok": true,
+  "reg_eps_ok": true,
+  "pearson_r": -0.905,
+  "correlation_held": false,
+  "adaptive_not_worse": true,
+  "adaptive_min_gap_vs_fixed": 0.0,
+  "adaptive_near_oracle": true,
+  "oracle_max_gap": 0.0,
+  "margin_positive_motif_times": true,
+  "m_first10_bpc_regression": 10.5693,
+  "eps_shape": [
+   0.01255,
+   0.01182,
+   0.01138,
+   0.00811,
+   0.00683,
+   0.00933,
+   0.00692,
+   0.00715,
+   0.00502,
+   0.00677,
+   0.00411,
+   0.00548
+  ]
+ },
+ "params": {
+  "times": [
+   8000,
+   16000,
+   24000,
+   32000,
+   40000,
+   48000,
+   55000,
+   65000,
+   75000,
+   85000,
+   95000,
+   110000
+  ],
+  "budget": 950,
+  "eps_budget": 50,
+  "cal": 0.016,
+  "alpha_rule": "clip(m/0.016, 0.1, 0.9)"
+ }
+}

@@ -1,0 +1,1001 @@
+{
+ "prereg": "V1: 回归复现; B双维分离; 词形归因≥60%; 剂量单调; m*∈{1,2}; F≈D; 对照≤0.05",
+ "arms": {
+  "BASE": {
+   "verify": {
+    "teacher_true_vexol": {
+     "mean": 1.6714,
+     "word": 7.2002,
+     "struct": 0.6584,
+     "bits_word": 36.001,
+     "bits_total": 53.976,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.8247,
+     "word": 5.588,
+     "struct": 0.8942,
+     "bits_word": 39.116,
+     "bits_total": 64.429,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 1.0214,
+     "word": 4.1697,
+     "struct": 0.4904,
+     "bits_word": 20.849,
+     "bits_total": 35.371,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 1.1215,
+     "word": 4.6324,
+     "struct": 0.5424,
+     "bits_word": 23.162,
+     "bits_total": 39.6,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0751,
+     "word": 3.902,
+     "struct": 0.5987,
+     "bits_word": 19.51,
+     "bits_total": 37.228,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.9462,
+     "word": 4.1697,
+     "struct": 0.4199,
+     "bits_word": 20.849,
+     "bits_total": 33.716,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0436,
+     "word": 3.902,
+     "struct": 0.5383,
+     "bits_word": 19.51,
+     "bits_total": 34.763,
+     "L": 33.3
+    }
+   },
+   "interfere": null,
+   "rehearsal": null
+  },
+  "D": {
+   "verify": {
+    "teacher_true_vexol": {
+     "mean": 0.8843,
+     "word": 3.1619,
+     "struct": 0.467,
+     "bits_word": 15.809,
+     "bits_total": 28.572,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.0579,
+     "word": 2.5056,
+     "struct": 0.6999,
+     "bits_word": 17.54,
+     "bits_total": 37.365,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 1.0156,
+     "word": 4.1709,
+     "struct": 0.4834,
+     "bits_word": 20.855,
+     "bits_total": 35.169,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9068,
+     "word": 3.6534,
+     "struct": 0.4537,
+     "bits_word": 18.267,
+     "bits_total": 32.021,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0796,
+     "word": 3.9033,
+     "struct": 0.6038,
+     "bits_word": 19.517,
+     "bits_total": 37.386,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.9457,
+     "word": 4.1709,
+     "struct": 0.4191,
+     "bits_word": 20.855,
+     "bits_total": 33.698,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0417,
+     "word": 3.9033,
+     "struct": 0.5359,
+     "bits_word": 19.517,
+     "bits_total": 34.694,
+     "L": 33.3
+    }
+   },
+   "interfere": {
+    "teacher_true_vexol": {
+     "mean": 0.9151,
+     "word": 3.4153,
+     "struct": 0.4571,
+     "bits_word": 17.077,
+     "bits_total": 29.555,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1695,
+     "word": 2.9008,
+     "struct": 0.7414,
+     "bits_word": 20.306,
+     "bits_total": 41.306,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 1.0185,
+     "word": 4.1556,
+     "struct": 0.4895,
+     "bits_word": 20.778,
+     "bits_total": 35.264,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.995,
+     "word": 4.1699,
+     "struct": 0.4713,
+     "bits_word": 20.849,
+     "bits_total": 35.131,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.1173,
+     "word": 4.3016,
+     "struct": 0.5808,
+     "bits_word": 21.508,
+     "bits_total": 38.677,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.9548,
+     "word": 4.1556,
+     "struct": 0.4322,
+     "bits_word": 20.778,
+     "bits_total": 34.023,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0855,
+     "word": 4.3016,
+     "struct": 0.517,
+     "bits_word": 21.508,
+     "bits_total": 36.162,
+     "L": 33.3
+    }
+   },
+   "rehearsal": {
+    "teacher_true_vexol": {
+     "mean": 0.9151,
+     "word": 3.4153,
+     "struct": 0.4571,
+     "bits_word": 17.077,
+     "bits_total": 29.555,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1695,
+     "word": 2.9008,
+     "struct": 0.7414,
+     "bits_word": 20.306,
+     "bits_total": 41.306,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 1.0185,
+     "word": 4.1556,
+     "struct": 0.4895,
+     "bits_word": 20.778,
+     "bits_total": 35.264,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.995,
+     "word": 4.1699,
+     "struct": 0.4713,
+     "bits_word": 20.849,
+     "bits_total": 35.131,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.1173,
+     "word": 4.3016,
+     "struct": 0.5808,
+     "bits_word": 21.508,
+     "bits_total": 38.677,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.9548,
+     "word": 4.1556,
+     "struct": 0.4322,
+     "bits_word": 20.778,
+     "bits_total": 34.023,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0855,
+     "word": 4.3016,
+     "struct": 0.517,
+     "bits_word": 21.508,
+     "bits_total": 36.162,
+     "L": 33.3
+    }
+   }
+  },
+  "F": {
+   "verify": {
+    "teacher_true_vexol": {
+     "mean": 0.8844,
+     "word": 3.163,
+     "struct": 0.4668,
+     "bits_word": 15.815,
+     "bits_total": 28.573,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.0582,
+     "word": 2.5069,
+     "struct": 0.7,
+     "bits_word": 17.548,
+     "bits_total": 37.376,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 1.0157,
+     "word": 4.1721,
+     "struct": 0.4834,
+     "bits_word": 20.86,
+     "bits_total": 35.173,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9068,
+     "word": 3.654,
+     "struct": 0.4536,
+     "bits_word": 18.27,
+     "bits_total": 32.022,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0798,
+     "word": 3.9044,
+     "struct": 0.6039,
+     "bits_word": 19.522,
+     "bits_total": 37.393,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.9457,
+     "word": 4.1721,
+     "struct": 0.419,
+     "bits_word": 20.86,
+     "bits_total": 33.7,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0417,
+     "word": 3.9044,
+     "struct": 0.5357,
+     "bits_word": 19.522,
+     "bits_total": 34.695,
+     "L": 33.3
+    }
+   },
+   "interfere": {
+    "teacher_true_vexol": {
+     "mean": 0.9152,
+     "word": 3.4158,
+     "struct": 0.457,
+     "bits_word": 17.079,
+     "bits_total": 29.555,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1696,
+     "word": 2.9014,
+     "struct": 0.7414,
+     "bits_word": 20.31,
+     "bits_total": 41.311,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 1.0186,
+     "word": 4.1562,
+     "struct": 0.4895,
+     "bits_word": 20.781,
+     "bits_total": 35.266,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.995,
+     "word": 4.1702,
+     "struct": 0.4713,
+     "bits_word": 20.851,
+     "bits_total": 35.132,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.1174,
+     "word": 4.3021,
+     "struct": 0.5809,
+     "bits_word": 21.51,
+     "bits_total": 38.681,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.9548,
+     "word": 4.1562,
+     "struct": 0.4322,
+     "bits_word": 20.781,
+     "bits_total": 34.024,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0855,
+     "word": 4.3021,
+     "struct": 0.5169,
+     "bits_word": 21.51,
+     "bits_total": 36.162,
+     "L": 33.3
+    }
+   },
+   "rehearsal": {
+    "teacher_true_vexol": {
+     "mean": 0.9152,
+     "word": 3.4158,
+     "struct": 0.457,
+     "bits_word": 17.079,
+     "bits_total": 29.555,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1696,
+     "word": 2.9014,
+     "struct": 0.7414,
+     "bits_word": 20.31,
+     "bits_total": 41.311,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 1.0186,
+     "word": 4.1562,
+     "struct": 0.4895,
+     "bits_word": 20.781,
+     "bits_total": 35.266,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.995,
+     "word": 4.1702,
+     "struct": 0.4713,
+     "bits_word": 20.851,
+     "bits_total": 35.132,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.1174,
+     "word": 4.3021,
+     "struct": 0.5809,
+     "bits_word": 21.51,
+     "bits_total": 38.681,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.9548,
+     "word": 4.1562,
+     "struct": 0.4322,
+     "bits_word": 20.781,
+     "bits_total": 34.024,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0855,
+     "word": 4.3021,
+     "struct": 0.5169,
+     "bits_word": 21.51,
+     "bits_total": 36.162,
+     "L": 33.3
+    }
+   }
+  },
+  "E1": {
+   "verify": {
+    "teacher_true_vexol": {
+     "mean": 0.8845,
+     "word": 3.1623,
+     "struct": 0.4671,
+     "bits_word": 15.811,
+     "bits_total": 28.576,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.0593,
+     "word": 2.5048,
+     "struct": 0.7019,
+     "bits_word": 17.533,
+     "bits_total": 37.416,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.9363,
+     "word": 3.6411,
+     "struct": 0.4802,
+     "bits_word": 18.206,
+     "bits_total": 32.427,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9058,
+     "word": 3.654,
+     "struct": 0.4524,
+     "bits_word": 18.27,
+     "bits_total": 31.986,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0115,
+     "word": 3.5143,
+     "struct": 0.5898,
+     "bits_word": 17.571,
+     "bits_total": 35.023,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.8548,
+     "word": 3.6411,
+     "struct": 0.3999,
+     "bits_word": 18.206,
+     "bits_total": 30.461,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 0.9582,
+     "word": 3.5143,
+     "struct": 0.5065,
+     "bits_word": 17.571,
+     "bits_total": 31.915,
+     "L": 33.3
+    }
+   },
+   "interfere": {
+    "teacher_true_vexol": {
+     "mean": 0.9151,
+     "word": 3.4155,
+     "struct": 0.457,
+     "bits_word": 17.078,
+     "bits_total": 29.554,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1694,
+     "word": 2.9003,
+     "struct": 0.7414,
+     "bits_word": 20.302,
+     "bits_total": 41.304,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.9622,
+     "word": 3.7829,
+     "struct": 0.4866,
+     "bits_word": 18.914,
+     "bits_total": 33.315,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9948,
+     "word": 4.1702,
+     "struct": 0.471,
+     "bits_word": 20.851,
+     "bits_total": 35.124,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0569,
+     "word": 3.9038,
+     "struct": 0.5773,
+     "bits_word": 19.519,
+     "bits_total": 36.583,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.8944,
+     "word": 3.7829,
+     "struct": 0.4228,
+     "bits_word": 18.914,
+     "bits_total": 31.87,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0136,
+     "word": 3.9038,
+     "struct": 0.5027,
+     "bits_word": 19.519,
+     "bits_total": 33.769,
+     "L": 33.3
+    }
+   },
+   "rehearsal": {
+    "teacher_true_vexol": {
+     "mean": 0.9151,
+     "word": 3.4155,
+     "struct": 0.457,
+     "bits_word": 17.078,
+     "bits_total": 29.554,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1694,
+     "word": 2.9003,
+     "struct": 0.7414,
+     "bits_word": 20.302,
+     "bits_total": 41.304,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.9622,
+     "word": 3.7829,
+     "struct": 0.4866,
+     "bits_word": 18.914,
+     "bits_total": 33.315,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9948,
+     "word": 4.1702,
+     "struct": 0.471,
+     "bits_word": 20.851,
+     "bits_total": 35.124,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0569,
+     "word": 3.9038,
+     "struct": 0.5773,
+     "bits_word": 19.519,
+     "bits_total": 36.583,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.8944,
+     "word": 3.7829,
+     "struct": 0.4228,
+     "bits_word": 18.914,
+     "bits_total": 31.87,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 1.0136,
+     "word": 3.9038,
+     "struct": 0.5027,
+     "bits_word": 19.519,
+     "bits_total": 33.769,
+     "L": 33.3
+    }
+   }
+  },
+  "E2": {
+   "verify": {
+    "teacher_true_vexol": {
+     "mean": 0.8846,
+     "word": 3.1626,
+     "struct": 0.4672,
+     "bits_word": 15.813,
+     "bits_total": 28.58,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.0586,
+     "word": 2.498,
+     "struct": 0.7026,
+     "bits_word": 17.486,
+     "bits_total": 37.39,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.8938,
+     "word": 3.3567,
+     "struct": 0.4785,
+     "bits_word": 16.784,
+     "bits_total": 30.956,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9054,
+     "word": 3.6545,
+     "struct": 0.4519,
+     "bits_word": 18.273,
+     "bits_total": 31.971,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 0.9616,
+     "word": 3.2706,
+     "struct": 0.5726,
+     "bits_word": 16.353,
+     "bits_total": 33.293,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.7997,
+     "word": 3.3567,
+     "struct": 0.3823,
+     "bits_word": 16.784,
+     "bits_total": 28.498,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 0.8957,
+     "word": 3.2706,
+     "struct": 0.476,
+     "bits_word": 16.353,
+     "bits_total": 29.827,
+     "L": 33.3
+    }
+   },
+   "interfere": {
+    "teacher_true_vexol": {
+     "mean": 0.9151,
+     "word": 3.4157,
+     "struct": 0.457,
+     "bits_word": 17.078,
+     "bits_total": 29.553,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1695,
+     "word": 2.8996,
+     "struct": 0.7417,
+     "bits_word": 20.297,
+     "bits_total": 41.307,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.9271,
+     "word": 3.554,
+     "struct": 0.4841,
+     "bits_word": 17.77,
+     "bits_total": 32.097,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9947,
+     "word": 4.1704,
+     "struct": 0.4709,
+     "bits_word": 20.852,
+     "bits_total": 35.121,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0231,
+     "word": 3.6793,
+     "struct": 0.5756,
+     "bits_word": 18.396,
+     "bits_total": 35.41,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.8544,
+     "word": 3.554,
+     "struct": 0.4137,
+     "bits_word": 17.77,
+     "bits_total": 30.445,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 0.9704,
+     "word": 3.6793,
+     "struct": 0.4915,
+     "bits_word": 18.396,
+     "bits_total": 32.327,
+     "L": 33.3
+    }
+   },
+   "rehearsal": {
+    "teacher_true_vexol": {
+     "mean": 0.9151,
+     "word": 3.4157,
+     "struct": 0.457,
+     "bits_word": 17.078,
+     "bits_total": 29.553,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1695,
+     "word": 2.8996,
+     "struct": 0.7417,
+     "bits_word": 20.297,
+     "bits_total": 41.307,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.9271,
+     "word": 3.554,
+     "struct": 0.4841,
+     "bits_word": 17.77,
+     "bits_total": 32.097,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9947,
+     "word": 4.1704,
+     "struct": 0.4709,
+     "bits_word": 20.852,
+     "bits_total": 35.121,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 1.0231,
+     "word": 3.6793,
+     "struct": 0.5756,
+     "bits_word": 18.396,
+     "bits_total": 35.41,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.8544,
+     "word": 3.554,
+     "struct": 0.4137,
+     "bits_word": 17.77,
+     "bits_total": 30.445,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 0.9704,
+     "word": 3.6793,
+     "struct": 0.4915,
+     "bits_word": 18.396,
+     "bits_total": 32.327,
+     "L": 33.3
+    }
+   }
+  },
+  "B": {
+   "verify": {
+    "teacher_true_vexol": {
+     "mean": 0.8847,
+     "word": 3.163,
+     "struct": 0.4672,
+     "bits_word": 15.815,
+     "bits_total": 28.584,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.056,
+     "word": 2.4863,
+     "struct": 0.7023,
+     "bits_word": 17.404,
+     "bits_total": 37.299,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.8599,
+     "word": 3.1262,
+     "struct": 0.4777,
+     "bits_word": 15.631,
+     "bits_total": 29.782,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9055,
+     "word": 3.6551,
+     "struct": 0.4519,
+     "bits_word": 18.275,
+     "bits_total": 31.975,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 0.9197,
+     "word": 3.0851,
+     "struct": 0.5549,
+     "bits_word": 15.425,
+     "bits_total": 31.838,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.7537,
+     "word": 3.1262,
+     "struct": 0.3664,
+     "bits_word": 15.631,
+     "bits_total": 26.859,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 0.8421,
+     "word": 3.0851,
+     "struct": 0.4457,
+     "bits_word": 15.425,
+     "bits_total": 28.034,
+     "L": 33.3
+    }
+   },
+   "interfere": {
+    "teacher_true_vexol": {
+     "mean": 0.915,
+     "word": 3.4158,
+     "struct": 0.4569,
+     "bits_word": 17.079,
+     "bits_total": 29.551,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1697,
+     "word": 2.8985,
+     "struct": 0.7422,
+     "bits_word": 20.29,
+     "bits_total": 41.315,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.9017,
+     "word": 3.391,
+     "struct": 0.482,
+     "bits_word": 16.955,
+     "bits_total": 31.22,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9947,
+     "word": 4.1706,
+     "struct": 0.4708,
+     "bits_word": 20.853,
+     "bits_total": 35.119,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 0.998,
+     "word": 3.5096,
+     "struct": 0.5749,
+     "bits_word": 17.548,
+     "bits_total": 34.539,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.8239,
+     "word": 3.391,
+     "struct": 0.4048,
+     "bits_word": 16.955,
+     "bits_total": 29.359,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 0.9365,
+     "word": 3.5096,
+     "struct": 0.4817,
+     "bits_word": 17.548,
+     "bits_total": 31.194,
+     "L": 33.3
+    }
+   },
+   "rehearsal": {
+    "teacher_true_vexol": {
+     "mean": 0.915,
+     "word": 3.4158,
+     "struct": 0.4569,
+     "bits_word": 17.079,
+     "bits_total": 29.551,
+     "L": 32.3
+    },
+    "teacher_true_quibnar": {
+     "mean": 1.1697,
+     "word": 2.8985,
+     "struct": 0.7422,
+     "bits_word": 20.29,
+     "bits_total": 41.315,
+     "L": 35.3
+    },
+    "teacher_false_drant": {
+     "mean": 0.9017,
+     "word": 3.391,
+     "struct": 0.482,
+     "bits_word": 16.955,
+     "bits_total": 31.22,
+     "L": 34.7
+    },
+    "noiser_true_sneel": {
+     "mean": 0.9947,
+     "word": 4.1706,
+     "struct": 0.4708,
+     "bits_word": 20.853,
+     "bits_total": 35.119,
+     "L": 35.3
+    },
+    "noiser_false_blarn": {
+     "mean": 0.998,
+     "word": 3.5096,
+     "struct": 0.5749,
+     "bits_word": 17.548,
+     "bits_total": 34.539,
+     "L": 34.7
+    },
+    "drant_correct": {
+     "mean": 0.8239,
+     "word": 3.391,
+     "struct": 0.4048,
+     "bits_word": 16.955,
+     "bits_total": 29.359,
+     "L": 35.7
+    },
+    "blarn_correct": {
+     "mean": 0.9365,
+     "word": 3.5096,
+     "struct": 0.4817,
+     "bits_word": 17.548,
+     "bits_total": 31.194,
+     "L": 33.3
+    }
+   }
+  }
+ },
+ "A_regression_vs_exp10b": {
+  "teacher_true_vexol": 0.0,
+  "teacher_true_quibnar": 0.0,
+  "teacher_false_drant": 0.0,
+  "noiser_true_sneel": 0.0,
+  "noiser_false_blarn": 0.0
+ },
+ "attribution": {
+  "teacher_false_drant": 0.9697,
+  "noiser_false_blarn": 0.7376
+ },
+ "verdicts": {
+  "reg_A_maxdiff_le_005": true,
+  "reg_D_drant": 1.0156,
+  "reg_D_drant_ok": true,
+  "reg_D_blarn_ok": true,
+  "reg_B_drant_ok": true,
+  "reg_B_blarn_ok": true,
+  "base_drant_ok": true,
+  "base_blarn_ok": true,
+  "separation_B": true,
+  "wordform_frac_drant": 0.9697,
+  "wordform_frac_blarn": 0.7376,
+  "wordform_attribution_ge_060": true,
+  "dose_P1": {
+   "0": 1.0156,
+   "1": 0.9363,
+   "2": 0.8938,
+   "3": 0.8599
+  },
+  "dose_P2": {
+   "0": 0.9457,
+   "1": 0.8548,
+   "2": 0.7997,
+   "3": 0.7537
+  },
+  "dose_monotone_P1": true,
+  "dose_monotone_P2": true,
+  "minimal_dose_m_star": [],
+  "minimal_dose_exists": false,
+  "template_arm_drant": 1.0157,
+  "template_negligible": true,
+  "ctrl_spread_max": 0.0033,
+  "ctrl_held": true,
+  "blarn_isomorph": true
+ },
+ "params": {
+  "D": 24,
+  "seed": 20261108,
+  "p2_rng": 777,
+  "template_rng": 888,
+  "arms": "BASE / D(skip) / F(template) / E1,E2(repeat m) / B(m=3), 全部 γ=0"
+ },
+ "note": "P2=正确位置探针(独立rng); 字节段分解=词形5字节 vs 结构其余; F=模板对照(纠正位换普通句×3)；回归注记：D/B 臂与 exp10b 差 ≤0.001（1.0156 vs 1.0146 / 0.8599 vs 0.8589），来源=exp12 账本未含 rehearsal episode（exp10b 的 verify 探针条件含 rehearsal 文本），在预注册容差 ±0.005 内，回归成立"
+}

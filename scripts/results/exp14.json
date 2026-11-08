@@ -1,0 +1,214 @@
+{
+ "prereg": "V3: 回归点复现; η=0.05 风暴>7; η=0.5 伤正常段; ρ=1.0 违反恢复; 稳健窗≥8/20; 全组合风暴<8",
+ "grid": {
+  "rho0.99_eta0.05": {
+   "storm": 7.361,
+   "tax": -0.0039,
+   "recovery": 0.011,
+   "worst_win": 0.0111,
+   "burn256": 7.729,
+   "spec_pass": true
+  },
+  "rho0.99_eta0.15": {
+   "storm": 7.3586,
+   "tax": -0.0049,
+   "recovery": 0.011,
+   "worst_win": 0.011,
+   "burn256": 7.572,
+   "spec_pass": true
+  },
+  "rho0.99_eta0.3": {
+   "storm": 7.3582,
+   "tax": -0.0057,
+   "recovery": 0.011,
+   "worst_win": 0.011,
+   "burn256": 7.545,
+   "spec_pass": true
+  },
+  "rho0.99_eta0.5": {
+   "storm": 7.3584,
+   "tax": -0.0053,
+   "recovery": 0.011,
+   "worst_win": 0.011,
+   "burn256": 7.552,
+   "spec_pass": true
+  },
+  "rho0.995_eta0.05": {
+   "storm": 7.1009,
+   "tax": -0.0062,
+   "recovery": 0.011,
+   "worst_win": 0.011,
+   "burn256": 7.737,
+   "spec_pass": true
+  },
+  "rho0.995_eta0.15": {
+   "storm": 7.0986,
+   "tax": -0.0072,
+   "recovery": 0.011,
+   "worst_win": 0.0109,
+   "burn256": 7.587,
+   "spec_pass": true
+  },
+  "rho0.995_eta0.3": {
+   "storm": 7.0983,
+   "tax": -0.0079,
+   "recovery": 0.0109,
+   "worst_win": 0.0109,
+   "burn256": 7.562,
+   "spec_pass": true
+  },
+  "rho0.995_eta0.5": {
+   "storm": 7.0985,
+   "tax": -0.0076,
+   "recovery": 0.0109,
+   "worst_win": 0.0109,
+   "burn256": 7.564,
+   "spec_pass": true
+  },
+  "rho0.999_eta0.05": {
+   "storm": 6.7607,
+   "tax": -0.0084,
+   "recovery": 0.0111,
+   "worst_win": 0.0108,
+   "burn256": 8.19,
+   "spec_pass": true
+  },
+  "rho0.999_eta0.15": {
+   "storm": 6.7575,
+   "tax": -0.0101,
+   "recovery": 0.011,
+   "worst_win": 0.0108,
+   "burn256": 8.081,
+   "spec_pass": true
+  },
+  "rho0.999_eta0.3": {
+   "storm": 6.7552,
+   "tax": -0.011,
+   "recovery": 0.011,
+   "worst_win": 0.0108,
+   "burn256": 7.981,
+   "spec_pass": true
+  },
+  "rho0.999_eta0.5": {
+   "storm": 6.755,
+   "tax": -0.0107,
+   "recovery": 0.011,
+   "worst_win": 0.0108,
+   "burn256": 7.964,
+   "spec_pass": true
+  },
+  "rho0.9995_eta0.05": {
+   "storm": 6.7594,
+   "tax": -0.0087,
+   "recovery": 0.0111,
+   "worst_win": 0.0109,
+   "burn256": 8.252,
+   "spec_pass": true
+  },
+  "rho0.9995_eta0.15": {
+   "storm": 6.7515,
+   "tax": -0.0104,
+   "recovery": 0.0111,
+   "worst_win": 0.0109,
+   "burn256": 8.096,
+   "spec_pass": true
+  },
+  "rho0.9995_eta0.3": {
+   "storm": 6.7493,
+   "tax": -0.0113,
+   "recovery": 0.0111,
+   "worst_win": 0.0108,
+   "burn256": 8.036,
+   "spec_pass": true
+  },
+  "rho0.9995_eta0.5": {
+   "storm": 6.7485,
+   "tax": -0.011,
+   "recovery": 0.0111,
+   "worst_win": 0.0108,
+   "burn256": 8.012,
+   "spec_pass": true
+  },
+  "rho1.0_eta0.05": {
+   "storm": 7.9945,
+   "tax": -0.0082,
+   "recovery": 0.0108,
+   "worst_win": 0.0108,
+   "burn256": 8.269,
+   "spec_pass": true
+  },
+  "rho1.0_eta0.15": {
+   "storm": 7.9904,
+   "tax": -0.0094,
+   "recovery": 0.0108,
+   "worst_win": 0.0108,
+   "burn256": 8.098,
+   "spec_pass": true
+  },
+  "rho1.0_eta0.3": {
+   "storm": 7.9863,
+   "tax": -0.0107,
+   "recovery": 0.0107,
+   "worst_win": 0.0108,
+   "burn256": 8.043,
+   "spec_pass": true
+  },
+  "rho1.0_eta0.5": {
+   "storm": 7.9817,
+   "tax": -0.0106,
+   "recovery": 0.0107,
+   "worst_win": 0.0108,
+   "burn256": 8.021,
+   "spec_pass": true
+  }
+ },
+ "regression_point": {
+  "storm": 6.7575,
+  "tax": -0.0101,
+  "recovery": 0.011,
+  "worst_win": 0.0108,
+  "burn256": 8.081,
+  "spec_pass": true
+ },
+ "regression_targets": {
+  "storm": 6.758,
+  "tax": -0.0101,
+  "recovery": 0.011
+ },
+ "storm_raw_regression": 9.644,
+ "verdicts": {
+  "reg_storm_ok": true,
+  "reg_tax_ok": true,
+  "reg_recovery_ok": true,
+  "eta005_storm_gt7": false,
+  "eta05_hurts_normal": false,
+  "rho10_recovery_violation": false,
+  "rho999_9995_recovery_ok": true,
+  "robust_window_count": 20,
+  "robust_window_ge_8": true,
+  "all_storm_lt8": true
+ },
+ "params": {
+  "rho_list": [
+   0.99,
+   0.995,
+   0.999,
+   0.9995,
+   1.0
+  ],
+  "eta_list": [
+   0.05,
+   0.15,
+   0.3,
+   0.5
+  ],
+  "floor": "1/256",
+  "w_init": [
+   0.98,
+   0.016,
+   0.004
+  ],
+  "D": 24,
+  "spec": "风暴<8 ∧ 税≤0.02 ∧ 恢复≤0.02"
+ }
+}
