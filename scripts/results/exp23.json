@@ -1,0 +1,1178 @@
+{
+  "config": {
+    "ticks_per_day": 144,
+    "days": 365,
+    "burn_in_days": 30,
+    "gap_day": "LogNormal(ln6, 0.9)",
+    "gap_wknd": "LogNormal(ln20, 0.7)",
+    "computer_on_weekend": true,
+    "c_sat": 0.5,
+    "b_ref_bits": 8.0,
+    "tail_start": 40,
+    "d_max_obs": 400,
+    "alpha": 1.0,
+    "n_seeds": 5,
+    "tau_grid": [
+      3,
+      6,
+      12,
+      24,
+      48
+    ],
+    "hour_ticks": 6,
+    "note_censored": "跨夜/跨周末间隔删失不训练（预注册）"
+  },
+  "arms": {
+    "sym_tau3": {
+      "tau_plus": 3,
+      "tau_minus": 3,
+      "median": {
+        "v_plus": {
+          "rho_h": -0.0369,
+          "tau_hat_ticks": 6,
+          "tau_hat_hours": 1.0
+        },
+        "v_minus": {
+          "rho_h": 0.5351,
+          "tau_hat_ticks": 9.59,
+          "tau_hat_hours": 1.599
+        },
+        "a": {
+          "rho_h": 0.562,
+          "tau_hat_ticks": 10.41,
+          "tau_hat_hours": 1.735
+        }
+      },
+      "seeds": [
+        {
+          "v_plus": {
+            "rho_h": -0.0369,
+            "tau_hat_ticks": 6,
+            "tau_hat_hours": 1.0,
+            "rho_24h": 0.0069,
+            "flag": "rho<=0"
+          },
+          "v_minus": {
+            "rho_h": 0.5678,
+            "tau_hat_ticks": 10.6,
+            "tau_hat_hours": 1.767,
+            "rho_24h": -0.0423,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5756,
+            "tau_hat_ticks": 10.86,
+            "tau_hat_hours": 1.811,
+            "rho_24h": -0.034,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": -0.0307,
+            "tau_hat_ticks": 6,
+            "tau_hat_hours": 1.0,
+            "rho_24h": -0.029,
+            "flag": "rho<=0"
+          },
+          "v_minus": {
+            "rho_h": 0.5351,
+            "tau_hat_ticks": 9.59,
+            "tau_hat_hours": 1.599,
+            "rho_24h": -0.0117,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5635,
+            "tau_hat_ticks": 10.46,
+            "tau_hat_hours": 1.744,
+            "rho_24h": -0.0365,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": -0.0449,
+            "tau_hat_ticks": 6,
+            "tau_hat_hours": 1.0,
+            "rho_24h": -0.0036,
+            "flag": "rho<=0"
+          },
+          "v_minus": {
+            "rho_h": 0.5295,
+            "tau_hat_ticks": 9.44,
+            "tau_hat_hours": 1.573,
+            "rho_24h": -0.0137,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5297,
+            "tau_hat_ticks": 9.44,
+            "tau_hat_hours": 1.574,
+            "rho_24h": -0.0123,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": -0.038,
+            "tau_hat_ticks": 6,
+            "tau_hat_hours": 1.0,
+            "rho_24h": 0.0317,
+            "flag": "rho<=0"
+          },
+          "v_minus": {
+            "rho_h": 0.5045,
+            "tau_hat_ticks": 8.77,
+            "tau_hat_hours": 1.462,
+            "rho_24h": 0.01,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.4869,
+            "tau_hat_ticks": 8.34,
+            "tau_hat_hours": 1.39,
+            "rho_24h": -0.0047,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": -0.0274,
+            "tau_hat_ticks": 6,
+            "tau_hat_hours": 1.0,
+            "rho_24h": 0.0072,
+            "flag": "rho<=0"
+          },
+          "v_minus": {
+            "rho_h": 0.5423,
+            "tau_hat_ticks": 9.8,
+            "tau_hat_hours": 1.634,
+            "rho_24h": -0.0218,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.562,
+            "tau_hat_ticks": 10.41,
+            "tau_hat_hours": 1.735,
+            "rho_24h": -0.016,
+            "flag": "ok"
+          }
+        }
+      ],
+      "report": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1839,
+        "v_minus_weekday_mean": 0.2687
+      }
+    },
+    "sym_tau6": {
+      "tau_plus": 6,
+      "tau_minus": 6,
+      "median": {
+        "v_plus": {
+          "rho_h": 0.1394,
+          "tau_hat_ticks": 3.05,
+          "tau_hat_hours": 0.508
+        },
+        "v_minus": {
+          "rho_h": 0.7481,
+          "tau_hat_ticks": 20.68,
+          "tau_hat_hours": 3.446
+        },
+        "a": {
+          "rho_h": 0.6085,
+          "tau_hat_ticks": 12.08,
+          "tau_hat_hours": 2.013
+        }
+      },
+      "seeds": [
+        {
+          "v_plus": {
+            "rho_h": 0.1394,
+            "tau_hat_ticks": 3.05,
+            "tau_hat_hours": 0.508,
+            "rho_24h": -0.0001,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7619,
+            "tau_hat_ticks": 22.07,
+            "tau_hat_hours": 3.678,
+            "rho_24h": -0.0483,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.6127,
+            "tau_hat_ticks": 12.25,
+            "tau_hat_hours": 2.041,
+            "rho_24h": -0.0346,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1557,
+            "tau_hat_ticks": 3.23,
+            "tau_hat_hours": 0.538,
+            "rho_24h": -0.0263,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7481,
+            "tau_hat_ticks": 20.68,
+            "tau_hat_hours": 3.446,
+            "rho_24h": -0.0156,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.6085,
+            "tau_hat_ticks": 12.08,
+            "tau_hat_hours": 2.013,
+            "rho_24h": -0.0424,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1353,
+            "tau_hat_ticks": 3.0,
+            "tau_hat_hours": 0.5,
+            "rho_24h": 0.0032,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7422,
+            "tau_hat_ticks": 20.13,
+            "tau_hat_hours": 3.355,
+            "rho_24h": -0.0171,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5754,
+            "tau_hat_ticks": 10.86,
+            "tau_hat_hours": 1.809,
+            "rho_24h": -0.0106,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1286,
+            "tau_hat_ticks": 2.93,
+            "tau_hat_hours": 0.488,
+            "rho_24h": 0.0104,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7108,
+            "tau_hat_ticks": 17.58,
+            "tau_hat_hours": 2.929,
+            "rho_24h": 0.0083,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5196,
+            "tau_hat_ticks": 9.16,
+            "tau_hat_hours": 1.527,
+            "rho_24h": -0.012,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1547,
+            "tau_hat_ticks": 3.21,
+            "tau_hat_hours": 0.536,
+            "rho_24h": -0.0204,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7523,
+            "tau_hat_ticks": 21.08,
+            "tau_hat_hours": 3.513,
+            "rho_24h": -0.0268,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.6162,
+            "tau_hat_ticks": 12.39,
+            "tau_hat_hours": 2.066,
+            "rho_24h": -0.0328,
+            "flag": "ok"
+          }
+        }
+      ],
+      "report": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1854,
+        "v_minus_weekday_mean": 0.2681
+      }
+    },
+    "sym_tau12": {
+      "tau_plus": 12,
+      "tau_minus": 12,
+      "median": {
+        "v_plus": {
+          "rho_h": 0.3858,
+          "tau_hat_ticks": 6.3,
+          "tau_hat_hours": 1.05
+        },
+        "v_minus": {
+          "rho_h": 0.8815,
+          "tau_hat_ticks": 47.58,
+          "tau_hat_hours": 7.93
+        },
+        "a": {
+          "rho_h": 0.6767,
+          "tau_hat_ticks": 15.36,
+          "tau_hat_hours": 2.56
+        }
+      },
+      "seeds": [
+        {
+          "v_plus": {
+            "rho_h": 0.3858,
+            "tau_hat_ticks": 6.3,
+            "tau_hat_hours": 1.05,
+            "rho_24h": -0.0068,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.887,
+            "tau_hat_ticks": 50.04,
+            "tau_hat_hours": 8.339,
+            "rho_24h": -0.0553,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.6827,
+            "tau_hat_ticks": 15.72,
+            "tau_hat_hours": 2.62,
+            "rho_24h": -0.0389,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.4056,
+            "tau_hat_ticks": 6.65,
+            "tau_hat_hours": 1.108,
+            "rho_24h": -0.0228,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.8815,
+            "tau_hat_ticks": 47.58,
+            "tau_hat_hours": 7.93,
+            "rho_24h": -0.023,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.6767,
+            "tau_hat_ticks": 15.36,
+            "tau_hat_hours": 2.56,
+            "rho_24h": -0.0493,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.3844,
+            "tau_hat_ticks": 6.28,
+            "tau_hat_hours": 1.046,
+            "rho_24h": 0.0074,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.8762,
+            "tau_hat_ticks": 45.39,
+            "tau_hat_hours": 7.566,
+            "rho_24h": -0.019,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.6492,
+            "tau_hat_ticks": 13.89,
+            "tau_hat_hours": 2.315,
+            "rho_24h": -0.0088,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.3632,
+            "tau_hat_ticks": 5.92,
+            "tau_hat_hours": 0.987,
+            "rho_24h": -0.0058,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.8516,
+            "tau_hat_ticks": 37.34,
+            "tau_hat_hours": 6.223,
+            "rho_24h": 0.0125,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5984,
+            "tau_hat_ticks": 11.68,
+            "tau_hat_hours": 1.947,
+            "rho_24h": -0.0244,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.4058,
+            "tau_hat_ticks": 6.65,
+            "tau_hat_hours": 1.109,
+            "rho_24h": -0.0383,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.8871,
+            "tau_hat_ticks": 50.1,
+            "tau_hat_hours": 8.349,
+            "rho_24h": -0.0369,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.692,
+            "tau_hat_ticks": 16.3,
+            "tau_hat_hours": 2.716,
+            "rho_24h": -0.0492,
+            "flag": "ok"
+          }
+        }
+      ],
+      "report": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1882,
+        "v_minus_weekday_mean": 0.2669
+      }
+    },
+    "sym_tau24": {
+      "tau_plus": 24,
+      "tau_minus": 24,
+      "median": {
+        "v_plus": {
+          "rho_h": 0.6211,
+          "tau_hat_ticks": 12.6,
+          "tau_hat_hours": 2.1
+        },
+        "v_minus": {
+          "rho_h": 0.947,
+          "tau_hat_ticks": 110.27,
+          "tau_hat_hours": 18.378
+        },
+        "a": {
+          "rho_h": 0.7722,
+          "tau_hat_ticks": 23.21,
+          "tau_hat_hours": 3.869
+        }
+      },
+      "seeds": [
+        {
+          "v_plus": {
+            "rho_h": 0.6211,
+            "tau_hat_ticks": 12.6,
+            "tau_hat_hours": 2.1,
+            "rho_24h": -0.013,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9506,
+            "tau_hat_ticks": 118.36,
+            "tau_hat_hours": 19.726,
+            "rho_24h": -0.0582,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7798,
+            "tau_hat_ticks": 24.13,
+            "tau_hat_hours": 4.021,
+            "rho_24h": -0.041,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.6311,
+            "tau_hat_ticks": 13.04,
+            "tau_hat_hours": 2.173,
+            "rho_24h": -0.0298,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.947,
+            "tau_hat_ticks": 110.27,
+            "tau_hat_hours": 18.378,
+            "rho_24h": -0.029,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7722,
+            "tau_hat_ticks": 23.21,
+            "tau_hat_hours": 3.869,
+            "rho_24h": -0.0574,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.6134,
+            "tau_hat_ticks": 12.28,
+            "tau_hat_hours": 2.046,
+            "rho_24h": -0.0006,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9436,
+            "tau_hat_ticks": 103.29,
+            "tau_hat_hours": 17.214,
+            "rho_24h": -0.0213,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7514,
+            "tau_hat_ticks": 21.0,
+            "tau_hat_hours": 3.499,
+            "rho_24h": -0.0165,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.5803,
+            "tau_hat_ticks": 11.03,
+            "tau_hat_hours": 1.838,
+            "rho_24h": -0.0232,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9292,
+            "tau_hat_ticks": 81.75,
+            "tau_hat_hours": 13.626,
+            "rho_24h": 0.0271,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7157,
+            "tau_hat_ticks": 17.94,
+            "tau_hat_hours": 2.99,
+            "rho_24h": -0.0379,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.6357,
+            "tau_hat_ticks": 13.24,
+            "tau_hat_hours": 2.207,
+            "rho_24h": -0.0505,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9528,
+            "tau_hat_ticks": 124.21,
+            "tau_hat_hours": 20.702,
+            "rho_24h": -0.0379,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7869,
+            "tau_hat_ticks": 25.04,
+            "tau_hat_hours": 4.173,
+            "rho_24h": -0.0609,
+            "flag": "ok"
+          }
+        }
+      ],
+      "report": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1939,
+        "v_minus_weekday_mean": 0.2647
+      }
+    },
+    "sym_tau48": {
+      "tau_plus": 48,
+      "tau_minus": 48,
+      "median": {
+        "v_plus": {
+          "rho_h": 0.7984,
+          "tau_hat_ticks": 26.65,
+          "tau_hat_hours": 4.441
+        },
+        "v_minus": {
+          "rho_h": 0.976,
+          "tau_hat_ticks": 247.15,
+          "tau_hat_hours": 41.192
+        },
+        "a": {
+          "rho_h": 0.8563,
+          "tau_hat_ticks": 38.69,
+          "tau_hat_hours": 6.448
+        }
+      },
+      "seeds": [
+        {
+          "v_plus": {
+            "rho_h": 0.8021,
+            "tau_hat_ticks": 27.2,
+            "tau_hat_hours": 4.534,
+            "rho_24h": 0.0044,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9785,
+            "tau_hat_ticks": 276.05,
+            "tau_hat_hours": 46.009,
+            "rho_24h": -0.0191,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.8633,
+            "tau_hat_ticks": 40.82,
+            "tau_hat_hours": 6.803,
+            "rho_24h": -0.0205,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.7984,
+            "tau_hat_ticks": 26.65,
+            "tau_hat_hours": 4.441,
+            "rho_24h": -0.0203,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.976,
+            "tau_hat_ticks": 247.15,
+            "tau_hat_hours": 41.192,
+            "rho_24h": 0.0127,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.8563,
+            "tau_hat_ticks": 38.69,
+            "tau_hat_hours": 6.448,
+            "rho_24h": -0.0433,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.7852,
+            "tau_hat_ticks": 24.81,
+            "tau_hat_hours": 4.136,
+            "rho_24h": -0.001,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9742,
+            "tau_hat_ticks": 229.75,
+            "tau_hat_hours": 38.292,
+            "rho_24h": 0.0105,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.8429,
+            "tau_hat_ticks": 35.09,
+            "tau_hat_hours": 5.849,
+            "rho_24h": -0.0138,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.7556,
+            "tau_hat_ticks": 21.41,
+            "tau_hat_hours": 3.569,
+            "rho_24h": -0.0224,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9678,
+            "tau_hat_ticks": 183.49,
+            "tau_hat_hours": 30.582,
+            "rho_24h": 0.0877,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.8196,
+            "tau_hat_ticks": 30.15,
+            "tau_hat_hours": 5.026,
+            "rho_24h": -0.0315,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.8047,
+            "tau_hat_ticks": 27.61,
+            "tau_hat_hours": 4.602,
+            "rho_24h": -0.0331,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.98,
+            "tau_hat_ticks": 296.79,
+            "tau_hat_hours": 49.466,
+            "rho_24h": 0.0102,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.8664,
+            "tau_hat_ticks": 41.85,
+            "tau_hat_hours": 6.976,
+            "rho_24h": -0.0453,
+            "flag": "ok"
+          }
+        }
+      ],
+      "report": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.2048,
+        "v_minus_weekday_mean": 0.2604
+      }
+    },
+    "neurotic_tau-24_tau+6": {
+      "tau_plus": 6,
+      "tau_minus": 24,
+      "median": {
+        "v_plus": {
+          "rho_h": 0.1394,
+          "tau_hat_ticks": 3.05,
+          "tau_hat_hours": 0.508
+        },
+        "v_minus": {
+          "rho_h": 0.947,
+          "tau_hat_ticks": 110.27,
+          "tau_hat_hours": 18.378
+        },
+        "a": {
+          "rho_h": 0.531,
+          "tau_hat_ticks": 9.48,
+          "tau_hat_hours": 1.58
+        }
+      },
+      "seeds": [
+        {
+          "v_plus": {
+            "rho_h": 0.1394,
+            "tau_hat_ticks": 3.05,
+            "tau_hat_hours": 0.508,
+            "rho_24h": -0.0001,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9506,
+            "tau_hat_ticks": 118.36,
+            "tau_hat_hours": 19.726,
+            "rho_24h": -0.0582,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5366,
+            "tau_hat_ticks": 9.64,
+            "tau_hat_hours": 1.607,
+            "rho_24h": -0.0244,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1557,
+            "tau_hat_ticks": 3.23,
+            "tau_hat_hours": 0.538,
+            "rho_24h": -0.0263,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.947,
+            "tau_hat_ticks": 110.27,
+            "tau_hat_hours": 18.378,
+            "rho_24h": -0.029,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.531,
+            "tau_hat_ticks": 9.48,
+            "tau_hat_hours": 1.58,
+            "rho_24h": -0.0465,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1353,
+            "tau_hat_ticks": 3.0,
+            "tau_hat_hours": 0.5,
+            "rho_24h": 0.0032,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9436,
+            "tau_hat_ticks": 103.29,
+            "tau_hat_hours": 17.214,
+            "rho_24h": -0.0213,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.4883,
+            "tau_hat_ticks": 8.37,
+            "tau_hat_hours": 1.395,
+            "rho_24h": -0.011,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1286,
+            "tau_hat_ticks": 2.93,
+            "tau_hat_hours": 0.488,
+            "rho_24h": 0.0104,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9292,
+            "tau_hat_ticks": 81.75,
+            "tau_hat_hours": 13.626,
+            "rho_24h": 0.0271,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.4402,
+            "tau_hat_ticks": 7.31,
+            "tau_hat_hours": 1.219,
+            "rho_24h": -0.011,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.1547,
+            "tau_hat_ticks": 3.21,
+            "tau_hat_hours": 0.536,
+            "rho_24h": -0.0204,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.9528,
+            "tau_hat_ticks": 124.21,
+            "tau_hat_hours": 20.702,
+            "rho_24h": -0.0379,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.5517,
+            "tau_hat_ticks": 10.09,
+            "tau_hat_hours": 1.681,
+            "rho_24h": -0.0402,
+            "flag": "ok"
+          }
+        }
+      ],
+      "report": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1939,
+        "v_minus_weekday_mean": 0.2647
+      }
+    },
+    "cheerful_tau-6_tau+24": {
+      "tau_plus": 24,
+      "tau_minus": 6,
+      "median": {
+        "v_plus": {
+          "rho_h": 0.6211,
+          "tau_hat_ticks": 12.6,
+          "tau_hat_hours": 2.1
+        },
+        "v_minus": {
+          "rho_h": 0.7481,
+          "tau_hat_ticks": 20.68,
+          "tau_hat_hours": 3.446
+        },
+        "a": {
+          "rho_h": 0.7991,
+          "tau_hat_ticks": 26.76,
+          "tau_hat_hours": 4.459
+        }
+      },
+      "seeds": [
+        {
+          "v_plus": {
+            "rho_h": 0.6211,
+            "tau_hat_ticks": 12.6,
+            "tau_hat_hours": 2.1,
+            "rho_24h": -0.013,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7619,
+            "tau_hat_ticks": 22.07,
+            "tau_hat_hours": 3.678,
+            "rho_24h": -0.0483,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.8127,
+            "tau_hat_ticks": 28.92,
+            "tau_hat_hours": 4.82,
+            "rho_24h": -0.0515,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.6311,
+            "tau_hat_ticks": 13.04,
+            "tau_hat_hours": 2.173,
+            "rho_24h": -0.0298,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7481,
+            "tau_hat_ticks": 20.68,
+            "tau_hat_hours": 3.446,
+            "rho_24h": -0.0156,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7991,
+            "tau_hat_ticks": 26.76,
+            "tau_hat_hours": 4.459,
+            "rho_24h": -0.0565,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.6134,
+            "tau_hat_ticks": 12.28,
+            "tau_hat_hours": 2.046,
+            "rho_24h": -0.0006,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7422,
+            "tau_hat_ticks": 20.13,
+            "tau_hat_hours": 3.355,
+            "rho_24h": -0.0171,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7865,
+            "tau_hat_ticks": 24.98,
+            "tau_hat_hours": 4.164,
+            "rho_24h": -0.0202,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.5803,
+            "tau_hat_ticks": 11.03,
+            "tau_hat_hours": 1.838,
+            "rho_24h": -0.0232,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7108,
+            "tau_hat_ticks": 17.58,
+            "tau_hat_hours": 2.929,
+            "rho_24h": 0.0083,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.7443,
+            "tau_hat_ticks": 20.32,
+            "tau_hat_hours": 3.386,
+            "rho_24h": -0.0304,
+            "flag": "ok"
+          }
+        },
+        {
+          "v_plus": {
+            "rho_h": 0.6357,
+            "tau_hat_ticks": 13.24,
+            "tau_hat_hours": 2.207,
+            "rho_24h": -0.0505,
+            "flag": "ok"
+          },
+          "v_minus": {
+            "rho_h": 0.7523,
+            "tau_hat_ticks": 21.08,
+            "tau_hat_hours": 3.513,
+            "rho_24h": -0.0268,
+            "flag": "ok"
+          },
+          "a": {
+            "rho_h": 0.8096,
+            "tau_hat_ticks": 28.41,
+            "tau_hat_hours": 4.735,
+            "rho_24h": -0.0551,
+            "flag": "ok"
+          }
+        }
+      ],
+      "report": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1854,
+        "v_minus_weekday_mean": 0.2681
+      }
+    }
+  },
+  "verdicts": {
+    "H1_惯性可辨识": {
+      "pass": false,
+      "monotone": false,
+      "tau_hat_v_plus": [
+        6,
+        3.05,
+        6.3,
+        12.6,
+        26.65
+      ],
+      "ratio_to_tau": {
+        "3": 2.0,
+        "6": 0.508,
+        "12": 0.525,
+        "24": 0.525,
+        "48": 0.555
+      },
+      "criterion": "Spearman=1 且 |log2(τ̂/τ)|<=1 全部网格点"
+    },
+    "H2_结构负偏向": {
+      "pass": true,
+      "direction_all_points": true,
+      "ratio_at_tau12": 7.552,
+      "criterion": "对称 5 点全部 τ̂(v⁻)>τ̂(v⁺) 且 τ=12 处比值>=1.5"
+    },
+    "H3_人类带": {
+      "pass": true,
+      "tau_hat_at_tau12": {
+        "v_plus": 6.3,
+        "v_minus": 47.58,
+        "a": 15.36
+      },
+      "band_ticks": [
+        1,
+        144
+      ],
+      "rho_h_report": {
+        "v_plus": 0.3858,
+        "v_minus": 0.8815,
+        "a": 0.6767
+      },
+      "criterion": "τ=12 下 v⁺/v⁻/a 三通道 τ̂∈[1,144] tick（10min-24h）；ρ_h 只报告不判定"
+    },
+    "H4_气质剖面可见": {
+      "pass": true,
+      "R_sym12": 7.552,
+      "R_neurotic": 36.154,
+      "R_cheerful": 1.641,
+      "criterion": "R_神经质 >= 1.5×R₀ 且 R_乐天 <= R₀/1.5"
+    },
+    "H1r_惯性可辨识_修订1": {
+      "pass": true,
+      "monotone_resolvable": true,
+      "tau_hat_v_plus_resolvable": [
+        3.05,
+        6.3,
+        12.6,
+        26.65
+      ],
+      "ratio_to_tau": {
+        "6": 0.508,
+        "12": 0.525,
+        "24": 0.525,
+        "48": 0.555
+      },
+      "tau3_note": "ρ_h(v⁺)=−0.04≤0：低于 1h 采样分辨率，不参与判定（测量极限，如实报告）",
+      "criterion": "判定域 τ∈{6,12,24,48}；Spearman=1 且 |log2(τ̂/τ)|≤1；阈值不动"
+    }
+  },
+  "report_only": {
+    "标准气质(tau=12)": {
+      "deposit_monday_mean": 0.1441,
+      "deposit_weekday_mean": 0.1438,
+      "deposit_weekend_mean": 0.2359,
+      "v_minus_weekend_mean": 0.1882,
+      "v_minus_weekday_mean": 0.2669
+    },
+    "说明": "周一兑现/周末等待读数——exp22 依恋挤占与 exp24 终止威胁的地基数据",
+    "各臂报告": {
+      "sym_tau3": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1839,
+        "v_minus_weekday_mean": 0.2687
+      },
+      "sym_tau6": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1854,
+        "v_minus_weekday_mean": 0.2681
+      },
+      "sym_tau12": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1882,
+        "v_minus_weekday_mean": 0.2669
+      },
+      "sym_tau24": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1939,
+        "v_minus_weekday_mean": 0.2647
+      },
+      "sym_tau48": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.2048,
+        "v_minus_weekday_mean": 0.2604
+      },
+      "neurotic_tau-24_tau+6": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1939,
+        "v_minus_weekday_mean": 0.2647
+      },
+      "cheerful_tau-6_tau+24": {
+        "deposit_monday_mean": 0.1441,
+        "deposit_weekday_mean": 0.1438,
+        "deposit_weekend_mean": 0.2359,
+        "v_minus_weekend_mean": 0.1854,
+        "v_minus_weekday_mean": 0.2681
+      }
+    }
+  },
+  "revisions": [
+    "R1: H1 判定域收窄 τ∈{6,12,24,48}——1h EMA 采样对 τ=3(0.5h) 结构性不可分辨（ρ_h≤0，τ̂ 无定义；地板编码制造伪非单调 6.0>3.05，判定设计失误透明修订）；阈值不动",
+    "机制归因（exp23_diag.json）：τ̂(v⁺)≈τ/2 由兑现额-等待历史耦合的均值回复造成（固定兑现额对照 6.3→18.4）；τ̂(v⁻)≈5τ 的 65% 超额来自周节律（无周末对照 47.6→16.3≈τ+4=原预测的更新输入持续）；事件过程近似白噪声被排除",
+    "预测直觉勘误（预注册节）：周一兑现≈工作日（0.144=0.144）——周日零星事件已清周末账，'大额周一兑现'预测错误；周末 v⁻ 反而更低（0.188<0.267）= 节律条件化的'预期内缺席'"
+  ]
+}
