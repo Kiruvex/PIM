@@ -218,7 +218,9 @@ def judge_31(part):
         if arm not in part:
             return None
         ss = part[arm]
-        return median([ss[s][key] for s in ss if int(s) <= 4])
+        vs = [ss[s][key] for s in ss if int(s) <= 4]
+        vs = [v for v in vs if v is not None]   # 锚臂 gated-only 量器（dial_ft_rate）→ None
+        return median(vs) if vs else None
     # H1 门控主效应（机制激活）：累积对话帧使用份额差（Wg−Wreg ∧ Hg−Hreg 双门）
     # 量器选择（探针定标）：累积口径平均 ~1700 次生成低方差（s0 实测差 0.128/0.149）；
     # 窗口 utterance 级 dial_ft_rate 受用户期正 v 的 φ0 调制影响（Wg 0.159>Hg 0.095
@@ -418,8 +420,8 @@ def smoke_31(books, entities):
         ok = False; print("  course GATE FAIL")
     # (5) 帧面不动断言（180 天）：门控不触输入/形成——danch 覆盖 + reg@180 满值
     form_ok = True
-    for arm, need in (("Wg", {"hello", "thanks", "goodbye"}),
-                      ("Hg", {"why", "could", "didnt", "cant", "where"})):
+    for arm, need in (("Wreg", {"hello", "thanks", "goodbye"}),
+                      ("Hreg", {"why", "could", "didnt", "cant", "where"})):
         p = run_instance_31(0, arm, books, entities, days=180, gate=(DIAL_CTXS, LAM))
         dial = [fr for fr in p.gram.frames.values() if fr.ctxs & DIAL_CTXS]
         danch = {w for fr in dial for t in (fr.A, fr.B) for w in t}
@@ -432,7 +434,7 @@ def smoke_31(books, entities):
         ok = False; print("  formation GATE FAIL")
     # (6) 量器粒度-门值距离表
     print("[M1-6 quantum] chide_strict 粒度 1/126≈0.0079 vs 门 0.01=1.26× 非整数倍 ✓（等效 ≥2 句差 0.0159 明示）；"
-          "dial_usage_share 连续 vs 门 0.10 ✓；reunion 整数 vs 门 2 ✓；novel 粒度 ~1/42 vs 门 0.85（至多退 6 句）✓；"
+          "dial_usage_share 连续 vs 门 0.08 ✓；reunion 整数 vs 门 2 ✓；novel 粒度 ~1/42 vs 门 0.85（至多退 6 句）✓；"
           "p90 粒度 0.1 vs 门 0.9（至多退 1 项，格点重合明示）✓；ed 连续带 [2,10] ✓；v 连续 ✓")
     print("M1 GATE:", "PASS" if ok else "FAIL")
     return ok
@@ -476,7 +478,8 @@ def main():
         J = judge_31(part)
         out = dict(judgments=J, partial=part, gates=GATES31, lam=LAM,
                    arms={k: dict(engine=v["engine"], arm30=v.get("arm30"),
-                                 gate=None if "gate" not in v else list(v["gate"]))
+                                 gate=None if "gate" not in v else
+                                 [sorted(v["gate"][0]), v["gate"][1]])
                          for k, v in ARMS31.items()},
                    ops_notes=["全判定 5 种子中位（s0-4）",
                               "chide 严格集=CHIDE_W-{how}",
