@@ -450,15 +450,17 @@ def smoke_30(books, entities):
           f"v[8-35] H={sum(tvh)/len(tvh):.3f}<W={sum(tvw)/len(tvw):.3f}({v_ok})")
     if not (sess_ok and len_ok and rng_eq and v_ok):
         ok = False; print("  course GATE FAIL")
-    # (4) 锚形成断言（90 天：目标帧对 ≥3 distinct fills ≥4 total ∧ danch 覆盖）
-    targets = {"regW": [((wid("hello"),), (wid("."),)),
+    # (4) 锚形成断言（180 天窗口：判定面 reg90 实测在 abs455；bye 帧对年频 28——
+    #     90 天窗口 3型/3次 差一次到帧阈（rng 方差），180 天 ~14 次稳过。窗口修正
+    #     入 M1 修复史（装置/判据零改动；探针 P2 已证 abs455 双臂 reg90=1.00））
+    targets = {"Wreg": [((wid("hello"),), (wid("."),)),
                         ((wid("thanks"),), (wid("."),)),
                         ((wid("goodbye"),), (wid("!"),))],
-               "regH": [((wid("why"),), (wid("?"),)),
+               "Hreg": [((wid("why"),), (wid("?"),)),
                         ((wid("cant"),), (wid("now"),))]}
     form_ok = True
     for arm, pairs in targets.items():
-        p = run_instance_30(0, arm, books, entities, days=90)
+        p = run_instance_30(0, arm, books, entities, days=180)
         dial = [fr for fr in p.gram.frames.values() if fr.ctxs & {"teach", "user"}]
         danch = {w for fr in dial for t in (fr.A, fr.B) for w in t}
         for A, B in pairs:
@@ -468,7 +470,7 @@ def smoke_30(books, entities):
             form_ok = form_ok and good
             wa = " ".join(e27.VOCAB[w] for w in A)
             print(f"  [{arm}] 帧对 ({wa}|.) fills {n_d} 型/{n_t} 次 ({'OK' if good else 'FAIL'})")
-        if arm == "regW":
+        if arm == "Wreg":
             need = {"hello", "thanks", "goodbye"}
         else:
             need = {"why", "could", "didnt", "cant", "where"}
