@@ -1,0 +1,673 @@
+{
+ "cutoff": 36,
+ "n_verb_safe": 38,
+ "n_adv_safe": 37,
+ "verbs": [
+  "try",
+  "listen",
+  "wait",
+  "rest",
+  "see",
+  "read",
+  "sit",
+  "look",
+  "hold",
+  "keep",
+  "move",
+  "stand",
+  "run",
+  "jump",
+  "dance",
+  "sing",
+  "play",
+  "laugh",
+  "smile",
+  "point",
+  "turn",
+  "touch",
+  "lift",
+  "carry",
+  "draw",
+  "write",
+  "count",
+  "spell",
+  "guess",
+  "climb",
+  "hop",
+  "skip",
+  "march",
+  "tiptoe",
+  "stretch",
+  "yawn",
+  "blink",
+  "wave"
+ ],
+ "advs": [
+  "gently",
+  "slowly",
+  "quietly",
+  "brightly",
+  "calmly",
+  "softly",
+  "kindly",
+  "sweetly",
+  "gladly",
+  "neatly",
+  "warmly",
+  "quickly",
+  "carefully",
+  "happily",
+  "proudly",
+  "boldly",
+  "bravely",
+  "clearly",
+  "closely",
+  "dearly",
+  "deeply",
+  "firmly",
+  "fondly",
+  "freely",
+  "gaily",
+  "gravely",
+  "mildly",
+  "nobly",
+  "partly",
+  "plainly",
+  "poorly",
+  "rarely",
+  "richly",
+  "safely",
+  "smartly",
+  "truly",
+  "wisely"
+ ],
+ "rows": [
+  {
+   "kind": "verb",
+   "word": "try",
+   "b_pv": 0,
+   "b_vt": 1,
+   "wf": 82
+  },
+  {
+   "kind": "verb",
+   "word": "listen",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 29
+  },
+  {
+   "kind": "verb",
+   "word": "wait",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 35
+  },
+  {
+   "kind": "verb",
+   "word": "rest",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 103
+  },
+  {
+   "kind": "verb",
+   "word": "see",
+   "b_pv": 0,
+   "b_vt": 8,
+   "wf": 644
+  },
+  {
+   "kind": "verb",
+   "word": "read",
+   "b_pv": 3,
+   "b_vt": 4,
+   "wf": 115
+  },
+  {
+   "kind": "verb",
+   "word": "sit",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 47
+  },
+  {
+   "kind": "verb",
+   "word": "look",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 318
+  },
+  {
+   "kind": "verb",
+   "word": "hold",
+   "b_pv": 0,
+   "b_vt": 2,
+   "wf": 121
+  },
+  {
+   "kind": "verb",
+   "word": "keep",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 128
+  },
+  {
+   "kind": "verb",
+   "word": "move",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 17
+  },
+  {
+   "kind": "verb",
+   "word": "stand",
+   "b_pv": 0,
+   "b_vt": 1,
+   "wf": 123
+  },
+  {
+   "kind": "verb",
+   "word": "run",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 76
+  },
+  {
+   "kind": "verb",
+   "word": "jump",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 23
+  },
+  {
+   "kind": "verb",
+   "word": "dance",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 48
+  },
+  {
+   "kind": "verb",
+   "word": "sing",
+   "b_pv": 0,
+   "b_vt": 1,
+   "wf": 29
+  },
+  {
+   "kind": "verb",
+   "word": "play",
+   "b_pv": 0,
+   "b_vt": 1,
+   "wf": 63
+  },
+  {
+   "kind": "verb",
+   "word": "laugh",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 36
+  },
+  {
+   "kind": "verb",
+   "word": "smile",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 28
+  },
+  {
+   "kind": "verb",
+   "word": "point",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 146
+  },
+  {
+   "kind": "verb",
+   "word": "turn",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 117
+  },
+  {
+   "kind": "verb",
+   "word": "touch",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 45
+  },
+  {
+   "kind": "verb",
+   "word": "lift",
+   "b_pv": 0,
+   "b_vt": 1,
+   "wf": 12
+  },
+  {
+   "kind": "verb",
+   "word": "carry",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 43
+  },
+  {
+   "kind": "verb",
+   "word": "draw",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 34
+  },
+  {
+   "kind": "verb",
+   "word": "write",
+   "b_pv": 0,
+   "b_vt": 1,
+   "wf": 36
+  },
+  {
+   "kind": "verb",
+   "word": "count",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 8
+  },
+  {
+   "kind": "verb",
+   "word": "spell",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 12
+  },
+  {
+   "kind": "verb",
+   "word": "guess",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 28
+  },
+  {
+   "kind": "verb",
+   "word": "climb",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 5
+  },
+  {
+   "kind": "verb",
+   "word": "hop",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 3
+  },
+  {
+   "kind": "verb",
+   "word": "skip",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 1
+  },
+  {
+   "kind": "verb",
+   "word": "march",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 47
+  },
+  {
+   "kind": "verb",
+   "word": "tiptoe",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 2
+  },
+  {
+   "kind": "verb",
+   "word": "stretch",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 9
+  },
+  {
+   "kind": "verb",
+   "word": "yawn",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 4
+  },
+  {
+   "kind": "verb",
+   "word": "blink",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 0
+  },
+  {
+   "kind": "verb",
+   "word": "wave",
+   "b_pv": 0,
+   "b_vt": 0,
+   "wf": 15
+  },
+  {
+   "kind": "adv",
+   "word": "gently",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 20
+  },
+  {
+   "kind": "adv",
+   "word": "slowly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 81
+  },
+  {
+   "kind": "adv",
+   "word": "quietly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 48
+  },
+  {
+   "kind": "adv",
+   "word": "brightly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 5
+  },
+  {
+   "kind": "adv",
+   "word": "calmly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 18
+  },
+  {
+   "kind": "adv",
+   "word": "softly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 11
+  },
+  {
+   "kind": "adv",
+   "word": "kindly",
+   "b_td": 0,
+   "b_de": 1,
+   "wf": 28
+  },
+  {
+   "kind": "adv",
+   "word": "sweetly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 2
+  },
+  {
+   "kind": "adv",
+   "word": "gladly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 4
+  },
+  {
+   "kind": "adv",
+   "word": "neatly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 5
+  },
+  {
+   "kind": "adv",
+   "word": "warmly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 10
+  },
+  {
+   "kind": "adv",
+   "word": "quickly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 30
+  },
+  {
+   "kind": "adv",
+   "word": "carefully",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 26
+  },
+  {
+   "kind": "adv",
+   "word": "happily",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 10
+  },
+  {
+   "kind": "adv",
+   "word": "proudly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 3
+  },
+  {
+   "kind": "adv",
+   "word": "boldly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 11
+  },
+  {
+   "kind": "adv",
+   "word": "bravely",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 2
+  },
+  {
+   "kind": "adv",
+   "word": "clearly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 22
+  },
+  {
+   "kind": "adv",
+   "word": "closely",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 20
+  },
+  {
+   "kind": "adv",
+   "word": "dearly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 5
+  },
+  {
+   "kind": "adv",
+   "word": "deeply",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 25
+  },
+  {
+   "kind": "adv",
+   "word": "firmly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 15
+  },
+  {
+   "kind": "adv",
+   "word": "fondly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 1
+  },
+  {
+   "kind": "adv",
+   "word": "freely",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 34
+  },
+  {
+   "kind": "adv",
+   "word": "gaily",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 3
+  },
+  {
+   "kind": "adv",
+   "word": "gravely",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 15
+  },
+  {
+   "kind": "adv",
+   "word": "mildly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 10
+  },
+  {
+   "kind": "adv",
+   "word": "nobly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 2
+  },
+  {
+   "kind": "adv",
+   "word": "partly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 17
+  },
+  {
+   "kind": "adv",
+   "word": "plainly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 50
+  },
+  {
+   "kind": "adv",
+   "word": "poorly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 3
+  },
+  {
+   "kind": "adv",
+   "word": "rarely",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 2
+  },
+  {
+   "kind": "adv",
+   "word": "richly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 1
+  },
+  {
+   "kind": "adv",
+   "word": "safely",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 12
+  },
+  {
+   "kind": "adv",
+   "word": "smartly",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 0
+  },
+  {
+   "kind": "adv",
+   "word": "truly",
+   "b_td": 0,
+   "b_de": 1,
+   "wf": 28
+  },
+  {
+   "kind": "adv",
+   "word": "wisely",
+   "b_td": 0,
+   "b_de": 0,
+   "wf": 6
+  }
+ ],
+ "tri_bad": [
+  [
+   "pvt",
+   "read",
+   3
+  ]
+ ],
+ "book_leak_5w": 0,
+ "picked": {
+  "verbs": [
+   "try",
+   "listen",
+   "wait",
+   "rest",
+   "see",
+   "read",
+   "sit",
+   "look",
+   "hold",
+   "keep",
+   "move",
+   "stand",
+   "run",
+   "jump",
+   "dance",
+   "sing",
+   "play",
+   "laugh",
+   "smile",
+   "point",
+   "turn",
+   "touch",
+   "lift",
+   "carry"
+  ],
+  "advs": [
+   "gently",
+   "slowly",
+   "quietly",
+   "brightly",
+   "calmly",
+   "softly",
+   "kindly",
+   "sweetly",
+   "gladly",
+   "neatly",
+   "warmly",
+   "quickly",
+   "carefully",
+   "happily",
+   "proudly",
+   "boldly",
+   "bravely",
+   "clearly",
+   "closely",
+   "dearly",
+   "deeply",
+   "firmly",
+   "fondly",
+   "freely"
+  ]
+ }
+}
