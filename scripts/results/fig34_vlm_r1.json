@@ -1,0 +1,29 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "# 逐面板质检报告\n\n## P1（读源杠杆化剂量-响应）\n1. 标题/副标题：四行副标题完整，未截断、未跨面板叠印 → **PASS**\n2. 标注文字：ms=42/47/52/59/29 均位于折线外侧空白处，\"差 +0.090/+0.078\" 在中部空白区 → **PASS**\n3. 图例：位于左上空白区，不压折线与散点 → **PASS**\n4. 虚线/点线门标注：γ*=3 点线在 x=3 处，标注在下方空白，未压柱（本面板无柱） → **PASS**\n5. 缺字形：γ、→、× 等均正常渲染 → **PASS**\n6. 不适用（单轴）\n\n**P1 总评：PASS**\n\n## P2（三槽形成）\n1. 标题三行完整 → **PASS**\n2. 柱顶数值标注（5/11/26/60）均在柱体上方空白 → **PASS**\n3. 无图例；顶部注释框在空白区 → **PASS**\n4. 门标注\"⌐8\"：紧贴右轴边框，未溢出、未压柱 → **可忽略**（贴边但可读）\n5. 缺字形：⌐ 符号渲染正常 → **PASS**\n\n**P2 总评：PASS**\n\n## P3（三槽结构保持）⚠️\n1. 标题五行完整，但右侧行文字逼近面板边缘 → **可忽略**\n2. \"0.411\" 标注在红柱顶上方，可读 → **PASS**\n3. **图例遮挡**：右上角图例框压住了 H 侧 cond 柱的 \"1.000\" 数值标注（部分被遮） → **真问题**\n4. 虚线门标注：\"cond 门 0.985\" 文字溢出/贴死右轴边界；\"ind 门 0.040\" 红字贴右缘且与虚线端部叠压 → **真问题**\n5. 缺字形：≥、λ、Δ 正常 → **PASS**\n\n**P3 总评：2 处真问题（图例遮 \"1.000\"；两条门标注贴边/溢出）**\n\n## P4（连接子文法化，双轴）⚠️\n1. 标题三行完整 → **PASS**\n2. **标注压柱**：\"recomb 门 25\" 红字压在 Hrg 红柱体上，红字红底几乎不可读 → **真问题**；\"93\" 数值被上方菱形标记部分遮挡 → **可忽略**（仍可辨认）\n3. 图例在左上空白区 → **PASS**\n4. 虚线门 25（黑）、点线 LR 门 40：位置合理，但门 25 的文字标签压柱（见第 2 项）→ **真问题（同上）**\n5. 缺字形：≥、Λ、× 正常 → **PASS**\n6. 双轴分离：左轴 recomb（0–100+）与右轴 LLR（−150–200）刻度标签分列两侧、字号颜色无冲突 → **PASS**\n\n**P4 总评：1 处真问题（\"recomb 门 25\" 压柱不可读）**\n\n## P5（对话优先保持）⚠️\n1. 标题四行完整 → **PASS**\n2. 柱顶数值均在柱上方 → **PASS**\n3. 无图例 → **PASS**\n4. 红色虚线门 30 的标注\"⌐30\"压在 Hrg 橙红柱体上，红字红底可读性差 → **真问题**（与 P4 同类）\n5. 缺字形：⌐ 正常 → **PASS**\n\n**P5 总评：1 处真问题（门标注压柱）**\n\n## P6（保护面三合一）\n1. 标题三行完整 → **PASS**\n2. 柱顶数值标注清晰 → **PASS**\n3. 注释框在左上空白区 → **PASS**\n4. 上下两条虚线门（10 与 2）均未压柱、未溢出；\"ed 带 [2.10]\" 说明文字悬浮空白区 → **PASS**\n5. 缺字形：≤、λ 正常 → **PASS**\n\n**P6 总评：PASS**\n\n---\n\n# 系统性总结\n\n全图共发现 **3 类真问题，集中在 P3 与 P4/P5**：\n\n1. **门标注文字压柱/贴边（最普遍）**：P4 \"recomb 门 25\"、P5 \"⌐30\" 均以红字直接叠在红/橙柱体上，几乎不可读；P3 的 \"cond 门 0.985\"、\"ind 门 0.040\" 贴死或溢出右边界。建议统一把门标注移至虚线的左侧空白端，或加白色描边（bbox）。\n2. **图例遮挡数据标注**：P3 右上图例框压住 \"1.000\" 柱顶标注。建议图例外移或加半透明底并下调柱顶标注。\n3. **可忽略项**：P2 门标注贴边、P4 \"93\" 被菱形标记轻遮、P3 副标题行贴右缘。\n\n**全局 PASS 项**：标题无截断、无跨面板叠印；无 Unicode 豆腐块；P4 双轴左右刻度分离清晰。整体排版良好，修复以上 3 处即可达标。",
+        "reasoning_content": "Inspect each panel.\n\nP1: title lines fit; legend top-left inside plot, data starts low-left? Legend box at top-left overlapping? Data line rises to right; legend seems over empty area—ok. Annotations ms=42 etc not on line. γ*=3 text below dotted line—fine. PASS.\n\nP2: annotation box top-left over empty area; bar value labels above bars fine; \"⌐8\" gate label at right edge near dashed line, slightly overlapping axis edge—maybe溢出? It's inside. PASS.\n\nP3: subtitle lines; \"0.985\" right edge? \"1.000\" near legend overlap? Top right \"cond 门 0.985\" at right edge possibly clipped. Also legend top-right overlapping bar value \"1.000\"? Legend covers the second cond bar's \"1.000\" label? The 1.000 at ~x of second group left bar—legend box overlaps it partially. Gate labels: cond门0.985 text at right beyond bars — potential clipping at edge. ind门0.040 red text at right edge overlapping dashed line. Also 0.411 label above bar fine. P3: \"1.000\" top-right partially under legend → 真问题 (图例遮挡标注). Also cond门 0.985 text may溢出右边缘.\n\nP4: right axis labels; annotation \"recomb 门 25\" over bar Hrg? It's at right, over bar top region—压在柱体上? The red text \"recomb 门 25\" appears overlapping Hrg bar area—真问题? It sits over bar at ~y25 with red color on red bar — low readability. Also legend top-left over empty area fine. +153/+157 above diamonds fine. \"93\" label overlapped by diamond? \"98\"? The bar label at top with diamond marker overlapping — the diamond sits over the bar top, label slightly covered. Minor. LR门40 label fine.\n\nP5: gate label \"⌐30\" red at right overlapping dashed line near bar Hrg — 压柱? It's at right edge over/near bar. Actually \"⌐30\" appears at x right over the Hrg bar area — 真问题 or可忽略. Grey band label fine.\n\nP6: annotation box top-left; \"ed 带 [2.10]\" text right side floating—fine; dashed line at 10 and 2; value labels above bars fine. PASS.\n\nUnicode: arrows/⌐ symbols appear rendered; γ, λ, ≥, × all visible; no tofu — PASS.\n\nP4 dual axis: left recomb 0-100+, right LLR -150~200; ticks separated clearly — PASS.\n\nWrite report.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1794401727,
+  "id": "20261111205438c96f5b67a69a4a6c",
+  "model": "glm-5.3-flash",
+  "object": "chat.completion",
+  "request_id": "20261111205438c96f5b67a69a4a6c",
+  "usage": {
+    "completion_tokens": 1847,
+    "completion_tokens_details": {
+      "reasoning_tokens": 566
+    },
+    "prompt_tokens": 3472,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5319
+  }
+}

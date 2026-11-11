@@ -1,0 +1,29 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "PASS\n\n检查结果：P4 面板中 -114/-107 两个 chance 期望标注带有白色底衬（bbox），分别位于 Wrg/Hrg 橙色柱体内部或旁侧，与柱体颜色区分清晰、可读性好，未与柱体数值（98、82）或 LLR 菱形标注混淆。其余五个面板（P1 剂量-响应曲线、P2 三槽柱状图、P3 att 率双柱、P5 ms_events 事件柱、P6 ed 距离柱状图）均保持完好，标注、门限线、图例无回归。",
+        "reasoning_content": "Check P4: -114/-107 labels near chance markers; they appear white-backed? In image, \"-114\" appears on the orange bar with white bbox. -107 also near orange bar. They seem readable. Other panels fine. Answer PASS.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1794401809,
+  "id": "20261111205642bf0a0762e6c94159",
+  "model": "glm-5.3-flash",
+  "object": "chat.completion",
+  "request_id": "20261111205642bf0a0762e6c94159",
+  "usage": {
+    "completion_tokens": 195,
+    "completion_tokens_details": {
+      "reasoning_tokens": 51
+    },
+    "prompt_tokens": 3380,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3575
+  }
+}
