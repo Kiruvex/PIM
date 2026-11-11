@@ -101,7 +101,6 @@ python3 scripts/fig34.py
 - **代码与文档**（`scripts/`、`docs/`、`Makefile`、`README.md`）：以 **GNU Affero General Public License v3 或（按你的选择）任何更新版本**（**AGPL-3.0-or-later**）授权，全文见 [`LICENSE`](./LICENSE)；
 - **网络服务注意**：若将修改后的 PIM 以网络服务形式提供，依 AGPL 第 13 条须向远程交互用户提供对应源码；
 - **语料**（`data/`）为 Project Gutenberg 公版书（美国公有领域），不随本仓库许可变化；
-- 如需锁回 v3-only，将源文件 SPDX 头全局替换为 `AGPL-3.0-only` 即可（单行注释，无连带改动）。
 
 ### 发布快照
 
@@ -194,7 +193,6 @@ python3 scripts/fig34.py
 - **Code and documentation** (`scripts/`, `docs/`, `Makefile`, `README.md`) are licensed under the **GNU Affero General Public License v3 or, at your option, any later version** (**AGPL-3.0-or-later**); the full text is in [`LICENSE`](./LICENSE);
 - **Network services**: if you offer a modified PIM over a network, AGPL §13 requires you to offer the corresponding source to remote users;
 - **Corpus** (`data/`) consists of Project Gutenberg public-domain books (US public domain), unaffected by this repository's license;
-- To pin to v3-only instead, globally replace the SPDX headers with `AGPL-3.0-only` (single comment lines, no further changes).
 
 ### Release Snapshot
 
