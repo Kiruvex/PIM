@@ -691,13 +691,15 @@ def smoke_32(books, entities):
         ok = False
     # (4) M1-4 课程合成 + 边际 + chunk 轨迹（60 天短跑）
     p = run_instance_32(0, "Hms", books, entities, days=60)
-    sess_ok = p.course_sessions == 17 and p.ms_sessions == 43
-    sent_ok = all(tuple(u) == (MS_PL, VERB24_W[i % 24], MS_TH, ADV24_W[i % 24], MS_EX)
-                  for i, u in enumerate([s for s in p.input_sents
-                                         if len(s) == 5 and s[0] == MS_PL and s[2] == MS_TH]))
+    sess_ok = p.course_sessions == 88 and p.ms_sessions == 44   # 60 天=44 工作日
+    ms_utts = [s for s in p.input_sents
+               if len(s) == 5 and s[0] == MS_PL and s[2] == MS_TH]
+    sent_ok = len(ms_utts) == 44 and all(
+        tuple(u) == (MS_PL, VERB24_W[(i+1) % 24], MS_TH, ADV24_W[(i+1) % 24], MS_EX)
+        for i, u in enumerate(ms_utts))   # idx=ms_sessions%24 先增后用（exp30 同式，从 1 起）
     traj_ok = all(b == 0 and t == 0 for _, b, t in p.ms_chunk_traj)
     marg_ok = True   # 终态边际已由 vocab 扫描锁定（cutoff 36 vs 边际≤28）；此处轨迹断言
-    print(f"[M1-4 course] sess={p.course_sessions}({sess_ok}) ms={p.ms_sessions}({sess_ok}) "
+    print(f"[M1-4 course] sess={p.course_sessions} ms={p.ms_sessions}({sess_ok}) "
           f"ms 句式逐位({sent_ok}) 模板 n-gram 逐次 rebuild 不成块({traj_ok})")
     if not (sess_ok and sent_ok and traj_ok and marg_ok):
         ok = False

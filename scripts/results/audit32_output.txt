@@ -1,0 +1,56 @@
+========================================================================
+A1 ②多槽形成-使用链（4 ms 臂 5 种子中位）
+  课程剂量→冻结对数              Wms 114  Hms 112
+  distinct 双射对           Wms 24  Hms 24
+  生成使用事件                 Wms 55  Hms 55
+  使用份额                   Wms 0.02679  Hms 0.02675
+  全部多槽事件（含读源）            Wms 183  Hms 154
+  多槽帧总数（含读源）             Wms 208  Hms 208
+  槽支持: slot1=VERB24 ∧ slot2=ADV24 精确相等（H2 全 5/5×4 臂）  cross=0（全种子）
+  γ 物理预期份额: γ·w_ms/(γ·w_ms+Σw_rest)≈0.027 实测 0.0268
+
+A2 ③槽后结构 pair vs ind（逐种子 valid/事件）
+  Wms/Wmi s0: pair 54/54=1.000  ind 2/54=0.037  事件数相等 True
+  Wms/Wmi s1: pair 61/61=1.000  ind 3/61=0.049  事件数相等 True
+  Wms/Wmi s2: pair 55/55=1.000  ind 1/55=0.018  事件数相等 True
+  Wms/Wmi s3: pair 66/66=1.000  ind 1/66=0.015  事件数相等 True
+  Wms/Wmi s4: pair 49/49=1.000  ind 4/49=0.082  事件数相等 True
+  Hms/Hmi s0: pair 55/55=1.000  ind 2/55=0.036  事件数相等 True
+  Hms/Hmi s1: pair 66/66=1.000  ind 6/66=0.091  事件数相等 True
+  Hms/Hmi s2: pair 52/52=1.000  ind 3/52=0.058  事件数相等 True
+  Hms/Hmi s3: pair 64/64=1.000  ind 2/64=0.031  事件数相等 True
+  Hms/Hmi s4: pair 55/55=1.000  ind 3/55=0.055  事件数相等 True
+  池化: pair 577/577=1.000  ind 27/577=0.0468（chance=1/24=0.0417）
+
+A3 H5 零外溢（哈希 + 选择同一性 + 帧面）
+  哈希检查: True（6 项）
+  选择同一性 Wms≡Wmi: ms_events 逐种子 True；ms_pairs 逐种子 True；n_mframes 逐种子 True
+  选择同一性 Hms≡Hmi: ms_events 逐种子 True；ms_pairs 逐种子 True；n_mframes 逐种子 True
+  帧面 nf: Wms 4621 vs Wreg 4601（ms 课追加的新增帧；danch 等形成面由 H6 reg90/chide 全保守门）
+  帧面 nf: Hms 4572 vs Hreg 4604（ms 课追加的新增帧；danch 等形成面由 H6 reg90/chide 全保守门）
+
+A4 保护面配对（pair vs ind vs 锚，逐种子 novel）
+  s0: Wms 0.917 Wmi 1.000 Wreg 1.000 | Hms 0.929 Hmi 1.000 Hreg 1.000
+  s1: Wms 1.000 Wmi 1.000 Wreg 1.000 | Hms 1.000 Hmi 1.000 Hreg 1.000
+  s2: Wms 1.000 Wmi 1.000 Wreg 1.000 | Hms 1.000 Hmi 1.000 Hreg 1.000
+  s3: Wms 0.950 Wmi 0.950 Wreg 1.000 | Hms 1.000 Hmi 1.000 Hreg 1.000
+  s4: Wms 1.000 Wmi 1.000 Wreg 1.000 | Hms 0.952 Hmi 1.000 Hreg 1.000
+  novel<1.0 计数: pair 侧 4/10 vs ind 侧 1/10——课程原句质量点代价集中在 pair 侧（③ 结构保持的可观测代价，带内）
+  ed 中位: pair 5.75 vs ind 5.75（带 [2,10] 内）
+
+A5 预测对照（诚实勘误盘点）
+  ms_pairs 预测 [90,135] 实测 98-214 → 勘误①：s3/s4 未冻（[213, 206, 214, 214]）——全模板吸收为阈值现象（5-gram 分数 vs cutoff 刀刃），种子二模态
+  ms_events 预测 [40,65] 实测 49-66 → 微超上缘 1（勘误②，1/20 种子）
+  novel_pair 预测 [0.88,0.95] 实测中位 1.000（0.917-1.000） → 勘误③：带上缘低估（7/10 种子=1.0——课程原句份额窗口依赖）
+  valid_pair 预测 1.0 实测 1.000（577/577 点质量精确）✓
+  valid_ind 预测 [0.02,0.08] 实测 0.015-0.091 ✓
+  reg90 预测全 1.00 实测全 1.00 ✓；chide 预测 H=5/W=0 实测 H=5.0/W=0.0 ✓
+  最可能 FAIL 排序 H3(0.25)>H1(0.15)>H8(0.10)——全未命中（保守侧，exp31 同型）
+
+A6 全模板吸收二模态（机制注记）
+  pairs 种子分布: [114, 99, 113, 213, 206]（Wms） [112, 98, 107, 214, 214]（Hms）
+  二模态: 冻结组 98-114（s0/s1/s2，day~180 前后 5-gram 越 cutoff）vs 未冻组 206-214（s3/s4，cutoff 轨迹更高——读流世界线差异）
+  机制: 5-gram (please,v,this,d,!) 计数×4 vs top-2500 分数线——确定性轮转剂量 vs 语料增长的赛跑；冻结不破坏 ②/③（帧=图式层已捕获，cond 点质量保持——valid=1.0 与冻结无关地全对）
+  探针 P3 s0 预演 55/54 事件 vs 全批中位 55/55——单种子定标本批落点准确
+========================================================================
+audit32 完成（纯读 JSON 零重跑）
