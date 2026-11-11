@@ -59,5 +59,5 @@ ax.legend(handles=[l1, l2], loc='center left', fontsize=9)
 ax.grid(alpha=0.3)
 
 fig.suptitle('实验 20：缺席惊讶——"你好长时间没来了"的信号层内生涌现（零社交机制）', fontsize=13, y=1.04)
-fig.savefig('/home/z/my-project/download/figures/exp20_缺席惊讶.png', bbox_inches=None)
-print('saved:', '/home/z/my-project/download/figures/exp20_缺席惊讶.png')
+fig.savefig('docs/figures/exp20_缺席惊讶.png', bbox_inches=None)
+print('saved:', 'docs/figures/exp20_缺席惊讶.png')

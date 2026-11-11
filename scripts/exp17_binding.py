@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Noto Sans SC', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
 
-CTW = '/home/z/my-project/scripts/ctw'
+CTW = 'scripts/ctw'
 D = 24
 LAMBDA = 0.5
 LAMBDA_SENS = [0.3, 0.7]
@@ -45,7 +45,7 @@ OBJ = ['frobe', 'wug', 'tarp']; ADV = ['quickly', 'at dawn', 'twice']
 def sent(s, v, o, a): return f"the {s} {v} the {o} {a}. "
 def base_sentences(n):
     return ''.join(sent(random.choice(SUBJ), random.choice(VERB), random.choice(OBJ), random.choice(ADV)) for _ in range(n))
-moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+moby = open('data/moby.txt', 'rb').read()
 S_WORDS = ['vexol', 'quibnar', 'blarn']; O_WORDS = ['sneel', 'drant']
 def true_usage(w):
     return (w, 'S') if w in S_WORDS else (w, 'O')
@@ -306,8 +306,8 @@ def run_base(lam_list):
 
 # ----------------- 主流程 -----------------
 def main():
-    results_dir = '/home/z/my-project/scripts/results'
-    fig_dir = '/home/z/my-project/download/figures'
+    results_dir = 'scripts/results'
+    fig_dir = 'docs/figures'
     ledger = build_ledger()
     _rngT = random.Random(888)
     template_texts = {}

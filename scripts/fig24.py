@@ -162,6 +162,6 @@ ax.set_title("(f) life review 解离：告别翻的是快乐回忆\n效价 d_sv 
              fontsize=10)
 ax.set_ylabel("重放效价偏移 d_sv（戳v）")
 
-out = "download/figures/exp24_终止威胁.png"
+out = "docs/figures/exp24_终止威胁.png"
 fig.savefig(out, dpi=150)
 print("saved:", out)

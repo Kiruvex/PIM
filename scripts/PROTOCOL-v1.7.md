@@ -93,7 +93,7 @@
 
 ## 通用诚实条款
 
-- 全部随机性固定种子；脚本 `exp12_correct.py` / `exp13_spectrum.py` / `exp14_escape.py` / `exp15_quota.py`；结果 `results/exp1[2-5].json`；图 `download/figures/exp1[2-5]_*.png`，每图含 PNG 非白检查（>0.02）。
+- 全部随机性固定种子；脚本 `exp12_correct.py` / `exp13_spectrum.py` / `exp14_escape.py` / `exp15_quota.py`；结果 `results/exp1[2-5].json`；图 `docs/figures/exp1[2-5]_*.png`，每图含 PNG 非白检查（>0.02）。
 - 每个实验先做与 v1.6 批的回归对照（同种子同数据应复现已锁定数字，再叠加新条件）；回归失败 = 实现错误，先修再跑。
 - 失败后的修订预注册须在本文件追加章节（沿 v1.6 R6 v2/v3 条款），注明失败诊断与架构教训。
 - 不动的：v1.6 已闭合的修复（R1/R2/R5/R6v3）不在本轮重跑范围。

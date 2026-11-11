@@ -21,7 +21,7 @@ import random
 import re
 import subprocess
 
-CTW = '/home/z/my-project/scripts/ctw'
+CTW = 'scripts/ctw'
 D = 24
 
 # ----------------- 世界：与 exp10b 逐字节一致（主 rng 消耗顺序完整复刻） -----------------
@@ -31,7 +31,7 @@ OBJ = ['frobe', 'wug', 'tarp']; ADV = ['quickly', 'at dawn', 'twice']
 def sent(s, v, o, a): return f"the {s} {v} the {o} {a}. "
 def base_sentences(n):
     return ''.join(sent(random.choice(SUBJ), random.choice(VERB), random.choice(OBJ), random.choice(ADV)) for _ in range(n))
-moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+moby = open('data/moby.txt', 'rb').read()
 S_WORDS = ['vexol', 'quibnar', 'blarn']; O_WORDS = ['sneel', 'drant']
 def true_usage(w):
     return (w, 'S') if w in S_WORDS else (w, 'O')
@@ -221,7 +221,7 @@ def run_base():
 # ----------------- 主流程 -----------------
 print('A 臂在线（与 exp10b 同路径，产出账本）...', flush=True)
 armA = run_arm_A()
-old = json.load(open('/home/z/my-project/scripts/results/exp10b.json'))
+old = json.load(open('scripts/results/exp10b.json'))
 regA = {c: round(abs(armA['rounds']['verify'][c]['mean'] - old['arms']['A_old_protocol']['verify'][c]), 4)
         for c in PROBE_CELLS}
 print('A 臂回归差（预测 ≤0.005，P 命令纯预测不改状态）:', regA, flush=True)
@@ -309,7 +309,7 @@ res = {
                'arms': 'BASE / D(skip) / F(template) / E1,E2(repeat m) / B(m=3), 全部 γ=0'},
     'note': 'P2=正确位置探针(独立rng); 字节段分解=词形5字节 vs 结构其余; F=模板对照(纠正位换普通句×3)',
 }
-json.dump(res, open('/home/z/my-project/scripts/results/exp12.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(res, open('scripts/results/exp12.json', 'w'), ensure_ascii=False, indent=1)
 print('\n===== 实验12 判定 =====')
 print(json.dumps(verd, ensure_ascii=False, indent=1))
 
@@ -397,7 +397,7 @@ ax.set_title('六臂全览：BASE(紫) D(棕) F(绿) E1(橙) E2(蓝) B(红)')
 ax.grid(axis='y', alpha=0.3, lw=0.5); ax.legend(fontsize=8, ncol=6)
 
 fig.suptitle('实验12：词形/结构惊讶分离 + 纠正剂量扫描（公开问题 12）【沙盒级】', fontsize=12.5)
-out = '/home/z/my-project/download/figures/exp12_纠正分离.png'
+out = 'docs/figures/exp12_纠正分离.png'
 fig.savefig(out, dpi=150); plt.close(fig)
 from PIL import Image
 im = np.asarray(Image.open(out).convert('L'))

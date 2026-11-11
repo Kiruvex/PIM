@@ -1,6 +1,6 @@
 # v1.6 修复批预注册（先公布后跑——沿用第一批制度）
 
-> 日期：2026-11-08（会话 9）。依据：会话 8 实验批的九条反馈（见 download/实验报告.md）。
+> 日期：2026-11-08（会话 9）。依据：会话 8 实验批的九条反馈（见 docs/实验报告.md）。
 > 制度：本文件在跑任何复跑之前写完并锁定；每条预测可证伪；输了认。
 > 环境：同第一批（CPU-only, Python 3.12, 自研 ctw 引擎）。证据等级：【实验·沙盒级】。
 > 修复原则（会话 9 方法论决策）：**只修被实验点名的，修一处、闭合一处（复跑同一实验验收）**；
@@ -66,7 +66,7 @@
 
 ## 通用诚实条款
 
-- 全部随机性固定种子；脚本 `exp3b_storm.py` / `exp6b_redteam.py` / `exp7b_forgetting.py` / `exp2b_fewshot.py` / `exp10b_lecture.py`；结果 `results/exp*b.json`；图 `download/figures/exp*b_*.png`
+- 全部随机性固定种子；脚本 `exp3b_storm.py` / `exp6b_redteam.py` / `exp7b_forgetting.py` / `exp2b_fewshot.py` / `exp10b_lecture.py`；结果 `results/exp*b.json`；图 `docs/figures/exp*b_*.png`
 - 每个复跑先做与第一批数字的回归对照（同种子同数据应逐位复现基线，再叠加修复）
 - 反馈 7/8/9（组合归纳全胜、CTW 等能耗全胜、外交可行）无需修复，不重跑
 

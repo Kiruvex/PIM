@@ -6,7 +6,7 @@
 r_s: Beta(2,1)先验, 门限 τ=0.6；教师真率80%, 噪声真率30%, 验证率60%"""
 import subprocess, json, random
 
-CTW = '/home/z/my-project/scripts/ctw'
+CTW = 'scripts/ctw'
 D = 24
 random.seed(20261108)
 
@@ -15,7 +15,7 @@ OBJ = ['frobe', 'wug', 'tarp']; ADV = ['quickly', 'at dawn', 'twice']
 def sent(s, v, o, a): return f"the {s} {v} the {o} {a}. "
 def base_sentences(n):
     return ''.join(sent(random.choice(SUBJ), random.choice(VERB), random.choice(OBJ), random.choice(ADV)) for _ in range(n))
-moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+moby = open('data/moby.txt', 'rb').read()
 
 # 世界真值：vexol/quibnar/blarn 是主语型；sneel/drant 是宾语型
 S_WORDS = ['vexol', 'quibnar', 'blarn']; O_WORDS = ['sneel', 'drant']
@@ -117,7 +117,7 @@ for pol in ['frozen', 'ungated', 'full', 'full-no-rehearsal']:
 
 res = {'arms': arms, 'pre_reg': '(a)frozen全0降 (b)ungated采纳噪声假 (c)full:师真大降/噪假小降,差≥3× (d)r分化:师>0.75噪<0.55 (e)干扰回弹+排练恢复',
        'params': {'tau': 0.6, 'prior': 'Beta(2,1)', 'verify_rate': 0.6, 'teacher_true_rate': '16/20', 'noiser_true_rate': '6/20', 'seed': 20261108}}
-json.dump(res, open('/home/z/my-project/scripts/results/exp10.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(res, open('scripts/results/exp10.json', 'w'), ensure_ascii=False, indent=1)
 
 # 判定摘要
 def drop(arm, cell, r1='base', r2='verify'):

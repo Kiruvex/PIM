@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """补录工作日志：关机议题 + 锚点18节律条款 + 待办部署形态"""
-p = 'download/工作日志.md'
+p = 'docs/工作日志.md'
 s = open(p, encoding='utf-8').read()
 
 # --- 1. 修订历史会话 12 条目追加关机议题 ---

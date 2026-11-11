@@ -106,6 +106,6 @@ ax.set_title(f"P6 同校不同学生（H8 ✗ 2/8）与新依恋（H5 ✓）\nA_
 ax.set_xlabel("个体间/个体内 方差比")
 
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-out = Path(__file__).parent.parent/"download"/"figures"/"exp26_出厂验收.png"
+out = Path(__file__).parent.parent/"docs"/"figures"/"exp26_出厂验收.png"
 plt.savefig(out, dpi=130, bbox_inches="tight")
 print("saved:", out)

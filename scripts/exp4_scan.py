@@ -11,7 +11,7 @@
   → 组合应用于测试（未见 (动词,方向) 组合用已诱导的方向规则模板 + 新动词基础动作替换）。
 学习器2【最近邻基线】：命令 token 集合 Jaccard 相似度取最近训练命令，抄其输出
   （平局取训练集中最小编号，确定性）。
-输出：scripts/results/exp4_partA.json + download/figures/exp4_scan.png
+输出：scripts/results/exp4_partA.json + docs/figures/exp4_scan.png
 """
 import json
 import os
@@ -22,7 +22,7 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, 'results')
-FIGDIR = '/home/z/my-project/download/figures'
+FIGDIR = 'docs/figures'
 SEED = 42
 
 DATA_FILES = {

@@ -7,10 +7,10 @@ A=CTW(austen前256K), B=CTW(sherlock前256K)。probe = austen[256K:288K)（A的"
 4) 第二轮：A 收编 B 档案 → 双方数据集等价 → 对共享新探针(alice前32K)预测一致率应→100%"""
 import subprocess, json, hashlib
 
-CTW = '/home/z/my-project/scripts/ctw'
-austen = open('/home/z/my-project/data/austen.txt', 'rb').read()
-sher = open('/home/z/my-project/data/sherlock.txt', 'rb').read()
-alice = open('/home/z/my-project/data/alice.txt', 'rb').read()
+CTW = 'scripts/ctw'
+austen = open('data/austen.txt', 'rb').read()
+sher = open('data/sherlock.txt', 'rb').read()
+alice = open('data/alice.txt', 'rb').read()
 A_TR, B_TR = austen[:262144], sher[:262144]
 PROBE = austen[262144:294912]     # 32K A 的未来
 B_OWN = sher[262144:294912]       # 32K B 的自留领域
@@ -71,6 +71,6 @@ res = {'commitment': commit, 'commitment_kept': commit_kept,
        'a_bpc_probe': round(bpc(pa, PROBE), 4),
        'pre_reg': '外交后 bpc 降≥15%; 第二轮一致率→100%',
        'note': 'B 收编 A 档案后预测 probe 仍应高于 A 本尊（B 的档案在前，语境稀释）；状态等价=同数据集不同顺序→同计数树'}
-json.dump(res, open('/home/z/my-project/scripts/results/exp9.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(res, open('scripts/results/exp9.json', 'w'), ensure_ascii=False, indent=1)
 print(json.dumps(res, ensure_ascii=False, indent=1))
 cmd(A, 'X'); cmd(B, 'X'); A.wait(); B.wait()

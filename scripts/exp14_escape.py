@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Noto Sans SC', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
 
-CTW = '/home/z/my-project/scripts/ctw'
+CTW = 'scripts/ctw'
 D = 24
 FLOOR = 1.0 / 256.0
 W_INIT = (0.98, 0.016, 0.004)
@@ -40,7 +40,7 @@ SUBJ = ['blork', 'zemp', 'raffle']; VERB = ['snarfs', 'grabs', 'hoists']
 OBJ = ['frobe', 'wug', 'tarp']; ADV = ['quickly', 'at dawn', 'twice']
 def sents(n):
     return ''.join(f"the {random.choice(SUBJ)} {random.choice(VERB)} {random.choice(OBJ)} {random.choice(ADV)}. " for _ in range(n))
-moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+moby = open('data/moby.txt', 'rb').read()
 days = []
 for d in range(6):
     blocks = [sents(600).encode(), moby[200000 + d * 30000: 200000 + (d + 1) * 30000]]
@@ -175,8 +175,8 @@ res = {
     'params': {'rho_list': RHO_LIST, 'eta_list': ETA_LIST, 'floor': '1/256', 'w_init': W_INIT,
                'D': D, 'spec': '风暴<8 ∧ 税≤0.02 ∧ 恢复≤0.02'},
 }
-os.makedirs('/home/z/my-project/scripts/results', exist_ok=True)
-json.dump(res, open('/home/z/my-project/scripts/results/exp14.json', 'w'), ensure_ascii=False, indent=1)
+os.makedirs('scripts/results', exist_ok=True)
+json.dump(res, open('scripts/results/exp14.json', 'w'), ensure_ascii=False, indent=1)
 print('\n===== 实验14 判定 =====')
 print(json.dumps(verd, ensure_ascii=False, indent=1))
 
@@ -218,7 +218,7 @@ ax.set_title(f'η 剂量效应：风暴 bpc 随 η 单调降\n（v1.6 原点 ρ=
 ax.grid(alpha=0.3, lw=0.5); ax.legend(fontsize=8)
 
 fig.suptitle('实验14：逃逸链 ρ/η 敏感性——20 组合稳健窗扫描（锚点 11 规格化）【沙盒级】', fontsize=12)
-out = '/home/z/my-project/download/figures/exp14_逃逸敏感性.png'
+out = 'docs/figures/exp14_逃逸敏感性.png'
 fig.savefig(out, dpi=150); plt.close(fig)
 from PIL import Image
 im2 = np.asarray(Image.open(out).convert('L'))

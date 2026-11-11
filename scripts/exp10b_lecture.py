@@ -23,7 +23,7 @@ import json
 import random
 import re
 
-CTW = '/home/z/my-project/scripts/ctw'
+CTW = 'scripts/ctw'
 D = 24
 
 # ----------------- 世界生成：与 exp10 逐行一致（含 rng 消耗顺序） -----------------
@@ -33,7 +33,7 @@ OBJ = ['frobe', 'wug', 'tarp']; ADV = ['quickly', 'at dawn', 'twice']
 def sent(s, v, o, a): return f"the {s} {v} the {o} {a}. "
 def base_sentences(n):
     return ''.join(sent(random.choice(SUBJ), random.choice(VERB), random.choice(OBJ), random.choice(ADV)) for _ in range(n))
-moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+moby = open('data/moby.txt', 'rb').read()
 S_WORDS = ['vexol', 'quibnar', 'blarn']; O_WORDS = ['sneel', 'drant']
 def true_usage(w):
     return (w, 'S') if w in S_WORDS else (w, 'O')
@@ -208,7 +208,7 @@ def run_replay(armA, gamma, seed, skip_corrective=False):
 
 # ----------------- 主流程 -----------------
 armA = run_arm_A()
-old = json.load(open('/home/z/my-project/scripts/results/exp10.json'))['arms']['full']['rounds']
+old = json.load(open('scripts/results/exp10.json'))['arms']['full']['rounds']
 print('A 臂（旧协议，回归对照）verify:', armA['rounds']['verify'])
 print('原 full 臂                    verify:', old['verify'])
 reg_diff = {c: round(abs(armA['rounds']['verify'][c] - old['verify'][c]), 4) for c in old['verify']}
@@ -261,7 +261,7 @@ res = {
                'seed': 20261108, 'replay_include_seed': 555},
     'note': 'B/C=重放构建(CTW计数顺序无关); 降权=位置感知模式匹配; 撤回句只入记录层; 正确用法×3为新痕迹',
 }
-json.dump(res, open('/home/z/my-project/scripts/results/exp10b.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(res, open('scripts/results/exp10b.json', 'w'), ensure_ascii=False, indent=1)
 print('\n===== 实验10b 判定 =====')
 print(json.dumps(verd, ensure_ascii=False, indent=1))
 
@@ -311,7 +311,7 @@ ax2.set_title('纠正的持久性：撤销后的信念不随干扰/排练回涨�
 ax2.grid(alpha=0.3, lw=0.5); ax2.legend(fontsize=8.4)
 
 fig.suptitle('实验10b：再解释层纠正协议（双层日志：记录层不可变 + 权重改写重放）【沙盒级】', fontsize=12)
-out = '/home/z/my-project/download/figures/exp10b_纠正协议.png'
+out = 'docs/figures/exp10b_纠正协议.png'
 fig.savefig(out, dpi=150); plt.close(fig)
 from PIL import Image
 im = np.asarray(Image.open(out).convert('L'))

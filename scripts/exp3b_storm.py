@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Noto Sans SC', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
 
-CTW = '/home/z/my-project/scripts/ctw'
+CTW = 'scripts/ctw'
 D = 24
 ETA = 0.15
 RHO = 0.999
@@ -30,7 +30,7 @@ SUBJ = ['blork', 'zemp', 'raffle']; VERB = ['snarfs', 'grabs', 'hoists']
 OBJ = ['frobe', 'wug', 'tarp']; ADV = ['quickly', 'at dawn', 'twice']
 def sents(n):
     return ''.join(f"the {random.choice(SUBJ)} {random.choice(VERB)} {random.choice(OBJ)} {random.choice(ADV)}. " for _ in range(n))
-moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+moby = open('data/moby.txt', 'rb').read()
 days = []
 for d in range(6):
     blocks = [sents(600).encode(), moby[200000 + d * 30000: 200000 + (d + 1) * 30000]]
@@ -169,8 +169,8 @@ res = {
                'components': ['CTW-D24', 'fast-unigram(exp window, KT-0.5)', 'uniform']},
     'stream_len': len(stream), 'storm': [storm_lo, storm_hi],
 }
-os.makedirs('/home/z/my-project/scripts/results', exist_ok=True)
-json.dump(res, open('/home/z/my-project/scripts/results/exp3b.json', 'w'), ensure_ascii=False, indent=1)
+os.makedirs('scripts/results', exist_ok=True)
+json.dump(res, open('scripts/results/exp3b.json', 'w'), ensure_ascii=False, indent=1)
 
 print('===== 实验3b（R1 逃逸混合） =====')
 print(f"回归检查  风暴 raw bpc = {storm_raw:.3f}（原始 9.644）  逐日探针 raw = {day_probe_raw}")
@@ -215,7 +215,7 @@ ax.set_yscale('log'); ax.set_xlabel('流位置（字节）'); ax.set_ylabel('混
 ax.set_title('组件权重轨迹：正常文本 CTW 主导（~0.988）→ 风暴段转向快速单字 → 风暴后回到 CTW')
 ax.grid(alpha=0.3, lw=0.5); ax.legend(fontsize=8.6, loc='center right')
 
-out = '/home/z/my-project/download/figures/exp3b_逃逸混合.png'
+out = 'docs/figures/exp3b_逃逸混合.png'
 fig.savefig(out, dpi=150); plt.close(fig)
 from PIL import Image
 im = np.asarray(Image.open(out).convert('L'))

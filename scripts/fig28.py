@@ -130,7 +130,7 @@ fig.tight_layout(rect=[0, 0, 1, 0.955])
 hs = [ax_.get_position().bounds[3] for ax_ in fig.axes]
 assert all(h > 0.30 for h in hs), f"布局塌缩：轴高度 {hs}"
 
-out = Path(__file__).parent.parent/"download"/"figures"/"exp28_二语习得.png"
+out = Path(__file__).parent.parent/"docs"/"figures"/"exp28_二语习得.png"
 fig.savefig(out, dpi=150)
 
 # 防回归自检 2：存图后检测大空白带（中部连续空白 >25% 画布高即失败）

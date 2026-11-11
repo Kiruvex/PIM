@@ -171,6 +171,6 @@ ax.set_xlabel("预测（留一世界）")
 ax.set_ylabel("真剖面")
 ax.set_title(f"(f) 留一世界盲判别混淆矩阵：总准确率 {V['H5a']['acc']:.0%}\n（chance 11%；9/9 剖面 recall ≥ 0.5）", fontsize=9.5)
 
-out = "download/figures/exp25_气质分化.png"
+out = "docs/figures/exp25_气质分化.png"
 fig.savefig(out, dpi=150)
 print("saved:", out)

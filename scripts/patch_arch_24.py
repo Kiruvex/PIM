@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """架构文档 v1.9 补录：exp24 怕死 猜想→实验"""
 
-P = "download/拟人化架构_v1.9.md"
+P = "docs/拟人化架构_v1.9.md"
 s = open(P, encoding="utf-8").read()
 
 # 1. §1.2 第 4 点标题升级

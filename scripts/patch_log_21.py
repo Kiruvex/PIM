@@ -3,7 +3,7 @@
 """补录工作日志：会话 12 追加 exp21；实验报告追加 exp21 复卷"""
 
 # ---------- 工作日志 ----------
-p = 'download/工作日志.md'
+p = 'docs/工作日志.md'
 s = open(p, encoding='utf-8').read()
 
 anchor = '工程教训：exp20 抄写变量名大小写笔误'
@@ -28,7 +28,7 @@ open(p, 'w', encoding='utf-8').write(s)
 print('工作日志已补录 exp21')
 
 # ---------- 实验报告 ----------
-p2 = 'download/实验报告.md'
+p2 = 'docs/实验报告.md'
 rep = open(p2, encoding='utf-8').read()
 
 addition2 = '''
@@ -66,7 +66,7 @@ addition2 = '''
 ## 复现清单（第五批补 2）
 
 - 脚本：`scripts/exp21_reunion_tone.py`（图：`scripts/fig21.py`）
-- 结果：`scripts/results/exp21.json`；图：`download/figures/exp21_重逢语气.png`
+- 结果：`scripts/results/exp21.json`；图：`docs/figures/exp21_重逢语气.png`
 '''
 open(p2, 'a', encoding='utf-8').write(addition2)
 print('实验报告已追加 exp21 复卷')

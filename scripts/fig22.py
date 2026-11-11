@@ -143,5 +143,5 @@ ax.legend(fontsize=8, loc='upper right')
 ax.set_ylim(0, 1.0)
 
 fig.suptitle('exp22/22b 依恋挤占：想念 = 联想地板（v1.3） + 急性惦记（边际账） + 慢性思念（存量账）', fontsize=13)
-fig.savefig('/home/z/my-project/download/figures/exp22_依恋挤占.png')
+fig.savefig('docs/figures/exp22_依恋挤占.png')
 print('saved figures/exp22_依恋挤占.png')

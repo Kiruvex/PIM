@@ -5,8 +5,8 @@ GPT-2-small：沙盒不可部署（PyPI/HF 均不可达），以解析估算行�
 import subprocess, time, json, gzip, lzma, brotli, math, os
 import numpy as np
 
-DATA = '/home/z/my-project/data/moby.txt'
-CTW = '/home/z/my-project/scripts/ctw'
+DATA = 'data/moby.txt'
+CTW = 'scripts/ctw'
 raw = open(DATA, 'rb').read()
 TEST = raw[262144:524288]          # 256KB 固定测试段（书中段）
 TRAIN = raw[0:262144]              # MLP 预训练段
@@ -127,6 +127,6 @@ for name, (b, c) in codecs.items():
 res = {'test': 'moby[262144:524288] 256KB', 'tiers_cpu_s': TIERS, 'tdp_watts': TDP,
        'codecs': rows, 'char_mlp': mlp, 'gpt2': gpt2_est,
        'uniform_ref': 8.0, 'pre_reg': '(a)无限制时深度模型bpc最低 (b)T=32s档 CTW<3.5 且 深度>6.5 (c)CTW≤gzip'}
-json.dump(res, open('/home/z/my-project/scripts/results/exp1.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(res, open('scripts/results/exp1.json', 'w'), ensure_ascii=False, indent=1)
 print(json.dumps({k: {'bpc': v['bpc'], 'cpu_s': v['cpu_s'], 'eff32': v['eff_bpc_by_tier'].get('32')} for k, v in rows.items()}, ensure_ascii=False, indent=1))
 print('MLP:', {k: (round(v,3) if isinstance(v,float) else v) for k,v in mlp.items() if k!='note'})

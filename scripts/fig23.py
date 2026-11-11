@@ -122,5 +122,5 @@ ax_b.annotate('"该来没来"最痛（危险率峰）', xy=(xh[len(xh)//3], vm[l
 
 fig.suptitle('实验 23：情感动态——(v,a) 惯性的人类对照（判定 4/4：可辨识/结构负偏向 7.55/人类带/气质剖面）',
              fontsize=12.5)
-fig.savefig('/home/z/my-project/download/figures/exp23_情感动态.png')
+fig.savefig('docs/figures/exp23_情感动态.png')
 print('saved')

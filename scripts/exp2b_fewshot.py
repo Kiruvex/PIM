@@ -30,7 +30,7 @@ from exp2_fewshot import (SEEDS, KS, POOL, N_TEST, LANGS, GrammarModel,
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(HERE, 'results')
-FIG_DIR = '/home/z/my-project/download/figures'
+FIG_DIR = 'docs/figures'
 
 COPY_COST = 20.0
 CLFS = ('gzip_knn', 'grammar', 'grammar_prog', 'grammar_prog2', 'grammar_prog3')

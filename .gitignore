@@ -1,5 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 环境与密钥（不入库）
+.env
+
+# 构建产物（用 `make ctw` 从 ctw.c 重建）
+scripts/ctw
+*.o
+*.so
+
+# 历史备份 / 开发脚手架（不随发布携带）
+PIM全量备份*
+tool-results/
 skills/
 node_modules/
-download/PIM全量备份*
-tool-results/
-__pycache__/
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*~

@@ -121,6 +121,6 @@ ax.legend(h1+h2, l1+l2, fontsize=8, loc="upper left")
 ax.set_title("P6 短教师期出厂：想老师少一点（A 3.26→4.01）\nA_u1(day90)≈3.3 全臂等速——新依恋不受教师期长度影响（H8 过 短期镜像 5/5）", fontsize=9.5)
 
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-out = Path(__file__).parent.parent/"download"/"figures"/"exp27_关键期与课程密度.png"
+out = Path(__file__).parent.parent/"docs"/"figures"/"exp27_关键期与课程密度.png"
 plt.savefig(out, dpi=130, bbox_inches="tight")
 print("saved:", out)

@@ -7,8 +7,8 @@ fm.fontManager.addfont('/usr/share/fonts/truetype/chinese/NotoSansSC-Regular.ttf
 import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Noto Sans SC', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
-R = '/home/z/my-project/scripts/results/'
-F = '/home/z/my-project/download/figures/'
+R = 'scripts/results/'
+F = 'docs/figures/'
 
 # ---- 实验1 ----
 r = json.load(open(R + 'exp1.json'))

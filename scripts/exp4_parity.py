@@ -20,7 +20,7 @@ DSL（位线路，递归/折叠解释）：固定叶 IN_i 的静态电路无法�
   计分口径（两学习器一致）：逐样本奇偶标签精确匹配
   （标签为单比特，"整串全对"即该位完全命中；见 deviations 说明）。
 
-输出：scripts/results/exp4_partB.json + download/figures/exp4_parity.png
+输出：scripts/results/exp4_partB.json + docs/figures/exp4_parity.png
 """
 import json
 import os
@@ -30,7 +30,7 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, 'results')
-FIGDIR = '/home/z/my-project/download/figures'
+FIGDIR = 'docs/figures'
 
 TRAIN_LENGTHS = list(range(2, 9))
 N_TRAIN_PER_LEN = 40

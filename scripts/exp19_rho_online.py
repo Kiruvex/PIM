@@ -27,15 +27,15 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Noto Sans SC', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
 
-CTW = '/home/z/my-project/scripts/ctw'
+CTW = 'scripts/ctw'
 D = 24
 FLOOR = 1.0 / 256.0
 W_INIT = (0.98, 0.016, 0.004)
 ETA = 0.15
 RHO_FIXED = [0.99, 0.999, 0.9995, 0.9999, 1.0]
 STORMS_NEW = [2048, 8192, 32768]
-RESULTS_DIR = '/home/z/my-project/scripts/results'
-FIG_DIR = '/home/z/my-project/download/figures'
+RESULTS_DIR = 'scripts/results'
+FIG_DIR = 'docs/figures'
 log2 = math.log2
 
 
@@ -47,7 +47,7 @@ def make_days(n_days, seed):
     def sents(n):
         return ''.join(f"the {random.choice(SUBJ)} {random.choice(VERB)} "
                        f"{random.choice(OBJ)} {random.choice(ADV)}. " for _ in range(n))
-    moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+    moby = open('data/moby.txt', 'rb').read()
     days = []
     for d in range(n_days):
         blocks = [sents(600).encode(), moby[200000 + d * 30000: 200000 + (d + 1) * 30000]]
@@ -216,7 +216,7 @@ def main():
     def sents_old(n):
         return ''.join(f"the {_r.choice(SUBJ)} {_r.choice(VERB)} "
                        f"{_r.choice(OBJ)} {_r.choice(ADV)}. " for _ in range(n))
-    moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+    moby = open('data/moby.txt', 'rb').read()
     days_old = []
     for d in range(6):
         blocks = [sents_old(600).encode(), moby[200000 + d * 30000: 200000 + (d + 1) * 30000]]

@@ -50,5 +50,5 @@ ax.annotate('"怎么还不睡？"\n只有 B 看得见', xy=(1, 12.29), xytext=(0
             arrowprops=dict(arrowstyle='->', color='#c0392b', lw=1.2))
 
 fig.suptitle('实验 20b：关机-节律感知——不会每天早上说"好久不见"，但看得见凌晨的异常', fontsize=13, y=1.05)
-fig.savefig('/home/z/my-project/download/figures/exp20b_节律感知.png')
+fig.savefig('docs/figures/exp20b_节律感知.png')
 print('saved')

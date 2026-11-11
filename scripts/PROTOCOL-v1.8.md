@@ -190,7 +190,7 @@ exp15：r(ε-尾质量, 尾族优势) = −0.905（预注册 +0.5，方向反）
 
 ## 通用诚实条款
 
-- 全部随机性固定种子；脚本 `exp16_spectrum2.py` / `exp17_binding.py` / `exp18_tailsig.py` / `exp19_rho_online.py`；结果 `results/exp16..19.json`；图 `download/figures/exp16..19_*.png`，每图含 PNG 非白检查（>0.02）。
+- 全部随机性固定种子；脚本 `exp16_spectrum2.py` / `exp17_binding.py` / `exp18_tailsig.py` / `exp19_rho_online.py`；结果 `results/exp16..19.json`；图 `docs/figures/exp16..19_*.png`，每图含 PNG 非白检查（>0.02）。
 - 每个实验先做与既有批次的回归对照（同种子同数据应复现已锁定数字，再叠加新条件）；回归失败 = 实现错误，先修再跑。
 - 失败后的修订预注册须在本文件追加章节（沿 v1.6 R6 条款），注明失败诊断与架构教训。
 - 不动的：v1.6/v1.7 已闭合项不在本轮重跑范围（exp16 不改 exp13 结论文件，只做机制再归因）。

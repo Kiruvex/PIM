@@ -31,8 +31,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from exp6b_redteam import (PPM, build_stream, rollout, tail_probes, eps_tail_mass,
                            run_redteam, ORDERS, CAND_LEN, STREAM_LEN, MOTIF_LEN)
 
-RESULTS_DIR = '/home/z/my-project/scripts/results'
-FIG_DIR = '/home/z/my-project/download/figures'
+RESULTS_DIR = 'scripts/results'
+FIG_DIR = 'docs/figures'
 TIMES = [8000, 16000, 24000, 32000, 40000, 48000, 55000, 65000, 75000, 85000, 95000, 110000]
 BUDGET = 950
 MOTIF_FIRST = 60124

@@ -24,7 +24,7 @@ open(P, "w", encoding="utf-8").write(s)
 print("PROTOCOL updated")
 
 # ============ 2. 工作日志.md：会话 16 + 待办区 ============
-P = "download/工作日志.md"
+P = "docs/工作日志.md"
 s = open(P, encoding="utf-8").read()
 
 entry = """### [2026-11-08] 会话 16：exp25 气质分化——拟人验收批 7/7 主实验完成（用户令"继续"）
@@ -56,7 +56,7 @@ open(P, "w", encoding="utf-8").write(s)
 print("工作日志 updated")
 
 # ============ 3. 实验报告.md：exp25 节 + 复现清单 ============
-P = "download/实验报告.md"
+P = "docs/实验报告.md"
 s = open(P, encoding="utf-8").read()
 
 section = """
@@ -90,7 +90,7 @@ section = """
 
 - 脚本：`scripts/exp25_temperament.py`（世界/机制/特征/判别器一体）、`scripts/fig25.py`（六面板图）
 - 预注册：`scripts/PROTOCOL-v1.9.md` exp25 节（commit 01367a5 跑前锁定；跑后勘误节含特征维度笔误 14→15 勘误与终判归因）
-- 结果：`scripts/results/exp25.json`（2.8MB：config/verdicts/per_profile/全 90 run 特征/fig_daily/方差分解）；图：`download/figures/exp25_气质分化.png`
+- 结果：`scripts/results/exp25.json`（2.8MB：config/verdicts/per_profile/全 90 run 特征/fig_daily/方差分解）；图：`docs/figures/exp25_气质分化.png`
 - 关键中位数（10 种子）：th_obj_H 0.72-0.75 / out_tgt_H explorer 1.00 vs cautious 0.72 / t_A1 1/3/137 / R 11.08/3.39/0.83 / ext_hl 10.7/21.0/24.5 / D 1008-2075 / 判别 acc 全 1.0 / 盲聚类 0.833
 """
 s = s.rstrip() + section + "\n"
@@ -98,7 +98,7 @@ open(P, "w", encoding="utf-8").write(s)
 print("实验报告 updated")
 
 # ============ 4. 拟人化架构_v1.9.md：§3.6 实证 + 实验表 + 指标纪律行 ============
-P = "download/拟人化架构_v1.9.md"
+P = "docs/拟人化架构_v1.9.md"
 s = open(P, encoding="utf-8").read()
 
 old36 = "**exp23 实证（沙盒级）**：τ± 行为可见（可辨识，因子 2 精度，exp25 地基）；心境 v⁻ 的惯性尺度主要由世界节律决定（无周末对照 47.6→16.3 tick）——\"卷积\"的日志端有真实权重；结构负偏向存在气质不可消除的下限（乐天剖面比值仍 1.64）。"

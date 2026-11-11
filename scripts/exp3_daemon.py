@@ -4,12 +4,12 @@
 验证：(i)逐4KB滚动bpc 学习曲线 (ii)风暴段预测不缺席(bpc有限<8) (iii)模因首现惊讶尖峰→衰减"""
 import subprocess, json, random
 
-CTW = '/home/z/my-project/scripts/ctw'; D = 24
+CTW = 'scripts/ctw'; D = 24
 random.seed(7)
 SUBJ = ['blork', 'zemp', 'raffle']; VERB = ['snarfs', 'grabs', 'hoists']
 OBJ = ['frobe', 'wug', 'tarp']; ADV = ['quickly', 'at dawn', 'twice']
 def sents(n): return ''.join(f"the {random.choice(SUBJ)} {random.choice(VERB)} {random.choice(OBJ)} {random.choice(ADV)}. " for _ in range(n))
-moby = open('/home/z/my-project/data/moby.txt', 'rb').read()
+moby = open('data/moby.txt', 'rb').read()
 
 days = []
 for d in range(6):
@@ -63,6 +63,6 @@ res = {'rolling_bpc_4k': roll, 'stream_len': len(stream), 'storm_bpc': round(sto
        'overall_bpc': round(sum(bits) / len(bits), 4), 'storm_len': len(storm),
        'pre_reg': '学习曲线单调改善; 风暴段bpc有限(<8); 模因首现尖峰',
        'note': '压缩时间模拟6日; 合成通道; CTW为全时在线层(无独立睡眠作业, 睡眠巩固见实验10排练臂)'}
-json.dump(res, open('/home/z/my-project/scripts/results/exp3.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(res, open('scripts/results/exp3.json', 'w'), ensure_ascii=False, indent=1)
 print(f"整体bpc {res['overall_bpc']}, 风暴段 {res['storm_bpc']} (风暴前 {res['before_storm_bpc']}), 模因首现 {res['motif_first_bpc']} bpc")
 print('逐日固定探针 bpc:', day_probe_bpc, '风暴中探针:', storm_probe_bpc)

@@ -243,6 +243,6 @@ ax.set_ylim(0.5, 1.85)
 
 fig.suptitle('exp22c 对象相对定标：想念是相对对象自身节律的偏离（v1.9.1 修订验证，7/7 判定全过；'
              'global 臂逐位复现 exp22b，ctrl 臂逐位复现 exp22）', fontsize=13, fontweight='bold')
-outp = os.path.join(HERE, '..', 'download', 'figures', 'exp22c_对象相对定标.png')
+outp = os.path.join(HERE, '..', 'docs', 'figures', 'exp22c_对象相对定标.png')
 fig.savefig(outp, dpi=150)
 print('saved:', os.path.abspath(outp))

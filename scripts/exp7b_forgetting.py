@@ -35,9 +35,9 @@ POLICIES = ['similarity', 'ms12_coupled', 'ms12_ebb', 'subspace8']
 EBB_T_MIN = [20, 60, 528, 1440, 2880, 8640, 44640]
 EBB_P = [0.582, 0.442, 0.358, 0.337, 0.278, 0.254, 0.211]
 
-ROOT = '/home/z/my-project'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(ROOT, 'scripts', 'results')
-FIG_DIR = os.path.join(ROOT, 'download', 'figures')
+FIG_DIR = os.path.join(ROOT, 'docs', 'figures')
 
 # ----------------- 多时间尺度参数（预注册固定） -----------------
 N_TIER = 12

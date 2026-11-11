@@ -23,7 +23,7 @@ plt.rcParams["axes.unicode_minus"] = False
 
 REPO = Path(__file__).resolve().parent.parent
 RES = REPO / "scripts" / "results"
-FIGD = REPO / "download" / "figures"
+FIGD = REPO / "docs" / "figures"
 FIGD.mkdir(parents=True, exist_ok=True)
 
 J = json.load(open(RES / "exp30.json"))

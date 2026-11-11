@@ -36,9 +36,9 @@ Q_POW = {'coupled': 1.0, 'ebb': 0.126}
 CAP_POOL = 96
 SPAN = 11.0                                                # 总尺度跨度 log2 = 11（12 层 × R=2）
 
-ROOT = '/home/z/my-project'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(ROOT, 'scripts', 'results')
-FIG_DIR = os.path.join(ROOT, 'download', 'figures')
+FIG_DIR = os.path.join(ROOT, 'docs', 'figures')
 
 
 def n_tiers_for(R):

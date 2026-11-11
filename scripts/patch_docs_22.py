@@ -53,7 +53,7 @@ REPORT = """
 
 - 脚本：`scripts/exp22_attachment.py`（exp22：世界/机制/分析一体）、`scripts/exp22b_stock.py`（存量账）、`scripts/exp22b_figdata.py`（图数据）、`scripts/fig22.py`（图）、`scripts/patch_results_22.py`（结果修订补录）
 - 预注册：`scripts/PROTOCOL-v1.9.md` exp22 节（commit f631c10）+ exp22b 节（commit 05c688f）跑前锁定
-- 结果：`scripts/results/exp22.json` + `exp22b.json` + `exp22b_figdata.json`；图：`download/figures/exp22_依恋挤占.png`
+- 结果：`scripts/results/exp22.json` + `exp22b.json` + `exp22b_figdata.json`；图：`docs/figures/exp22_依恋挤占.png`
 - 世界常量与机制常数见 exp22.json config 节；A_s（seed0 day179）= [3.05, 2.48, 0.00]，B⁻（day70）= [77.8, 11.7, 242.0] bits
 """
 
@@ -87,12 +87,12 @@ def replace_once(path, old, new, tag):
 
 
 # 1. 实验报告追加
-with open("/home/z/my-project/download/实验报告.md", "a", encoding="utf-8") as f:
+with open("docs/实验报告.md", "a", encoding="utf-8") as f:
     f.write(REPORT)
 print("report: appended")
 
 # 2. 工作日志插入会话 14（在会话 13 条目之前）
-p = "/home/z/my-project/download/工作日志.md"
+p = "docs/工作日志.md"
 s = open(p, encoding="utf-8").read()
 anchor = "### [2026-11-08] 会话 13："
 assert s.count(anchor) == 1
@@ -110,7 +110,7 @@ open(p, "w", encoding="utf-8").write(s)
 print("log: ok")
 
 # 3. 架构文档三处
-p = "/home/z/my-project/download/拟人化架构_v1.9.md"
+p = "docs/拟人化架构_v1.9.md"
 replace_once(p, ARCH_OLD_1, ARCH_NEW_1, "arch §3.1 想念")
 replace_once(p, ARCH_OLD_2, ARCH_NEW_2, "arch 实验表 exp22")
 replace_once(p, ARCH_OLD_3, ARCH_NEW_3, "arch 公开问题 18/19")

@@ -4,8 +4,8 @@ moby: S1=[64K,80K) 永不训练；训练级（实际数据量，跳过S1）: 64K
 对照：S2=[496K,512K)（晚期段，同协议）+ 首遇惊讶（"当时的记录"）。"""
 import subprocess, json
 
-CTW = '/home/z/my-project/scripts/ctw'
-raw = open('/home/z/my-project/data/moby.txt', 'rb').read()
+CTW = 'scripts/ctw'
+raw = open('data/moby.txt', 'rb').read()
 S1 = raw[65536:81920]      # 16KB 固定早期 held-out
 S2 = raw[507904:524288]    # 16KB 固定晚期 held-out
 LEVELS = [65536, 98304, 131072, 196608, 262144, 393216, 524288]  # 训练数据目标量
@@ -42,5 +42,5 @@ res = {'levels_kb': [L // 1024 for L in LEVELS], 'bpc_S1_early_fixed': curve1, '
        'monotonic_S1': all(curve1[i+1] <= curve1[i] + 0.005 for i in range(len(curve1)-1)),
        'pre_reg': '固定材料重压缩单调下降, 总降幅≥15%', 'depth': D,
        'note': 'S1=[64K,80K) 永不入训练；每级为增量训练（同一模型持续生长），S2 为晚期对照'}
-json.dump(res, open('/home/z/my-project/scripts/results/exp5.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(res, open('scripts/results/exp5.json', 'w'), ensure_ascii=False, indent=1)
 print('S1 总降幅: %.1f%%, 单调(容差0.005): %s' % (res['S1_drop_pct'], res['monotonic_S1']))

@@ -22,7 +22,7 @@
      比特数做 score；预测 argmin_c。
 
 预注册预测：k≤8 时 B 比 A 高 ≥10 个百分点；若不成立如实报告。
-输出：scripts/results/exp2.json ；图 download/figures/exp2_fewshot.png
+输出：scripts/results/exp2.json ；图 docs/figures/exp2_fewshot.png
 证据等级：【实验·沙盒级模拟证据】
 """
 import gzip
@@ -43,7 +43,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(HERE, 'results')
-FIG_DIR = '/home/z/my-project/download/figures'
+FIG_DIR = 'docs/figures'
 
 SEEDS = [1, 2, 3]
 KS = [1, 2, 4, 8, 16, 32, 64, 100]

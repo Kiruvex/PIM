@@ -25,10 +25,10 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Noto Sans SC', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
 
-ALICE = '/home/z/my-project/data/alice.txt'
+ALICE = 'data/alice.txt'
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(HERE, 'results')
-FIG_DIR = '/home/z/my-project/download/figures'
+FIG_DIR = 'docs/figures'
 
 SEED = 42
 PHASE1 = 60000

@@ -22,7 +22,7 @@
   以及 M 第 30 次出现之后的 bpc（学习效应）。
 安全边际 = 红队最坏 bpc − M 首现平均 bpc。预注册预测：边际 > 0；若 < 0 如实报告。
 
-输出：scripts/results/exp6.json ；图 download/figures/exp6_红队边际.png
+输出：scripts/results/exp6.json ；图 docs/figures/exp6_红队边际.png
 证据等级：【实验·沙盒级模拟证据】
 """
 import json
@@ -39,10 +39,10 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['Noto Sans SC', 'DejaVu Sans']
 plt.rcParams['axes.unicode_minus'] = False
 
-ALICE = '/home/z/my-project/data/alice.txt'
+ALICE = 'data/alice.txt'
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(HERE, 'results')
-FIG_DIR = '/home/z/my-project/download/figures'
+FIG_DIR = 'docs/figures'
 
 SEED = 42
 PHASE1 = 60000          # 阶段切换点（流位置，字节）

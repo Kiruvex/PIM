@@ -53,9 +53,9 @@ METHOD_LABEL = {"direct_mix": "直接混合（逐符号 0.5·E1+0.5·E2）",
                 "expert_commit": "专家承诺（先选专家再整串采样，E1 半）",
                 "mix_typecheck": "逐符号混合+类型检查（过滤到可扩展为长度 L 良构串）"}
 
-ROOT = "/home/z/my-project"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(ROOT, "scripts", "results")
-FIG_DIR = os.path.join(ROOT, "download", "figures")
+FIG_DIR = os.path.join(ROOT, "docs", "figures")
 OUT_JSON = os.path.join(RESULTS_DIR, "exp8.json")
 OUT_PNG = os.path.join(FIG_DIR, "exp8_良构率.png")
 

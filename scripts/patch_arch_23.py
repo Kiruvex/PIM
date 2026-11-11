@@ -3,7 +3,7 @@
 """拟人化架构_v1.9.md 补录 exp21/exp20b/exp23 状态与实证注记"""
 import io
 
-PATH = "/home/z/my-project/download/拟人化架构_v1.9.md"
+PATH = "docs/拟人化架构_v1.9.md"
 txt = io.open(PATH, encoding="utf-8").read()
 
 def rep1(old, new):

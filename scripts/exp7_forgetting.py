@@ -54,9 +54,9 @@ POLICY_LABELS = {
 EBB_T_MIN = [20, 60, 528, 1440, 2880, 8640, 44640]           # Ebbinghaus 1885 节省分数
 EBB_P = [0.582, 0.442, 0.358, 0.337, 0.278, 0.254, 0.211]
 
-ROOT = "/home/z/my-project"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(ROOT, "scripts", "results")
-FIG_DIR = os.path.join(ROOT, "download", "figures")
+FIG_DIR = os.path.join(ROOT, "docs", "figures")
 OUT_JSON = os.path.join(RESULTS_DIR, "exp7.json")
 OUT_PNG = os.path.join(FIG_DIR, "exp7_遗忘曲线.png")
 

@@ -62,5 +62,5 @@ ax.grid(alpha=0.3, axis='y')
 
 fig.suptitle('实验 21：重逢语气全链——间隔惊讶→情感状态→槽位竞争→问候与语气（零场景 if-else）',
              fontsize=12.5, y=1.05)
-fig.savefig('/home/z/my-project/download/figures/exp21_重逢语气.png')
+fig.savefig('docs/figures/exp21_重逢语气.png')
 print('saved')

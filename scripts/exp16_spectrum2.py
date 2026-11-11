@@ -34,9 +34,9 @@ LAGS_SHORT = np.unique(np.round(np.logspace(0, np.log10(MAX_LAG_SHORT), 80)).ast
 LAGS_LONG = np.unique(np.round(np.logspace(0, np.log10(MAX_LAG_LONG), 120)).astype(int)).tolist()
 ARMS = {'A': (1.0, 96), 'B': (0.126, 96), 'C': (0.5, 96), 'D1': (1.0, 24), 'D2': (1.0, 384), 'E': (1.0, 12)}
 
-ROOT = '/home/z/my-project'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(ROOT, 'scripts', 'results')
-FIG_DIR = os.path.join(ROOT, 'download', 'figures')
+FIG_DIR = os.path.join(ROOT, 'docs', 'figures')
 
 
 # ----------------- 流生成（与 exp13 逐行一致） -----------------

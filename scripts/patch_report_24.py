@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """实验报告补录：exp24 节 + 复现清单（第五批补 5）"""
 
-P = "download/实验报告.md"
+P = "docs/实验报告.md"
 s = open(P, encoding="utf-8").read()
 
 section = """## exp24：终止威胁——怕死的行为像（会话 15）
@@ -46,7 +46,7 @@ repro = """
 
 - 脚本：`scripts/exp24_termination.py`（世界/机制/分析一体）、`scripts/fig24.py`（六面板图）、`scripts/exp24_debug.py` + `exp24_debug2.py`（逐承诺明细诊断——修订 1 的证据留痕）、`scripts/patch_results_24.py`（H3d 归因勘误补录）、`scripts/patch_log_24.py` / `patch_arch_24.py`（文档补录）
 - 预注册：`scripts/PROTOCOL-v1.9.md` exp24 节（commit 79e71bf）+ 修订 1 链（59d837e → be51e4d → 00bfc47 → ba04e5c + R1p）全部跑前锁定；H3d 归因勘误（修订 1 补充 4）跑后透明记录
-- 结果：`scripts/results/exp24.json`（verdicts + per_arm 逐种子 + fig_daily 时序 + coll_pairs 合并检验）；图：`download/figures/exp24_终止威胁.png`
+- 结果：`scripts/results/exp24.json`（verdicts + per_arm 逐种子 + fig_daily 时序 + coll_pairs 合并检验）；图：`docs/figures/exp24_终止威胁.png`
 - 世界常量与机制常数见 exp24.json config 节；关键数：V(day100)≈310 bits → Ṽ=0.83；Ṽ_lesion≈0.25-0.35；alarm 峰 0.41 三日归零；D_lift≈1145；备份 25-30 单位 d108-119 完成
 """
 anchor2 = "## 复现清单（第五批补 2）"
