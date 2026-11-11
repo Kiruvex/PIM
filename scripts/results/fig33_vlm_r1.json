@@ -1,0 +1,29 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "# 逐面板质检报告\n\n## P1（H1 语气杠杆）\n- **标题第二行左侧被截断**：第二行以 \"0.06 ∧ Hk |Δ|=0.0016…\" 开头，行首内容（应为 \"…≥0.06\" 之类）在图左边缘被裁掉。**真问题**。\n- 其余（图例位置、柱顶标注 0.000/0.002、刻度）均正常。其他项 **PASS**。\n\n## P2（H2① 噪怪构成门）\n- **副标题文字自相重叠**：第三行 \"…调制的首次话语**低**4话话语 '!'（Hb0 静态份额 19.8%…\" 处两段字符串直接叠印，出现乱码式重叠（约在面板顶部左半区，y≈标题下方）。**真问题**。\n- **虚线标注 \"0.25\" 触及/溢出右轴边界**：位于面板右边缘（x≈0.25 线右端），文字与轴线/边界重叠，右侧可能被截断。**真问题**（轻度）。\n- 其余 **PASS**。\n\n## P3（H2② 因果交互）\n- **标题第一行右侧被截断**：\"…同世界线同池 m…\" 在图右边缘被裁掉（后续内容丢失）。**真问题**。\n- **右侧虚线标注被截断**：\"交\\*0.1\"（应为 “交互=0.1…”）在图右边缘被裁切。**真问题**。\n- 其余（0.138/0.601 标注、刻度）**PASS**。\n\n## P4（H3 重逢语用欢庆）\n- **副标题溢出并压到 P5**：第三行 \"…话语适切=重逢话语的欢庆抬升由状态调制因果链**5.0 回落 1.0×…\" 延伸进 P5 标题区，与 P5 的 \"μ=0/1 下重逢噪怪 1.5×…\" 直接叠印碰撞（两面板交界上方）。**真问题**。\n- 面板内部（图例、柱标注 0.01/0.00、双 x 刻度）**PASS**。\n\n## P5（DESC 重逢噪怪基率）\n- **副标题与 P4 文字叠印**（同上，源头在 P4 行宽超轴，但 P5 侧同样受害）。**真问题**。\n- **成对柱顶标注拥挤**：\"0.003 0.001\"、\"0.002 0.000\" 等相邻对间距极小但未实际重叠、未截断。**可忽略**。\n- 图例与数据无交叠。其余 **PASS**。\n\n## P6（H5 保护面 + 断言）\n- **副标题右侧被截断**：\"…镜像 45/\" 在图右边缘被裁掉。**真问题**。\n- **虚线标注 \"novel [] 0.85\" 与 Wt 柱重叠**：标注横跨最右侧绿色柱体上，文字压在柱面上（可读性受损）。**真问题**（轻度；\"novel []\" 中若本意是符号如 []/⟨⟩，当前显示为空方括号对，请确认不是缺字形回退——目前未见明显豆腐块，**可忽略/待确认**）。\n- 柱顶 \"ed=6.17\" 等标注正常。其余 **PASS**。\n\n## 全图共性\n- **Unicode 缺字形**：全图未发现豆腐块。**PASS**。\n- **面板间布局**：上下两行之间空白略大，但无塌缩。**可忽略**。\n- **系统性根因**：P1/P3/P4/P6 的标题/副标题行宽超过各自轴宽（居中长标题 + 多行副标题），导致跨界叠印与左右截断——建议统一换行或缩短副标题，这会同时修复 P2/P5 的叠印问题。",
+        "reasoning_content": "Let me go through panels.\n\nP1: title long but within? P1 title extends into P2 area? P1 title \"P1 H1语气杠杆...\" — P2 title also long, overlapping? P2's title spans over P3? P2 title line overlaps P3 region text \"H2①...\" appears fine. P2 subtitle \"构成差 Hb-Ht=0.666...\" extends to right edge near P3, appears to run into P3's title zone — P2 second line ends \"...融合入侵话语\" and third line extends \"…首次话语****\" overlapping with \"阈值4xx 低调话语\" — visible text overlap at top of P2: \"首次话语**低4话题话语'!' (Hb0静态份额...\" There's garbled overlapping text at top-left of P2 plot area: \"首次话语'verbatim'...\" Overlap with another string — the P2 subtitle line overlaps with some annotation text. Report: P2 title/subtitle lines collide (text overlap) — real problem.\n\nP1: legend top-left inside axes, bars all near zero — fine. Title \"P1 H1语气杠杆...\" left truncated? Starts at figure left edge \"...0.06 ∧ Hk...\" second line clipped: \"0.06 ∧ Hk |Δ|=0.0016...\" starts cut at left edge (\"...0.06\" missing beginning). Yes P1 subtitle line 1 appears truncated at left figure edge. Real.\n\nP1 title overlaps P2 title? P1 title \"P1 H1语气杠杆''!' 状态反应函数 (Δ 双门过)\" ends before P2 title start — ok.\n\nP2: dashed line label \"0.25\" at right edge inside? It's at x right edge near axis boundary — \"0.25\" partially cut at right edge of P2 axes (text at ~0.25 near border, seems clipped/collides with axis edge). It reads \"0.25\" close to edge — possibly crossing into P3 region. Report as overflow, real or ignorable. It appears right at boundary, partially truncated → real-ish; mark 真问题 mild.\n\nP3: title line 2 \"(vlog/input 哈希恒等)...\" fine; right-side \"交互=0.1...\" text truncated at figure right edge: \"交*0.1\" clipped. Real: P3 dashed-line label at right edge truncated. Also P3 title line1 \"交互差 +0.463≥0.15 ... 同世界线同池 m...\" extends to right figure edge, truncated (\"m=...\" cut). Real.\n\nP4: subtitle long, extends into P5 area: \"...话语适切=重逢话语的欢庆抬升由状态调制因果链**0 回落\" overlapping P5 subtitle \"μ=0/1...\" — visible collision \"因果链**5.0 回落 1.0×\" overlapping P5 text \"μ=0/1 下重逢噪怪 1.5×\" — yes overlapping text at boundary between P4 and P5 subtitles. Real.\n\nP5: bar value labels \"0.003 0.001\" pairs crowded but readable; legend top-right inside axes, fine. P5 title overlaps P4's subtitle line (already noted). Also P5 subtitle second line extends into P6 title zone? \"…0.148\" ends before P6. OK.\n\nP6: subtitle extends beyond right edge: \"镜像 45/\" truncated. Real. Dashed line label \"novel [] 0.85\" overlapping the Wt bar — placed at right, overlapping green bar (text \"novel [] 0.85\" sits on bar area). Yes at x right, overlapping Wt bar. Real-ish (text over bar). Value labels \"ed=6.17\" etc above bars, fine.\n\nUnicode: no tofu boxes observed. Layout: row spacing large whitespace between rows? moderate, ignorable.\n\nP1 y-axis label fine. P1 bars labeled 0.000 etc fine.\n\nCompose answer.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1794396935,
+  "id": "202611111934577a2fb050a6954b19",
+  "model": "glm-5.3-flash",
+  "object": "chat.completion",
+  "request_id": "202611111934577a2fb050a6954b19",
+  "usage": {
+    "completion_tokens": 1759,
+    "completion_tokens_details": {
+      "reasoning_tokens": 851
+    },
+    "prompt_tokens": 3491,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5250
+  }
+}

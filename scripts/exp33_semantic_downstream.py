@@ -716,11 +716,15 @@ def smoke_33(books, entities):
     # phi1=0 此两帧 ⇒ m=0 ⇒ μ=0 权重恰等于 w0（跨状态严格相等）
     flat_ok = w1a == w1b == w1c and w2a == w2b == w2c and \
         abs(w1a - f1.w0) < 1e-12 and abs(w2a - f2.w0) < 1e-12
-    # 反例（μ≠0 时状态相关——杠杆真的在动）：
+    # 反例（μ≠0 时状态相关——杠杆真的在动）：用 phi0>0 帧（(goodbye,!) 型）——
+    # phi 全零帧 m_state≡0 在任何 μ 下都平坦（不构成反例——断言层帧选择修正）
+    fe = e27.Frame((wid("goodbye"),), (EXCL_W,)); fe.fills[(wid("dear"),)] = 25
+    fe.finalize(); fe.ctxs = {"teach"}
     g.mu = 10.0
-    w1d = g._w_lever(f1, 0.1, 0.1, 0.3); w1e = g._w_lever(f1, 0.9, 0.9, 0.3)
-    live_ok = w1d != w1e
-    print(f"[M1-2 mu=0 flat] w 跨状态严格相等({flat_ok}) [μ=10 反例状态相关({live_ok})] "
+    we_d = g._w_lever(fe, 0.1, 0.1, 0.3); we_e = g._w_lever(fe, 0.9, 0.9, 0.3)
+    live_ok = we_d != we_e
+    print(f"[M1-2 mu=0 flat] w 跨状态严格相等({flat_ok}) "
+          f"[μ=10 反例状态相关({live_ok}: {we_d:.3f}→{we_e:.3f})] "
           f"w1={w1a:.6f} 恒定")
     if not (flat_ok and live_ok):
         ok = False; print("  M1-2 GATE FAIL")
@@ -744,11 +748,15 @@ def smoke_33(books, entities):
     mono = True
     p0 = None
     for v in (0.30, 0.45, 0.60):
-        gb.usage = Counter()
+        # 按 metas key 计数（usage 键=A——孿生 (where,!)/(where,?) 共 A 会合并计数）
+        cnt = Counter()
         rng2 = random.Random(11)
         for _ in range(4000):
-            gb.generate(rng2, [], v, 0.05, kap, style)
-        nb = gb.usage[fb.A]; nq = gb.usage[fq.A]; nn = gb.usage[fn.A]
+            gen = gb.generate(rng2, [], v, 0.05, kap, style)
+            if gen:
+                for m in gen[1]:
+                    cnt[m["key"]] += 1
+        nb = cnt[(fb.A, fb.B)]; nq = cnt[(fq.A, fq.B)]; nn = cnt[(fn.A, fn.B)]
         pb_ = nb/(nb+nq+nn)
         wb = LAM*gb._w_lever(fb, v, 0.05, kap)
         wq = LAM*gb._w_lever(fq, v, 0.05, kap)
@@ -805,10 +813,10 @@ def smoke_33(books, entities):
         ok = False; print("  M1-5 GATE FAIL")
     # (6) M1-6 量器粒度-门值距离表
     print("[M1-6 quantum] excl_rate 池化粒度 1/Σsel≈1/7000 连续 vs 门 %.3f ✓；"
-          "p(blend|chide) 粒度 1/Σchide≈1/300 连续 vs 门 %.3f ✓；"
-          "utt pos 粒度 1/765 vs 门 %.3f≈6 句差 ✓；novel 粒度 ~1/42 vs 门 0.85（至多退 6 句）✓；"
+          "p(blend|chide) 粒度 1/Σchide≈1/930 连续 vs 门 %.3f ✓；"
+          "utt pos 粒度 1/765 vs 门 %.3f≈4 句差 ✓；novel 粒度 ~1/42 vs 门 0.85（至多退 6 句）✓；"
           "reg90 粒度 0.25 vs 门 1.00 满值 ✓；chide_anch 整数 vs 门 3 ✓" %
-          (GATES33["h1"], GATES33["h2"], GATES33["h3"]))
+          (GATES33["h1"], GATES33["h2_int"], GATES33["h3"]))
     print("M1 GATE:", "PASS" if ok else "FAIL")
     return ok
 
