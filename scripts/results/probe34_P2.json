@@ -1,0 +1,330 @@
+{
+ "gamma": 3.0,
+ "rows": [
+  {
+   "arm": "Wrs",
+   "gamma_rs": 3.0,
+   "tmode": "cond",
+   "cmode": "fixed",
+   "rs_events": 230,
+   "rs_share": 0.11291114383897889,
+   "dial_multi": 81,
+   "ms_events": 62,
+   "t_events": 9,
+   "t_att": 9,
+   "t_att_rate": 1.0,
+   "recomb": 0,
+   "fam_events": 94,
+   "n_mframes": 200,
+   "n_tframes": 11,
+   "n_frames": 4383,
+   "novel": 1.0,
+   "ed": 5.478260869565218,
+   "cover": 1.0,
+   "p90": 1.0,
+   "reg90": 1.0,
+   "vlog_hash": 161158357788665,
+   "input_hash": 202124558373330
+  },
+  {
+   "arm": "Wrc",
+   "gamma_rs": 3.0,
+   "tmode": "ind",
+   "cmode": "fixed",
+   "rs_events": 230,
+   "rs_share": 0.11291114383897889,
+   "dial_multi": 81,
+   "ms_events": 62,
+   "t_events": 9,
+   "t_att": 2,
+   "t_att_rate": 0.2222222222222222,
+   "recomb": 0,
+   "fam_events": 94,
+   "n_mframes": 200,
+   "n_tframes": 11,
+   "n_frames": 4383,
+   "novel": 1.0,
+   "ed": 5.478260869565218,
+   "cover": 1.0,
+   "p90": 1.0,
+   "reg90": 1.0,
+   "vlog_hash": 161158357788665,
+   "input_hash": 202124558373330
+  },
+  {
+   "arm": "Wrg",
+   "gamma_rs": 3.0,
+   "tmode": "cond",
+   "cmode": "slot",
+   "rs_events": 230,
+   "rs_share": 0.11291114383897889,
+   "dial_multi": 81,
+   "ms_events": 62,
+   "t_events": 9,
+   "t_att": 9,
+   "t_att_rate": 1.0,
+   "recomb": 56,
+   "fam_events": 94,
+   "n_mframes": 200,
+   "n_tframes": 11,
+   "n_frames": 4383,
+   "novel": 1.0,
+   "ed": 5.608695652173913,
+   "cover": 1.0,
+   "p90": 1.0,
+   "reg90": 1.0,
+   "vlog_hash": 161158357788665,
+   "input_hash": 202124558373330
+  }
+ ],
+ "hash_eq": {
+  "rc": {
+   "vlog": true,
+   "input": true,
+   "rng": true,
+   "rs_ev": true
+  },
+  "rg": {
+   "vlog": true,
+   "input": true,
+   "rng": true,
+   "rs_ev": true
+  }
+ },
+ "famwin": {
+  "win": 2,
+  "n": 12,
+  "rate": 0.16666666666666666
+ },
+ "fam_preview": [
+  {
+   "key": [
+    ",",
+    ","
+   ],
+   "n": 11,
+   "members": {
+    "the": 9,
+    ",": 52,
+    "to": 4,
+    "s": 5,
+    ", and": 5,
+    "and": 12,
+    "or": 6
+   },
+   "gen": {
+    "75": 2,
+    "107": 9
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    ".",
+    "."
+   ],
+   "n": 7,
+   "members": {
+    ".": 11,
+    "s": 7
+   },
+   "gen": {
+    "153": 1,
+    "102": 6
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    "the",
+    "."
+   ],
+   "n": 10,
+   "members": {
+    "was": 21,
+    "of": 34,
+    "s": 11,
+    "is": 4,
+    "of the": 14,
+    "to": 6,
+    "of a": 4,
+    "of his": 5
+   },
+   "gen": {
+    "204": 1,
+    "79": 5,
+    "153": 2,
+    "(79, 75)": 2
+   },
+   "tv_emp": 0.859,
+   "tv_uni": 0.875
+  },
+  {
+   "key": [
+    "the",
+    ","
+   ],
+   "n": 6,
+   "members": {
+    "of": 18,
+    "and": 4,
+    ",": 8
+   },
+   "gen": {
+    "79": 3,
+    "107": 3
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    "of",
+    ","
+   ],
+   "n": 5,
+   "members": {
+    ",": 10,
+    "and": 13
+   },
+   "gen": {
+    "107": 3,
+    "25": 2
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    "to the",
+    "."
+   ],
+   "n": 8,
+   "members": {
+    "of": 5,
+    "of the": 6
+   },
+   "gen": {
+    "(79, 75)": 6,
+    "79": 2
+   },
+   "tv_emp": 0.455,
+   "tv_uni": 0.5
+  },
+  {
+   "key": [
+    "to",
+    "."
+   ],
+   "n": 7,
+   "members": {
+    "my": 4,
+    "her": 5,
+    "the": 17,
+    "his": 13,
+    "and": 8,
+    "your": 5,
+    "at": 5,
+    "a": 7
+   },
+   "gen": {
+    "75": 2,
+    "25": 2,
+    "639": 1,
+    "209": 2
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    "s",
+    "."
+   ],
+   "n": 4,
+   "members": {
+    "and": 5,
+    "of": 5
+   },
+   "gen": {
+    "25": 2,
+    "79": 2
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    ",",
+    "."
+   ],
+   "n": 5,
+   "members": {
+    ",": 4,
+    "the": 11,
+    "her": 5,
+    "or": 10,
+    ", and": 13
+   },
+   "gen": {
+    "110": 3,
+    "75": 2
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    "a",
+    "a"
+   ],
+   "n": 4,
+   "members": {
+    ",": 5,
+    "or": 7
+   },
+   "gen": {
+    "107": 2,
+    "110": 2
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    "a",
+    "."
+   ],
+   "n": 4,
+   "members": {
+    "of": 20,
+    "in": 6,
+    "and a": 4
+   },
+   "gen": {
+    "79": 1,
+    "82": 3
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  },
+  {
+   "key": [
+    ",",
+    "or"
+   ],
+   "n": 3,
+   "members": {
+    "of": 4,
+    ",": 11
+   },
+   "gen": {
+    "107": 3
+   },
+   "tv_emp": 1.0,
+   "tv_uni": 1.0
+  }
+ ]
+}
