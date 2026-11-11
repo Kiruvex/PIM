@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp32 多槽文法层（PROTOCOL-v2.6.md 预注册，判定跑前锁定）。
 
 v1.8 公开问题 12 剩余两项 + exp17 原型遗留：②动词/副词槽（A_mB 单槽→

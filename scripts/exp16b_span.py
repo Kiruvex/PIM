@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验16b（v1.8 修订 1 确认臂 C'）：谱跨距扩展检验 C2' 可显现条件。
 预注册：scripts/PROTOCOL-v1.8.md §修订1（先公布后跑）。

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp32 归因审计（纯读 JSON 零重跑——exp29/30/31 惯例）。
 
 A1 ②形成-使用链分解：课程剂量（261 会话）→ 吸收冻结（pairs 种子二模态）→

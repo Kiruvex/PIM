@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp20 图：缺席惊讶——重逢惊讶曲线 + 等待成本/累积账"""
 import json
 import matplotlib

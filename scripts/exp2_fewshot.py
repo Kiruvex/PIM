@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验2（预注册协议 #2）：文法层 few-shot 分类 —— gzip-kNN vs 文法诱导+压缩
 ================================================================================

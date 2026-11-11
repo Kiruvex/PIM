@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp25 图：气质分化——同一架构九种性格（六面板）
 (a) 特征热图（z 剖面）      (b) η 轴：社交面强 vs 内容面弱
 (c) β 轴：依恋增益曲线       (d) λ 轴：假威胁消退谱

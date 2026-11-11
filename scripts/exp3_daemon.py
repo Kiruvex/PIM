@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-only
 """实验3：daemon 常驻（压缩时间模拟 6 个"模拟日"）。
 通道混合：模板句(世界语言) + 自然文本(阅读) + 第3日起注入新模因 QK####QK(听觉motif) + 第5日事件风暴(高熵事件)。
 验证：(i)逐4KB滚动bpc 学习曲线 (ii)风暴段预测不缺席(bpc有限<8) (iii)模因首现惊讶尖峰→衰减"""

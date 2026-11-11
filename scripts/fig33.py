@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """fig33：exp33 语义层下游效应（6 面板）。数据=results/exp33.json。内置两道自检
 （fig28 防回归装置）：tight_layout 后轴高≥0.30 断言 + 存图后空白带<25% 断言。
 布局纪律：判读信息一律并入多行标题；suptitle ≤13pt；图例对照数据终值逐一避让。"""

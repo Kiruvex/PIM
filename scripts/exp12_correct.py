@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验12（v1.7 议题 V1，旗舰）：词形/结构惊讶分离 + 纠正剂量扫描 → 公开问题 12。
 预注册：scripts/PROTOCOL-v1.7.md §V1（先公布后跑）。

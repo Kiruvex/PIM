@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp27 关键期与课程密度（PROTOCOL-v2.1.md 预注册，commit 812c58c 判定跑前锁定）。
 
 装置：E1 生成层与 exp26 逐位相同；E2 教师期剂量参数化（长度 365/180/90/0 × 密度

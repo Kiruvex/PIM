@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验4B：奇偶长度外推（程序归纳 vs 统计基线）—— PIM 项目 T4
 

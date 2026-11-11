@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """fig32：exp32 多槽文法层（6 面板）。数据=results/exp32.json + probe32_P2.json
 （γ 扫描）+ probe32_vocab.json。内置两道自检（fig28 防回归装置）：tight_layout
 后轴高≥0.30 断言 + 存图后空白带<25% 断言。布局纪律：判读信息一律并入多行标题；

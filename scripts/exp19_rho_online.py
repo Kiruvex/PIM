@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验19（v1.8 议题 W4）：逃逸链 ρ 在线估计。
 预注册：scripts/PROTOCOL-v1.8.md §W4（先公布后跑）。

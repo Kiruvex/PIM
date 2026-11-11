@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """audit34：exp34 多槽扩展面审计（纯读 JSON 零重跑）。
 
 断面：判定总表 / 形成-使用链 / 剂量-响应配对 / 模式对零外溢 / H3 归因注记

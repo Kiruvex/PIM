@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-only
 """汇总作图：实验 1/5/9/10/3（子代理的图已各自生成）"""
 import json, matplotlib
 matplotlib.use('Agg')

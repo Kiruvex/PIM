@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 exp22：依恋挤占——"想念"的行为像（心智游移内容偏好 / DMN 对应）
 预注册：scripts/PROTOCOL-v1.9.md（exp22 节，commit f631c10 跑前锁定）

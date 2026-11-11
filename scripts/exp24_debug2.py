@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp24 诊断 2：终局分配明细 + 塌缩集去向（种子 0-4）"""
 import sys
 sys.path.insert(0, "scripts")

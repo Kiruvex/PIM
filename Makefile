@@ -8,7 +8,7 @@ CTW = scripts/ctw
 all: ctw
 
 ctw:
-	$(CC) $(CFLAGS) -o $(CTW) scripts/ctw.c
+	$(CC) $(CFLAGS) -o $(CTW) scripts/ctw.c -lm
 
 smoke: ctw
 	@echo "--- CTW 自检：alice 前 1MB 深度 16 ---"

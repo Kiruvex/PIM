@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp29 教师风格×课程结构（PROTOCOL-v2.3.md 预注册，commit 14e295f 判定跑前锁定）。
 
 装置：E1 生成层零改动（import exp27_critical 原样复用）；E2 课程引擎四句库

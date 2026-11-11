@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp30 FAIL 项归因审计（预注册归因面：H4→逐种子配对+dip_mean；H5→三道门分解
 [结构面/流量面/观测面]；H6→重逢机制）。只读 exp30.json + partials，零重跑。"""
 import json

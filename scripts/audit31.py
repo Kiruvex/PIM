@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp31 归因审计（纯读 JSON 零重跑——exp29/30 惯例）。
 
 A1 H2 机制链分解：静态物理（s_w/f_chide_w）→ 累积流量（dial_cum/chide_usage）

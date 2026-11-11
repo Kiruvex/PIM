@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-only
 """实验5：发育曲线（固定材料）。训练前缀逐级增长，固定早期 held-out 段的 bpc 应单调下降。
 moby: S1=[64K,80K) 永不训练；训练级（实际数据量，跳过S1）: 64K,96K,128K,192K,256K,384K,512K
 对照：S2=[496K,512K)（晚期段，同协议）+ 首遇惊讶（"当时的记录"）。"""

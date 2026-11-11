@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """补录工作日志：会话 12 追加 exp21；实验报告追加 exp21 复卷"""
 
 # ---------- 工作日志 ----------

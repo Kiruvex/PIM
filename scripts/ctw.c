@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
 /* ctw.c — 二进制 Context Tree Weighting 引擎（PIM 实验核心）
  * 精确贝叶斯混合：P_w(s) = 1/2 [ P_e(s) + P_w(s0)·P_w(s1) ]，叶=P_e(KT估计)
  * log2 域存储防下溢；预测 = 虚拟更新两种比特延伸取 softmax。

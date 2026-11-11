@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验4C：one-shot 新词组合复用（组合归纳 vs 最近邻）—— PIM 项目 T4
 

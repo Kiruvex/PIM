@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验13（v1.7 议题 V2）：谱稠密化——楼梯消除与 β=γ 收敛 → 公开问题 13。
 预注册：scripts/PROTOCOL-v1.7.md §V2（先公布后跑）。

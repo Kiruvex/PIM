@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """工作日志补录 exp23（会话 13 条目 + 状态行更新）——按短锚点做精确替换，每处断言命中唯一"""
 import io
 

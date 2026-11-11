@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp30 内容面通路修复（PROTOCOL-v2.4.md 预注册，判定跑前锁定）。
 
 装置：E1 生成层零改动（import exp27_critical/exp29_teacher_style 原样复用）；

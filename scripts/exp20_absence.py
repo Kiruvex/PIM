@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 exp20：缺席惊讶——"你好长时间没来了"的信号层内生涌现
 预注册：scripts/PROTOCOL-v1.9.md

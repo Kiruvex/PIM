@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-only
 """实验10：听课测试（v1.5 受教学习旗舰实验）。
 4 臂：frozen(冻结) / ungated(无r_s全盘接受) / full(r_s门控+悬置+验证提升) / full-no-rehearsal(无睡眠排练)
 阶段：基础语料 → 基线探测 → 授课(逐条，验证交错) → 探针1 → 验证+提升/纠正 → 探针2 → 干扰96KB → 探针3 → 睡眠排练×3 → 探针4

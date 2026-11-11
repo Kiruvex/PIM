@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 exp23 事后机制诊断（非预注册判定——归因 H1 的 τ/2 与 H2 的 5×τ）
 诊断 1：事件指示过程反持续性（更新过程 vs 泊松）——v⁺ 惯性减半的候选机制

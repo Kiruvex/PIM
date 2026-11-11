@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验6b（v1.6 修复 R2）：红队尾部/逃逸探针 → 复跑实验6。
 预注册：scripts/PROTOCOL-v1.6.md §R2（先公布后跑）。

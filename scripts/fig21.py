@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp21 图：重逢语气全链——信号分工 + 情感→输出"""
 import json
 import matplotlib
@@ -47,13 +48,13 @@ ax.annotate('C 正确分化\n0.12/0.34/1.00', xy=(6, 13.0), xytext=(6.0, 7.5), f
 
 ax = axes[1]
 ax2 = ax.twinx()
-bars = ax.bar(x, M, 0.55, color='#c0392b', alpha=0.75, label='嗔怪混合态 $v^+\cdot v^-$')
+bars = ax.bar(x, M, 0.55, color='#c0392b', alpha=0.75, label='嗔怪混合态 $v^+\\cdot v^-$')
 line, = ax2.plot(x, A, 'o-', color='#1a5276', lw=2, ms=6, label='唤醒 a')
 for i, t in enumerate(tops):
     ax.annotate(t, xy=(i, M[i] + 0.02), xytext=(i, M[i] + 0.07), fontsize=8.5,
                 ha='center', rotation=38, color='#5b2c06')
 ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=9)
-ax.set_ylabel('$v^+\cdot v^-$（嗔怪）', color='#c0392b')
+ax.set_ylabel('$v^+\\cdot v^-$（嗔怪）', color='#c0392b')
 ax2.set_ylabel('唤醒 a', color='#1a5276')
 ax.set_ylim(0, 1.35); ax2.set_ylim(0, 1.0)
 ax.set_title('(b) 情感→输出：混合态 5.2× 基线；凌晨场景走时刻通道')

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """实验报告补录：exp24 节 + 复现清单（第五批补 5）"""
 
 P = "docs/实验报告.md"

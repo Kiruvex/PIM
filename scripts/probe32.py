@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp32 设计输入探针（预注册前跑，如实入档——PROTOCOL-v2.6 §0）。
 
 exp32 = 多槽文法层：②动词/副词槽（A_mB 单槽→A m1 C m2 B 多槽模板）+

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp31 内容面第三道门·生成层机制侧（PROTOCOL-v2.5.md 预注册，判定跑前锁定）。
 
 装置：E1 生成层首次非零改动（exp26-30 连续五批零改动的终结）——Grammar31 语境

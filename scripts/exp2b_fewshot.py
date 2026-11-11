@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 实验2b（v1.6 修复 R6）：文法层加拷贝/绑定原语（程序层替身）→ 复跑实验2。
 预注册：scripts/PROTOCOL-v1.6.md §R6（先公布后跑）。

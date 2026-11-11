@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 exp22c：对象相对定标——想念是相对对象自身节律的偏离（v1.9.1 规格修订验证）
 预注册：scripts/PROTOCOL-v1.9.md（exp22c 节，commit 8d444f6 跑前锁定）

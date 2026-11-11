@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp31 设计输入探针（预注册前跑，如实入档——PROTOCOL-v2.5 §0）。
 
 P0（零成本）：exp30.json 基线物理（门 3 断点数字复核）。

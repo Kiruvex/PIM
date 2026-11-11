@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """fig31：exp31 内容面第三道门·生成层机制侧（6 面板）。数据=results/exp31.json
 + probe31.json（λ 扫描）。内置两道自检（fig28 防回归装置）：tight_layout 后
 轴高≥0.30 断言 + 存图后空白带<25% 断言。布局纪律：判读信息一律并入多行标题；

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp33 语义层下游效应（PROTOCOL-v2.7.md 预注册，判定跑前锁定）。
 
 动机=exp31 范围声明的遗留（门 3 打开后的下游语义效应不在 exp31 批）：

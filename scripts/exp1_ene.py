@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-only
 """实验1：等能耗在线 bpc 对比。沙盒级：256KB 测试段，CPU 时间×65W 为能量代理。
 基线：CTW(自研C) / PPM-D(Python) / gzip9 / xz9e / brotli11 / 字符MLP(torch本地训练)
 GPT-2-small：沙盒不可部署（PyPI/HF 均不可达），以解析估算行呈现并明确标注。"""

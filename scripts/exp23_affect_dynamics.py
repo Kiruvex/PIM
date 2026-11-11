@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 exp23：情感动态——(v,a) 惯性的人类对照
 预注册：scripts/PROTOCOL-v1.9.md（exp23 节，commit 8609ec6 跑前锁定）

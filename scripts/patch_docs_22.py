@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """exp22/22b 文档补录：实验报告节 + 工作日志会话14 + 架构文档三处 patch"""
 
 REPORT = """

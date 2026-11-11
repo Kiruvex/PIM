@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: AGPL-3.0-only
 """
 exp22b：存量账本——长缺席"想念"的慢性通道
 预注册：scripts/PROTOCOL-v1.9.md（exp22b 节，commit 05c688f 跑前锁定）

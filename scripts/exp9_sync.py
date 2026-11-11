@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-only
 """实验9：双机同步（承诺-揭示 + 压缩包外交）。
 A=CTW(austen前256K), B=CTW(sherlock前256K)。probe = austen[256K:288K)（A的"未来输出"）。
 1) A 预承诺其对 probe 的预测哈希（SHA256 of 惊讶向量）
