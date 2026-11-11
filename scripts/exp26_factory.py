@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp26 出厂验收批（v2.0 发育批）——E1-E5 装置，H0-H8 判定。
 
 预注册：scripts/PROTOCOL-v2.0.md（commit 5025580，判定跑前锁定）。

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """实验3b（v1.6 修复 R1）：逃逸编码 = 模型级混合先验底 → 复跑实验3 风暴段。
 预注册：scripts/PROTOCOL-v1.6.md §R1（先公布后跑）。
 组件：{CTW-D24(引擎原样), 快速单字(指数窗 ρ=0.999, KT-0.5 平滑), 均匀 1/256}

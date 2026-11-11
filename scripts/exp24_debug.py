@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp24 诊断：承诺明细（full_late vs ctrl 种子 0）+ 各种子 comp/塌缩集"""
 import sys
 sys.path.insert(0, "scripts")

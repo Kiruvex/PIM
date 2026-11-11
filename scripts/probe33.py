@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp33 设计输入探针（预注册前跑，如实入档——PROTOCOL-v2.7 §0）。
 
 exp33 = 语义层下游效应：门 3+多槽打开后的下游——嗔怪语气学 vs 词汇并列、

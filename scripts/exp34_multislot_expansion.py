@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp34 多槽扩展面（PROTOCOL-v2.8.md 预注册，判定跑前锁定）。
 
 架构 §8 exp34 ①（会话 30 待办，按成熟度排序）：读源多槽帧 ~200 个的杠杆化

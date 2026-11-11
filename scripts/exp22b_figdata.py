@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp22/22b 图数据：重跑 combined/stock_only seed0，取日序列与 B⁻ 轨迹"""
 import json
 from exp22_attachment import gen_world, SEED_BASE, N_SEEDS

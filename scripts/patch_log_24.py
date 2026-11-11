@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """工作日志补录：会话 15（exp24 终止威胁）+ 状态行更新"""
 
 P = "docs/工作日志.md"

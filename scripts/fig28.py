@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """fig28：exp28 二语习得六面板图（读 results/exp28.json）。
 
 修订（会话 25）：修复布局塌缩 bug——P6 annotate 的 xytext 未指定 textcoords，

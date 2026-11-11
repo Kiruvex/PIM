@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 exp21：重逢语气——间隔惊讶→情感状态→生成槽位竞争的全链演示
 预注册：scripts/PROTOCOL-v1.9.md（exp21 节）

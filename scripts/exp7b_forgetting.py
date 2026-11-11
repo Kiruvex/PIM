@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验7b（v1.6 修复 R4）：S_ji 多时间尺度 → 复跑实验7。
 预注册：scripts/PROTOCOL-v1.6.md §R4（先公布后跑）。

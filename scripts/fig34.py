@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """fig34：exp34 多槽扩展面（6 面板）。数据=results/exp34.json + probe34_P0/P1。
 内置三道自检（fig28 防回归装置 + fig33 行宽实测升级为内嵌）：tight_layout 后
 轴高≥0.30 断言 + 存图后空白带<25% 断言 + 渲染器逐行实测标题行宽≤轴宽断言。

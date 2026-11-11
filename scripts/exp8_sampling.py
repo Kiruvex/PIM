@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验8 [T8]: 混合采样一致性 —— 沙盒级模拟证据
 ================================================================

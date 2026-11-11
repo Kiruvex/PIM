@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """fig27：exp27 关键期与课程密度六面板图（读 results/exp27.json）。"""
 import json
 from pathlib import Path

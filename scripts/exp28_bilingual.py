@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp28 二语习得（PROTOCOL-v2.2.md 预注册，commit 71a9c2d 判定跑前锁定）。
 
 装置：E1 生成层零改动（import exp27_critical 原样复用）；L2=中文字级 wid

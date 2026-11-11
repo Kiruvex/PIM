@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验18（v1.8 议题 W3）：尾部信号复判与哨兵重设计。
 预注册：scripts/PROTOCOL-v1.8.md §W3（先公布后跑）。

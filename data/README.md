@@ -9,4 +9,4 @@
 | `xiyouji.txt` | 西游记（Project Gutenberg #23962 单卷，417 KB） | exp28 二语习得（L2=中文字级 wid，MDL 自发现词） |
 
 全部文本取自 Project Gutenberg 所列公版书（美国公有领域），语料保持公有领域状态；
-与语料所载作品相关的权利不随本仓库许可（AGPL-3.0，见根目录 `LICENSE`）发生任何变化。
+与语料所载作品相关的权利不随本仓库许可（AGPL-3.0-or-later，见根目录 `LICENSE`）发生任何变化。

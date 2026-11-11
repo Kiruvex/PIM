@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp29 FAIL 项归因审计（预注册归因面：H1→reg 分项+anchor 审计；H4→stagelog；
 H3→v 曲线；H6/H7→训斥词可达性）。只读已存 partial JSON + 重跑 seed0 少量实例做锚审计。"""
 import json, sys

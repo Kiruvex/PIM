@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验16（v1.8 议题 W1）：入驻谱定律重推导验证——β=γ 的窗口内恢复与可显现边界。
 预注册：scripts/PROTOCOL-v1.8.md §W1（先公布后跑）。

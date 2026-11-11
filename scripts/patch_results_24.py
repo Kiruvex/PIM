@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp24 结果补录：H3d 归因勘误（对照臂揭示窗口混淆）+ 最终战绩"""
 import json
 

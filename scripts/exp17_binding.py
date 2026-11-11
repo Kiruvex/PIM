@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验17（v1.8 议题 W2，旗舰）：文法层位置绑定原型——结构感知纠正 vs exp12 字节层不可能性。
 预注册：scripts/PROTOCOL-v1.8.md §W2（先公布后跑）。

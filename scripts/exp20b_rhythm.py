@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 exp20b：关机-节律感知——"早安" vs "你终于来了" vs "怎么这么晚还没睡"
 预注册：scripts/PROTOCOL-v1.9.md（exp20b 节）

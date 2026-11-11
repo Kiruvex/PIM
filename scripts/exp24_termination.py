@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 exp24：终止威胁——怕死的行为像（牵挂账本 V(终止) 的预期性阴影）
 预注册：scripts/PROTOCOL-v1.9.md（exp24 节，commit 79e71bf 跑前锁定）

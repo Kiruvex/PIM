@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp34 设计输入探针（预注册前跑，如实入档——PROTOCOL-v2.8 §0）。
 
 exp34 = 多槽扩展面（架构 §8 ①）：读源多槽帧 ~200 杠杆化（书语文法结构进入

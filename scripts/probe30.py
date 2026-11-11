@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp30 设计输入探针（预注册前跑，如实入档——PROTOCOL-v2.4.md §0）。
 
 P0: exp29 partials 配对 dip 分析（H4 复测先验）——已跑，结果入协议。

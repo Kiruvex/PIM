@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验10b（v1.6 修复 R5，旗舰）：再解释层纠正协议 → 复跑实验10 纠正臂。
 预注册：scripts/PROTOCOL-v1.6.md §R5（先公布后跑）。

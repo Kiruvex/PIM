@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """拟人化架构_v1.9.md 补录 exp21/exp20b/exp23 状态与实证注记"""
 import io
 

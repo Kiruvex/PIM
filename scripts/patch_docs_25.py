@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp25 补录：PROTOCOL 跑后勘误 + 工作日志会话 16 + 实验报告 exp25 节 + 架构文档 §3.6/实验表"""
 
 # ============ 1. PROTOCOL-v1.9.md：跑后勘误与终判 ============

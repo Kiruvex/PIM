@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """补录工作日志：关机议题 + 锚点18节律条款 + 待办部署形态"""
 p = 'docs/工作日志.md'
 s = open(p, encoding='utf-8').read()

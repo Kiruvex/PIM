@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 exp25：气质分化——同一架构 × 气质先验网格 → 行为风格可分性
 预注册：scripts/PROTOCOL-v1.9.md（exp25 节，commit 01367a5 跑前锁定）

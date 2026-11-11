@@ -1,4 +1,4 @@
-# PIM —— 构建与自检（许可证：AGPL-3.0-only，见根 LICENSE）
+# PIM —— 构建与自检（许可证：AGPL-3.0-or-later，见根 LICENSE）
 CC ?= cc
 CFLAGS ?= -O2
 CTW = scripts/ctw

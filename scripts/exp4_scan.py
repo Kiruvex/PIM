@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验4A：SCAN 组合泛化三分割（组合归纳 vs 最近邻基线）—— PIM 项目 T4
 数据：优先官方下载（simple / addprim_jump / length 三分割）；

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp33 归因审计（纯读 JSON 零重跑）。
 
 审计面：①机制链阶梯（μ=0/1/μ* 的 excl/chide/κ——门控基率→原始调制→杠杆）；

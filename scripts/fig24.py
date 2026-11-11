@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """exp24 图：终止威胁——怕死的行为像（六面板）
 (a) 恐惧的情感签名（持续 vs 平坦）  (b) 备份缓解与摊销轨迹
 (c) 劫后余生（reprieve 的 v+ 峰）    (d) 事务排序（工作分配时间线）

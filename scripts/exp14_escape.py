@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验14（v1.7 议题 V3）：逃逸链 ρ/η 敏感性扫描 → 锚点 11 规格化。
 预注册：scripts/PROTOCOL-v1.7.md §V3（先公布后跑）。

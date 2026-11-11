@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """架构文档 v1.9 补录：exp24 怕死 猜想→实验"""
 
 P = "docs/拟人化架构_v1.9.md"

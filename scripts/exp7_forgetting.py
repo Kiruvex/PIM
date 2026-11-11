@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """
 实验7 [T7]: 机器遗忘曲线（防循环论证版）—— 沙盒级模拟证据
 ================================================================

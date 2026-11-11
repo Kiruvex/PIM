@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# SPDX-License-Identifier: AGPL-3.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """fig29：exp29 教师风格×课程结构（6 面板）。数据=results/exp29.json（partial 全臂）。
 内置两道自检（fig28 防回归装置）：tight_layout 后轴高≥0.30 断言 + 存图后空白带<25% 断言。
 布局纪律（fig28 教训）：annotate 一律 textcoords="axes fraction"；suptitle ≤13pt；图例
