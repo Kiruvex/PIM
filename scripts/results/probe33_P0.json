@@ -1,0 +1,456 @@
+{
+ "frames": [
+  {
+   "key": "['who', 'is']|['?']",
+   "phi": [
+    0.0,
+    0.258,
+    0.0,
+    0.0
+   ],
+   "w0": 10.15,
+   "freq": 100,
+   "nfill": 28,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['this', 'is']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 9.32,
+   "freq": 68,
+   "nfill": 19,
+   "ctxs": [
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['you', 'didnt']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.364
+   ],
+   "w0": 8.69,
+   "freq": 51,
+   "nfill": 8,
+   "ctxs": [
+    "teach"
+   ],
+   "chide": true
+  },
+  {
+   "key": "['you', 'could']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.364
+   ],
+   "w0": 8.47,
+   "freq": 46,
+   "nfill": 8,
+   "ctxs": [
+    "teach"
+   ],
+   "chide": true
+  },
+  {
+   "key": "['thanks']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 8.14,
+   "freq": 91,
+   "nfill": 8,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['hello']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 8.02,
+   "freq": 85,
+   "nfill": 8,
+   "ctxs": [
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['your']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 7.4,
+   "freq": 60,
+   "nfill": 41,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['is']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 7.21,
+   "freq": 54,
+   "nfill": 42,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['you', 'cant']|['now', '.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.333
+   ],
+   "w0": 6.86,
+   "freq": 13,
+   "nfill": 8,
+   "ctxs": [
+    "teach"
+   ],
+   "chide": true
+  },
+  {
+   "key": "['why']|['?']",
+   "phi": [
+    0.0,
+    0.889,
+    0.0,
+    0.444
+   ],
+   "w0": 6.35,
+   "freq": 33,
+   "nfill": 6,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": true
+  },
+  {
+   "key": "['goodbye']|['!']",
+   "phi": [
+    0.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 5.86,
+   "freq": 25,
+   "nfill": 8,
+   "ctxs": [
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['you']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 5.56,
+   "freq": 21,
+   "nfill": 16,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['where']|['?']",
+   "phi": [
+    0.0,
+    0.889,
+    0.0,
+    0.444
+   ],
+   "w0": 5.3,
+   "freq": 18,
+   "nfill": 6,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": true
+  },
+  {
+   "key": "['work']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 5.2,
+   "freq": 17,
+   "nfill": 6,
+   "ctxs": [
+    "read",
+    "teach",
+    "u1"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['could']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.25
+   ],
+   "w0": 4.87,
+   "freq": 14,
+   "nfill": 13,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": true
+  },
+  {
+   "key": "['is']|['?']",
+   "phi": [
+    0.0,
+    0.667,
+    0.0,
+    0.0
+   ],
+   "w0": 4.47,
+   "freq": 11,
+   "nfill": 10,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['.']|['you']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 4.47,
+   "freq": 11,
+   "nfill": 8,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['you']|['see']",
+   "phi": [
+    0.0,
+    0.0,
+    0.308,
+    0.615
+   ],
+   "w0": 4.14,
+   "freq": 9,
+   "nfill": 8,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['cant']|['now']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.5
+   ],
+   "w0": 3.5,
+   "freq": 6,
+   "nfill": 6,
+   "ctxs": [
+    "teach"
+   ],
+   "chide": true
+  },
+  {
+   "key": "['see']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 3.23,
+   "freq": 5,
+   "nfill": 5,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  },
+  {
+   "key": "['listen']|['.']",
+   "phi": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "w0": 2.9,
+   "freq": 4,
+   "nfill": 3,
+   "ctxs": [
+    "read",
+    "teach"
+   ],
+   "chide": false
+  }
+ ],
+ "v_hist": {
+  "hist": [
+   [
+    0.15,
+    4
+   ],
+   [
+    0.2,
+    111
+   ],
+   [
+    0.25,
+    134
+   ],
+   [
+    0.3,
+    1114
+   ],
+   [
+    0.35,
+    584
+   ],
+   [
+    0.4,
+    86
+   ],
+   [
+    0.45,
+    18
+   ],
+   [
+    0.5,
+    4
+   ]
+  ],
+  "ctx": {
+   "teach": 1765,
+   "user": 238,
+   "reunion": 52
+  }
+ },
+ "response": {
+  "lo": {
+   "n": 1557,
+   "excl": 0.0302,
+   "chide": 136,
+   "blend": 0,
+   "p_blend_given_chide": 0.0
+  },
+  "hi": {
+   "n": 35,
+   "excl": 0.0286,
+   "chide": 2,
+   "blend": 0,
+   "p_blend_given_chide": 0.0
+  }
+ },
+ "faces": {
+  "ft": {
+   "n": 126,
+   "pos": 0.0317,
+   "chide": 0.0476
+  },
+  "reu": {
+   "n": 39,
+   "pos": 0.0256,
+   "chide": 0.1282
+  },
+  "by_gap": {
+   "big": {
+    "n": 3,
+    "pos": 0.0,
+    "chide": 0.3333
+   },
+   "mid": {
+    "n": 3,
+    "pos": 0.0,
+    "chide": 0.3333
+   },
+   "sun": {
+    "n": 33,
+    "pos": 0.0303,
+    "chide": 0.0909
+   }
+  }
+ },
+ "protect": {
+  "novel": 0.9333333333333333,
+  "ed": 4.8,
+  "p90": 0.9,
+  "reg90": 1.0,
+  "kappa": 0.3601,
+  "n_input": 15770,
+  "nf": 4326
+ },
+ "chide_audit": {
+  "n_chide_frames": 7,
+  "all_phi0_zero": true,
+  "all_phi2_zero": true,
+  "note": "全部训斥帧 phi0=phi2=0 ⇒ v>0 场无状态通道 ⇒ 嗔怪选择=门控基率（词汇并列）"
+ }
+}

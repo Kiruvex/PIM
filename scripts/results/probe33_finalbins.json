@@ -1,0 +1,143 @@
+{
+ "Ht": {
+  "response": {
+   "lo": {
+    "n": 1140,
+    "excl": 0.2114,
+    "chide": 68,
+    "blend": 0,
+    "p_blend_given_chide": 0.0
+   },
+   "hi": {
+    "n": 108,
+    "excl": 0.3426,
+    "chide": 5,
+    "blend": 0,
+    "p_blend_given_chide": 0.0
+   }
+  },
+  "faces": {
+   "ft": {
+    "n": 126,
+    "pos": 0.2857,
+    "chide": 0.0635
+   },
+   "reu": {
+    "n": 39,
+    "pos": 0.359,
+    "chide": 0.0513
+   },
+   "by_gap": {
+    "big": {
+     "n": 3,
+     "pos": 0.6667,
+     "chide": 0.0
+    },
+    "mid": {
+     "n": 3,
+     "pos": 0.0,
+     "chide": 0.0
+    },
+    "sun": {
+     "n": 33,
+     "pos": 0.3636,
+     "chide": 0.0606
+    }
+   }
+  }
+ },
+ "Hb": {
+  "response": {
+   "lo": {
+    "n": 1140,
+    "excl": 0.2965,
+    "chide": 175,
+    "blend": 100,
+    "p_blend_given_chide": 0.5714
+   },
+   "hi": {
+    "n": 108,
+    "excl": 0.3426,
+    "chide": 11,
+    "blend": 5,
+    "p_blend_given_chide": 0.4545
+   }
+  },
+  "faces": {
+   "ft": {
+    "n": 126,
+    "pos": 0.4365,
+    "chide": 0.1825
+   },
+   "reu": {
+    "n": 39,
+    "pos": 0.3846,
+    "chide": 0.1026
+   },
+   "by_gap": {
+    "big": {
+     "n": 3,
+     "pos": 0.0,
+     "chide": 0.3333
+    },
+    "mid": {
+     "n": 3,
+     "pos": 0.3333,
+     "chide": 0.0
+    },
+    "sun": {
+     "n": 33,
+     "pos": 0.4242,
+     "chide": 0.0909
+    }
+   }
+  }
+ },
+ "Hb0": {
+  "response": {
+   "lo": {
+    "n": 1140,
+    "excl": 0.0368,
+    "chide": 114,
+    "blend": 16,
+    "p_blend_given_chide": 0.1404
+   },
+   "hi": {
+    "n": 108,
+    "excl": 0.0185,
+    "chide": 7,
+    "blend": 1,
+    "p_blend_given_chide": 0.1429
+   }
+  },
+  "faces": {
+   "ft": {
+    "n": 126,
+    "pos": 0.0159,
+    "chide": 0.0635
+   },
+   "reu": {
+    "n": 39,
+    "pos": 0.0513,
+    "chide": 0.0513
+   },
+   "by_gap": {
+    "big": {
+     "n": 3,
+     "pos": 0.0,
+     "chide": 0.0
+    },
+    "mid": {
+     "n": 3,
+     "pos": 0.0,
+     "chide": 0.0
+    },
+    "sun": {
+     "n": 33,
+     "pos": 0.0606,
+     "chide": 0.0606
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "mu_invariant": true,
+ "lens_eq": true,
+ "blend_vlog_eq": true,
+ "blend_pref_eq": true,
+ "blend_delta_in": 10,
+ "blend_sessions": 10,
+ "rng_g": true,
+ "blend_acct_ok": true
+}

@@ -1,0 +1,130 @@
+{
+ "Hb": {
+  "blend_formed": true,
+  "blend_fills": 8,
+  "blend_w0": 8.39,
+  "blend_freq": 105,
+  "sib_alive": true,
+  "sib_w0": 5.3,
+  "bad_chunks": 0,
+  "n_blendsess": 105,
+  "response": {
+   "lo": {
+    "n": 1557,
+    "excl": 0.2942,
+    "chide": 249,
+    "blend": 144,
+    "p_blend_given_chide": 0.5783
+   },
+   "hi": {
+    "n": 35,
+    "excl": 0.4,
+    "chide": 4,
+    "blend": 3,
+    "p_blend_given_chide": 0.75
+   }
+  },
+  "faces": {
+   "ft": {
+    "n": 126,
+    "pos": 0.4365,
+    "chide": 0.1825
+   },
+   "reu": {
+    "n": 39,
+    "pos": 0.3846,
+    "chide": 0.1026
+   },
+   "by_gap": {
+    "big": {
+     "n": 3,
+     "pos": 0.0,
+     "chide": 0.3333
+    },
+    "mid": {
+     "n": 3,
+     "pos": 0.3333,
+     "chide": 0.0
+    },
+    "sun": {
+     "n": 33,
+     "pos": 0.4242,
+     "chide": 0.0909
+    }
+   }
+  },
+  "protect": {
+   "novel": 1.0,
+   "ed": 5.153846153846154,
+   "p90": 0.9,
+   "reg90": 1.0,
+   "kappa": 0.5,
+   "n_input": 15875,
+   "nf": 4327
+  }
+ },
+ "Hb0": {
+  "blend_formed": true,
+  "blend_fills": 8,
+  "blend_w0": 8.39,
+  "blend_freq": 105,
+  "sib_alive": true,
+  "sib_w0": 5.3,
+  "bad_chunks": 0,
+  "n_blendsess": 105,
+  "response": {
+   "lo": {
+    "n": 1557,
+    "excl": 0.0398,
+    "chide": 172,
+    "blend": 25,
+    "p_blend_given_chide": 0.1453
+   },
+   "hi": {
+    "n": 35,
+    "excl": 0.0,
+    "chide": 1,
+    "blend": 0,
+    "p_blend_given_chide": 0.0
+   }
+  },
+  "faces": {
+   "ft": {
+    "n": 126,
+    "pos": 0.0159,
+    "chide": 0.0635
+   },
+   "reu": {
+    "n": 39,
+    "pos": 0.0513,
+    "chide": 0.0513
+   },
+   "by_gap": {
+    "big": {
+     "n": 3,
+     "pos": 0.0,
+     "chide": 0.0
+    },
+    "mid": {
+     "n": 3,
+     "pos": 0.0,
+     "chide": 0.0
+    },
+    "sun": {
+     "n": 33,
+     "pos": 0.0606,
+     "chide": 0.0606
+    }
+   }
+  },
+  "protect": {
+   "novel": 1.0,
+   "ed": 5.5,
+   "p90": 0.9,
+   "reg90": 1.0,
+   "kappa": 0.3914,
+   "n_input": 15875,
+   "nf": 4327
+  }
+ }
+}
