@@ -78,6 +78,10 @@ class Handler(BaseHTTPRequestHandler):
             elif self.path == "/api/sleep":
                 LIVE.sleep(max(1, int(data.get("n", 1))))
                 LIVE.save(STATE)
+            elif self.path == "/api/mu":
+                variance = max(0.0, min(40.0, float(data.get("mu", 20.0))))
+                LIVE.pim.gram.mu = variance
+                print(f"[log] /api/mu -> {variance}", flush=True)
             elif self.path == "/api/reset":
                 seed = int(data.get("seed", 0)) % 1000
                 LIVE.reset(seed=seed)

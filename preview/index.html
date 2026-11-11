@@ -44,6 +44,8 @@
     </div>
     <div class="ctrl gap">
       <span>隔</span><input id="gap" type="range" min="1" max="30" value="1" style="width:110px"><span id="gapv" style="width:38px">1 天</span>
+      <span>μ</span><input id="mu" type="range" min="0" max="40" value="20" step="2" style="width:70px"
+             oninput="muShow()" onchange="muSet(this.value)"><span id="muv" style="width:24px">20</span>
       <button onclick="sleepN()">睡一觉(3天)</button>
       <button onclick="reset0()">重新长大</button>
     </div>
@@ -128,7 +130,7 @@ function renderChat() {
     <div class="msg me"><div class="who">你·D${r.day}${r.gap>1?`+${r.gap}d`:""}</div><div class="bub">${r.text.escape()}
       <div class="meta">bits ${r.bits}</div></div></div>
     <div class="msg"><div class="who">它</div><div class="bub">${r.reply.escape()}
-      <div class="meta">v ${r.v0}→${r.v} · a ${r.a0}→${r.a} · A_u1 ${r.A_u1}${r.ent?` · 绑定:${r.ent}`:""}</div></div></div>`).join("");
+      <div class="meta">v ${r.v0}→${r.v} · a ${r.a0}→${r.a} · A_u1 ${r.A_u1}${(r.sel?` · 选:${r.sel}`:"")+(r.ent?` · 绑定:${r.ent}`:"")}}</div></div></div>`).join("");
   $("chat").scrollTop = 9e9;
 }
 function drawAll() {
@@ -143,6 +145,8 @@ async function poll(){ const r=await fetch("/api/state"); S=await r.json(); rend
 async function post(u,b){ const r=await fetch(u,{method:"POST",body:JSON.stringify(b||{})}); S=await r.json(); renderStats(); renderChat(); }
 async function say(){ const t=$("say").value.trim(); if(!t)return; $("say").value=""; await post("/api/say",{text:t, gap:+$("gap").value}); }
 async function sleepN(){ await post("/api/sleep",{n:3}); }
+async function muSet(v){ await post("/api/mu",{mu:+v}); } 
+function muShow(){ $("muv").textContent = $("mu").value; }
 async function reset0(){ if(confirm("重新长大？（365 天教师期，约 7 秒）")) await post("/api/reset",{seed:(Math.random()*99|0)}); }
 $("say").addEventListener("keydown",e=>{ if(e.key==="Enter")say(); });
 $("gap").addEventListener("input",e=>$("gapv").textContent=e.target.value+" 天");
